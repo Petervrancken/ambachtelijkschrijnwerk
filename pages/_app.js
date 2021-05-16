@@ -1,5 +1,6 @@
 import base from '../styles/base.scss'
 import navbarstyle from "../styles/navbarstyle.scss"
+import indexstyle from "../styles/indexstyle.scss"
 
 
 

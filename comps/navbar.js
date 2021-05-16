@@ -40,9 +40,9 @@ export default function Navbar() {
             </a>
           </Link>
         </li>
-        <div class="dropdown">
+        <div className="dropdown">
           <div className="linkmenu"><Menu className="menuicoon" height={25} /></div>
-          <div class="dropdown-content">
+          <div className="dropdown-content">
             <Link href="/restauratie"><a title="ga naar restauratie"><Restauratie className="navText"  /></a></Link>
             <Link href="/schrijnentimmerwerken"><a title="ga naar schrijn en timmerwerken"><Schrijnentimmerwerken className="navText" /></a></Link>
             <Link href="/treecycle"><a title="ga naar treecyleshop"><Treecycleshop className="navText"  /></a></Link>

@@ -1,4 +1,7 @@
-import styles from '../styles/styles.scss'
+import base from '../styles/base.scss'
+import navbarstyle from "../styles/navbarstyle.scss"
+
+
 
 //components
 import Navbar from "../comps/navbar"

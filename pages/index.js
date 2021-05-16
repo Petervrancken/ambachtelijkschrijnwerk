@@ -1,9 +1,19 @@
 
+import Wijmaken from "../public/wijmaken.svg"
+import Geschiedenis from "../public/geschiedenis.svg"
+import Vanonze  from "../public/vanonze.svg"
+import Toekomst from "../public/toekomst.svg"
 
-import Logo from '../public/logo.svg'
 
 export default function Home() {
   return (
-    <h1>Welcome home test</h1>
+    <div className="backgroundTable">
+      <div className="slogan">
+        <Wijmaken className="sloganText"/>
+        <Geschiedenis className="sloganText"/>
+        <Vanonze className="sloganTextVanOnze"/>
+        <Toekomst className="sloganTextToekomst"/>
+      </div>
+    </div>
   )
 }

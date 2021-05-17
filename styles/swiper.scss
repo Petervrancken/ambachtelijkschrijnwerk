@@ -1,5 +1,5 @@
 .swiper-container {
-  width: 100%;
+  width: 80%;
   min-height: 250px;
   margin-top: 50px;
 }
@@ -13,6 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
     .swiper-grades {
       color: white;
       margin-left: auto;
@@ -22,7 +23,8 @@
   // center content
   .swiper-icoon {
     margin: 20px;
-    margin-right: 35px;
+    margin-right: 40px;
+    padding-left: 10px;
     p {
       color: rgb(177, 177, 177);
       padding-left: 15px;
@@ -33,10 +35,21 @@
     fill: white;
     width: 100px;
     height: 100px;
-    margin-left: 15px;
+    margin-left: 10px;
     min-height: 50px;
     min-width: 50px;
   }
+}
+
+.swiper-comment {
+  margin-bottom: 35px;
+}
+
+.swiper-button-next {
+  --swiper-theme-color: rgb(117, 117, 117);
+}
+.swiper-button-prev {
+  --swiper-theme-color: rgb(117, 117, 117);
 }
 
 .swiper-slide img {
@@ -46,5 +59,18 @@
   object-fit: cover;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 1400px) {
+  .swiper-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 790px) {
+  .swiper-container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .swiper-container {
+    width: 100%;
+  }
 }

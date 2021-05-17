@@ -5,28 +5,18 @@
 
 .slogan {
   display: flex;
-  padding-top: 300px;
+  padding-top: 250px;
   justify-content: center;
   flex-wrap: wrap;
+  font-family: WoodHellCompany;
   .sloganText {
-    fill: white;
-    width: 180px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    width: 60%;
     min-width: 175px;
-    height: 30px;
-    padding: 0px;
-  }
-  .sloganTextVanOnze {
-    fill: white;
-    width: 150px;
-    min-width: 150px;
-    height: 30px;
-    padding: 0px;
-  }
-  .sloganTextToekomst {
-    fill: white;
-    width: 100px;
-    min-width: 148px;
-    height: 30px;
     padding: 0px;
   }
 }
@@ -34,6 +24,9 @@
 @media only screen and (max-width: 1600px) {
   .slogan {
     padding-top: 80px;
+    .sloganText {
+      font-size: 35px;
+    }
   }
 }
 

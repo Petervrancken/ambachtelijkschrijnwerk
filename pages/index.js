@@ -33,7 +33,7 @@ export default function Home() {
       900: {
         slidesPerView: 3,
       },
-      800: {
+      600: {
         slidesPerView: 2,
       },
       10: {
@@ -54,15 +54,110 @@ export default function Home() {
       </div>
       <div class="swiper-container mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><Profiel className="icoon"  /></div>
-        <div class="swiper-slide"><Profiel className="icoon"  /></div>
-        <div class="swiper-slide"><Profiel className="icoon"  /></div>
-        <div class="swiper-slide"><Profiel className="icoon"  /></div>
-        <div class="swiper-slide"><Profiel className="icoon"  /></div>
-        <div class="swiper-slide"><Profiel className="icoon"  /></div>
-        <div class="swiper-slide"><Profiel className="icoon"  /></div>
-        <div class="swiper-slide"><Profiel className="icoon"  /></div>
-        <div class="swiper-slide"><Profiel className="icoon"  /></div>
+        <div class="swiper-slide">
+          <div className="swiper-icoon">
+            <div className="swiper-icoon-grades">
+              <p>27/08/2021</p>
+              <h3 className="swiper-grades">10/10</h3>
+            </div>
+            <div className="swiper-icoon-grades">
+              <Profiel className="icoon"  />
+              <p>Peter Vrancken</p>
+            </div>
+            <p>Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div className="swiper-icoon">
+            <div className="swiper-icoon-grades">
+              <p>27/08/2021</p>
+              <h3 className="swiper-grades">10/10</h3>
+            </div>
+            <div className="swiper-icoon-grades">
+              <Profiel className="icoon"  />
+              <p>Marianna Adamou</p>
+            </div>
+            <p>Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div className="swiper-icoon">
+            <div className="swiper-icoon-grades">
+              <p>27/08/2021</p>
+              <h3 className="swiper-grades">10/10</h3>
+            </div>
+            <div className="swiper-icoon-grades">
+              <Profiel className="icoon"  />
+              <p>Michiel Vandenbroecke</p>
+            </div>
+            <p>Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div className="swiper-icoon">
+            <div className="swiper-icoon-grades">
+              <p>27/08/2021</p>
+              <h3 className="swiper-grades">10/10</h3>
+            </div>
+            <div className="swiper-icoon-grades">
+              <Profiel className="icoon"  />
+              <p>Tim Van Mierlo</p>
+            </div>
+            <p>Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div className="swiper-icoon">
+            <div className="swiper-icoon-grades">
+              <p>27/08/2021</p>
+              <h3 className="swiper-grades">10/10</h3>
+            </div>
+            <div className="swiper-icoon-grades">
+              <Profiel className="icoon"  />
+              <p>Charel Jos</p>
+            </div>
+            <p>Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div className="swiper-icoon">
+            <div className="swiper-icoon-grades">
+              <p>27/08/2021</p>
+              <h3 className="swiper-grades">10/10</h3>
+            </div>
+            <div className="swiper-icoon-grades">
+              <Profiel className="icoon"  />
+              <p>Iemand</p>
+            </div>
+            <p>Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div className="swiper-icoon">
+            <div className="swiper-icoon-grades">
+              <p>27/08/2021</p>
+              <h3 className="swiper-grades">10/10</h3>
+            </div>
+            <div className="swiper-icoon-grades">
+              <Profiel className="icoon"  />
+              <p>De bomma</p>
+            </div>
+            <p>Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div className="swiper-icoon">
+            <div className="swiper-icoon-grades">
+              <p>27/08/2021</p>
+              <h3 className="swiper-grades">10/10</h3>
+            </div>
+            <div className="swiper-icoon-grades">
+              <Profiel className="icoon"  />
+              <p>Sonic</p>
+            </div>
+            <p>Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
+          </div>
+        </div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>

@@ -56,45 +56,6 @@ export default function Home() {
               <p className="swiper-comment">Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
             </div>
           </div>
-          <div className="swiper-slide">
-            <div className="swiper-icoon">
-              <div className="swiper-icoon-grades">
-                <p>27/08/2021</p>
-                <h3 className="swiper-grades">10/10</h3>
-              </div>
-              <div className="swiper-icoon-grades">
-                <Profiel className="icoon"  />
-                <p>Peter Vrancken</p>
-              </div>
-              <p className="swiper-comment">Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
-            </div>
-          </div>
-          <div className="swiper-slide">
-            <div className="swiper-icoon">
-              <div className="swiper-icoon-grades">
-                <p>27/08/2021</p>
-                <h3 className="swiper-grades">10/10</h3>
-              </div>
-              <div className="swiper-icoon-grades">
-                <Profiel className="icoon"  />
-                <p>Peter Vrancken</p>
-              </div>
-              <p className="swiper-comment">Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
-            </div>
-          </div>
-          <div className="swiper-slide">
-            <div className="swiper-icoon">
-              <div className="swiper-icoon-grades">
-                <p>27/08/2021</p>
-                <h3 className="swiper-grades">10/10</h3>
-              </div>
-              <div className="swiper-icoon-grades">
-                <Profiel className="icoon"  />
-                <p>Peter Vrancken</p>
-              </div>
-              <p className="swiper-comment">Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
-            </div>
-          </div>
       </div>
       <div className="swiper-button-next"></div>
       <div className="swiper-button-prev"></div>

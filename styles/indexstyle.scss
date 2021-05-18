@@ -10,7 +10,6 @@
   flex-wrap: wrap;
   font-family: WoodHellCompany;
   .sloganText {
-    display: block;
     margin: auto;
     text-align: center;
     font-size: 45px;
@@ -20,7 +19,28 @@
     padding: 0px;
   }
 }
-
+.comment-add {
+  font-family: WoodHellCompany;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .sloganText {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 150%;
+    color: white;
+    width: 100%;
+    padding: 0px;
+  }
+  .icoon {
+    fill: rgb(168, 168, 168);
+    height: 50px;
+    width: 50px;
+    &:hover {
+      fill: white;
+    }
+  }
+}
 @media only screen and (max-width: 1600px) {
   .slogan {
     padding-top: 80px;

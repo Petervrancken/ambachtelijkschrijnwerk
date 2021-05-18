@@ -2,6 +2,7 @@ import base from '../styles/base.scss'
 import navbarstyle from "../styles/navbarstyle.scss"
 import indexstyle from "../styles/indexstyle.scss"
 import swiper from "../styles/swiper.scss"
+import restauratiestyle from "../styles/restauratiestyle.scss"
 
 
 

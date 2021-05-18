@@ -21,7 +21,13 @@ return (
 
 <div className="backgroundTable">
   <div className="slogan">
-    <p className="sloganText">wij maken geschiedenis van onze toekomst!</p>
+    <p className="sloganText">restauratie</p>
+    <p className="infoRestauratie"> Aangezien we een grote liefde hebben voor het vakmanschap van weleer,
+        hebben we ons gespecialiseerd in het restaureren van antiek houtwerk.
+        Zoals bij alle restauratiewerken trachten we zo veel mogelijk van de originele timmerwerken te behouden.
+        We voeren de herstellingen uit met de aloude technieken zoals liplassen of zwaluwstaarten. Ook doen we herstellingen
+        met moderne technieken zoals polymeerchemisch en glasvezel.
+    </p>
   </div>
   <Swiper 
     slidesPerView={4} 

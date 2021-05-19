@@ -9,15 +9,15 @@
   justify-content: center;
   flex-wrap: wrap;
   font-family: WoodHellCompany;
-  .sloganText {
-    margin: auto;
-    text-align: center;
-    font-size: 45px;
-    color: white;
-    width: 60%;
-    min-width: 175px;
-    padding: 0px;
-  }
+}
+.sloganText {
+  margin: auto;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  width: 100%;
+  min-width: 175px;
+  padding: 0px;
 }
 .comment-add {
   font-family: WoodHellCompany;
@@ -39,19 +39,5 @@
     &:hover {
       fill: white;
     }
-  }
-}
-@media only screen and (max-width: 1600px) {
-  .slogan {
-    padding-top: 45px;
-    .sloganText {
-      font-size: 35px;
-    }
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .slogan {
-    padding-top: 20px;
   }
 }

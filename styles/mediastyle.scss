@@ -1,0 +1,50 @@
+//restauratie
+@media only screen and (max-width: 2000px) {
+  .backgroundTableTheme {
+    margin-right: 250px;
+    margin-left: 250px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .backgroundTableTheme {
+    margin-right: 300px;
+    margin-left: 300px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .backgroundTableTheme {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .infoRestauratie {
+    width: 80%;
+  }
+  .backgroundTableTheme {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .infoRestauratie {
+    width: 100%;
+  }
+}
+
+//index
+@media only screen and (max-width: 1600px) {
+  .slogan {
+    padding-top: 45px;
+    .sloganText {
+      font-size: 35px;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .slogan {
+    padding-top: 20px;
+  }
+}

@@ -1,7 +1,8 @@
 
-// SVG imports
-import Profiel from "../public/profielicoon.svg"
-import Plus from "../public/add.svg"
+// SVG imports"
+import Image from "next/image"
+import Timmerwerk from "../public/timmer.svg"
+
 
 //next imports
 import Link from 'next/link'
@@ -19,8 +20,8 @@ export default function Home() {
 
 return (
 
-<div className="backgroundTable">
-  <div className="slogan">
+<div className="backgroundTableTheme">
+  <div className="sloganTheme">
     <p className="sloganText">restauratie</p>
     <p className="infoRestauratie"> Aangezien we een grote liefde hebben voor het vakmanschap van weleer,
         hebben we ons gespecialiseerd in het restaureren van antiek houtwerk.
@@ -31,14 +32,14 @@ return (
   </div>
   <Swiper 
     slidesPerView={4} 
-    spaceBetween={30} 
+    spaceBetween={20} 
     slidesPerGroup={1}  
     navigation={true}
     breakpoints={{
       "1850": {
         "slidesPerView": 4,
       },
-      "1400": {
+      "1600": {
         "slidesPerView": 3,
       },
       "970": {
@@ -49,76 +50,112 @@ return (
       },
     }}
     className="mySwiper">
-    <SwiperSlide>
-      <div className="swiper-icoon">
-        <div className="swiper-icoon-grades">
-          <p>27/08/2021</p>
-          <h3 className="swiper-grades">10/10</h3>
+    <SwiperSlide className="slide-afbeelding">
+        <div className="swiper-afbeelding">
+          <Link href="#">
+            <a title="klik en vergroot!">
+          <Image 
+            src="/Restauratie1.jpg" 
+            alt="restauratie1"
+            width={250}
+            height={250}
+          />
+          </a>
+          </Link>
         </div>
-        <div className="swiper-icoon-grades">
-          <Profiel className="icoon"  />
-          <p>Peter Vrancken</p>
-        </div>
-        <p className="swiper-comment">Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
-      </div>
     </SwiperSlide>
-    <SwiperSlide>
-      <div className="swiper-icoon">
-        <div className="swiper-icoon-grades">
-          <p>27/08/2021</p>
-          <h3 className="swiper-grades">10/10</h3>
+    <SwiperSlide className="slide-afbeelding">
+        <div className="swiper-afbeelding">
+          <Link href="#">
+            <a title="klik en vergroot!">
+          <Image 
+            src="/Restauratie2.jpg" 
+            alt="restauratie1"
+            width={250}
+            height={250}
+          />
+          </a>
+          </Link>
         </div>
-        <div className="swiper-icoon-grades">
-          <Profiel className="icoon"  />
-          <p>Peter Vrancken</p>
-        </div>
-        <p className="swiper-comment">Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
-      </div>
     </SwiperSlide>
-    <SwiperSlide>
-      <div className="swiper-icoon">
-        <div className="swiper-icoon-grades">
-          <p>27/08/2021</p>
-          <h3 className="swiper-grades">10/10</h3>
+    <SwiperSlide className="slide-afbeelding">
+        <div className="swiper-afbeelding">
+          <Link href="#">
+            <a title="klik en vergroot!">
+          <Image 
+            src="/Restauratie3.jpg" 
+            alt="restauratie1"
+            width={250}
+            height={250}
+          />
+          </a>
+          </Link>
         </div>
-        <div className="swiper-icoon-grades">
-          <Profiel className="icoon"  />
-          <p>Peter Vrancken</p>
-        </div>
-        <p className="swiper-comment">Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
-      </div>
     </SwiperSlide>
-    <SwiperSlide>
-      <div className="swiper-icoon">
-        <div className="swiper-icoon-grades">
-          <p>27/08/2021</p>
-          <h3 className="swiper-grades">10/10</h3>
+    <SwiperSlide className="slide-afbeelding">
+        <div className="swiper-afbeelding">
+          <Link href="#">
+            <a title="klik en vergroot!">
+          <Image 
+            src="/Restauratie4.jpg" 
+            alt="restauratie1"
+            width={250}
+            height={250}
+          />
+          </a>
+          </Link>
         </div>
-        <div className="swiper-icoon-grades">
-          <Profiel className="icoon"  />
-          <p>Peter Vrancken</p>
-        </div>
-        <p className="swiper-comment">Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
-      </div>
     </SwiperSlide>
-    <SwiperSlide>
-      <div className="swiper-icoon">
-        <div className="swiper-icoon-grades">
-          <p>27/08/2021</p>
-          <h3 className="swiper-grades">10/10</h3>
+    <SwiperSlide className="slide-afbeelding">
+        <div className="swiper-afbeelding">
+          <Link href="#">
+            <a title="klik en vergroot!">
+          <Image 
+            src="/Restauratie2.jpg" 
+            alt="restauratie1"
+            width={250}
+            height={250}
+          />
+          </a>
+          </Link>
         </div>
-        <div className="swiper-icoon-grades">
-          <Profiel className="icoon"  />
-          <p>Peter Vrancken</p>
-        </div>
-        <p className="swiper-comment">Anton en Kristof hebben zeer goed werk afgeleverd! Ik kan vol lof genieten van mijn op maat gemaakte trap!</p>
-      </div>
     </SwiperSlide>
     
     </Swiper>
-    <div className="comment-add">
-      <p className="sloganText">klik op het plusje om je eigen commentaar toe te voegen!</p>
-      <Link href="#"><a title="ga naar comments"><Plus className="icoon"/></a></Link>
+    <div className="onderwerp">
+      <div className="box">
+      <p className="onderwerp-titel">restauratietimmerwerk</p> 
+        <Timmerwerk className="onderwerp-icoon"/>
+        <p> Dakstructuren en andere structurele
+            elementen (bv. moerbalken) in monumenten of andere oude gebouwen zijn meestal
+            gemaakt in hout. Hoewel hout een zeer
+            duurzaam bouwmateriaal is, kan na jarenlange blootstelling aan de elementen of
+            door aantasting van beestjes, restauratie
+            van doen zijn.
+        </p>
+      </div>
+      <div className="box">
+      <p className="onderwerp-titel">restauratietimmerwerk</p>
+        <Timmerwerk className="onderwerp-icoon"/>
+        <p> Dit gaat van ramen en deuren tot trappen
+            en ander interieur schrijnwerk.
+            We streven steeds na zo veel mogelijk van
+            het originele schrijnwerk te behouden,
+            enkel delen die niet meer gered kunnen worden
+            volgens de regels van de kunst geheel
+            of gedeeltelijk vervangen
+        </p>
+      </div>
+      <div className="box">
+      <p className="onderwerp-titel">restauratietimmerwerk</p>
+        <Timmerwerk className="onderwerp-icoon"/>
+        <p> Platformen en loopbruggen om moeilijk
+            bereikbare plaatsen toch gemakkelijk en
+            veilig te kunnen bereiken kunnen we ook
+            vervaardigen.
+        </p>
+      </div>
+      
     </div>
   </div>
   )

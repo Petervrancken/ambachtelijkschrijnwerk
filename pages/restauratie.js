@@ -2,6 +2,8 @@
 // SVG imports"
 import Image from "next/image"
 import Timmerwerk from "../public/timmer.svg"
+import Zaag from "../public/zaag.svg"
+import Veiligheid from "../public/veiligheid.svg"
 
 
 //next imports
@@ -19,6 +21,7 @@ export default function Home() {
 
 
 return (
+  <>
 
 <div className="backgroundTableTheme">
   <div className="sloganTheme">
@@ -36,14 +39,17 @@ return (
     slidesPerGroup={1}  
     navigation={true}
     breakpoints={{
-      "1850": {
+      "1920": {
         "slidesPerView": 4,
       },
-      "1600": {
+      "1366": {
         "slidesPerView": 3,
       },
-      "970": {
+      "768": {
         "slidesPerView": 2,
+      },
+      "320": {
+        "slidesPerView": 1,
       },
       "10": {
         "slidesPerView": 1,
@@ -136,7 +142,7 @@ return (
       </div>
       <div className="box">
       <p className="onderwerp-titel">restauratietimmerwerk</p>
-        <Timmerwerk className="onderwerp-icoon"/>
+        <Zaag className="onderwerp-icoon"/>
         <p> Dit gaat van ramen en deuren tot trappen
             en ander interieur schrijnwerk.
             We streven steeds na zo veel mogelijk van
@@ -148,15 +154,49 @@ return (
       </div>
       <div className="box">
       <p className="onderwerp-titel">restauratietimmerwerk</p>
-        <Timmerwerk className="onderwerp-icoon"/>
+        <Veiligheid className="onderwerp-icoon"/>
         <p> Platformen en loopbruggen om moeilijk
             bereikbare plaatsen toch gemakkelijk en
             veilig te kunnen bereiken kunnen we ook
             vervaardigen.
         </p>
       </div>
-      
     </div>
   </div>
+  <div className="onderwerp-bottom">
+  <div className="box">
+  <p className="onderwerp-titel">restauratietimmerwerk</p> 
+    <Timmerwerk className="onderwerp-icoon"/>
+    <p> Dakstructuren en andere structurele
+        elementen (bv. moerbalken) in monumenten of andere oude gebouwen zijn meestal
+        gemaakt in hout. Hoewel hout een zeer
+        duurzaam bouwmateriaal is, kan na jarenlange blootstelling aan de elementen of
+        door aantasting van beestjes, restauratie
+        van doen zijn.
+    </p>
+  </div>
+  <div className="box">
+      <p className="onderwerp-titel">restauratietimmerwerk</p>
+        <Zaag className="onderwerp-icoon"/>
+        <p> Dit gaat van ramen en deuren tot trappen
+            en ander interieur schrijnwerk.
+            We streven steeds na zo veel mogelijk van
+            het originele schrijnwerk te behouden,
+            enkel delen die niet meer gered kunnen worden
+            volgens de regels van de kunst geheel
+            of gedeeltelijk vervangen
+        </p>
+      </div>
+      <div className="box">
+      <p className="onderwerp-titel">restauratietimmerwerk</p>
+        <Veiligheid className="onderwerp-icoon"/>
+        <p> Platformen en loopbruggen om moeilijk
+            bereikbare plaatsen toch gemakkelijk en
+            veilig te kunnen bereiken kunnen we ook
+            vervaardigen.
+        </p>
+      </div>
+  </div>
+  </>
   )
 }

@@ -27,14 +27,17 @@ return (
     slidesPerGroup={1}  
     navigation={true}
     breakpoints={{
-      "1850": {
+      "1920": {
         "slidesPerView": 4,
       },
-      "1400": {
+      "1366": {
         "slidesPerView": 3,
       },
-      "970": {
+      "768": {
         "slidesPerView": 2,
+      },
+      "320": {
+        "slidesPerView": 1,
       },
       "10": {
         "slidesPerView": 1,

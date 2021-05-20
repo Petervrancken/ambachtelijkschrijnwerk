@@ -37,12 +37,12 @@
 }
 
 .onderwerp {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   .box {
     width: 300px;
-    min-width: 250px;
     margin: 20px;
     text-align: center;
     color: white;
@@ -52,7 +52,29 @@
     .onderwerp-icoon {
       height: 100px;
       width: 100px;
-      fill: white;
+      fill: rgb(216, 216, 216);
+    }
+  }
+}
+
+.onderwerp-bottom {
+  margin-top: 135px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  .box {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    color: black;
+    .onderwerp-titel {
+      font-family: WoodHellCompany;
+    }
+    .onderwerp-icoon {
+      height: 100px;
+      width: 100px;
+      fill: black;
     }
   }
 }

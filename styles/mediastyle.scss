@@ -1,23 +1,48 @@
-//restauratie
-@media only screen and (max-width: 2000px) {
+//bigscreen
+@media only screen and (max-width: 1920px) {
+  //restauratie
+  .onderwerp-bottom {
+    display: none;
+  }
   .backgroundTableTheme {
     margin-right: 250px;
     margin-left: 250px;
   }
-}
-@media only screen and (max-width: 1400px) {
-  .backgroundTableTheme {
-    margin-right: 300px;
-    margin-left: 300px;
+  //index
+  .slogan {
+    margin-top: 250px;
   }
 }
-@media only screen and (max-width: 1150px) {
+
+//normal small screen
+@media only screen and (max-width: 1366px) {
+  //restauratie
+  .onderwerp {
+    display: none;
+  }
+  .onderwerp-bottom {
+    height: 600px;
+    display: flex;
+  }
   .backgroundTableTheme {
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  //index
+  .slogan {
+    margin-top: 50px;
+    .sloganText {
+      font-size: 35px;
+    }
   }
 }
-@media only screen and (max-width: 800px) {
+
+// ipad
+@media only screen and (max-width: 768px) {
+  //restauratie
+  .box {
+    width: 200px;
+  }
   .infoRestauratie {
     width: 80%;
   }
@@ -25,26 +50,15 @@
     margin-left: 10px;
     margin-right: 10px;
   }
-}
-
-@media only screen and (max-width: 500px) {
-  .infoRestauratie {
-    width: 100%;
-  }
-}
-
-//index
-@media only screen and (max-width: 1600px) {
-  .slogan {
-    padding-top: 45px;
-    .sloganText {
-      font-size: 35px;
-    }
-  }
-}
-
-@media only screen and (max-width: 850px) {
+  //index
   .slogan {
     padding-top: 20px;
+  }
+}
+
+// iphone 5
+@media only screen and (max-width: 320px) {
+  .infoRestauratie {
+    width: 100%;
   }
 }

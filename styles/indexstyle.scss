@@ -5,9 +5,13 @@
 
 .slogan {
   display: flex;
+  margin-top: 300px;
   justify-content: center;
   flex-wrap: wrap;
   font-family: WoodHellCompany;
+}
+.comment-link {
+  margin-top: 20px;
 }
 .sloganText {
   margin: auto;
@@ -38,5 +42,14 @@
     &:hover {
       fill: white;
     }
+  }
+}
+.icoon-comment {
+  fill: rgb(168, 168, 168);
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  &:hover {
+    fill: white;
   }
 }

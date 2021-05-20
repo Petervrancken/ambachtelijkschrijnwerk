@@ -6,8 +6,8 @@ import Link from 'next/link'
 
 // import Swiper bundle
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, {Pagination,Navigation} from 'swiper/core';
-SwiperCore.use([Pagination,Navigation]);
+import SwiperCore, {Autoplay,Pagination,Navigation} from 'swiper/core';
+SwiperCore.use([Autoplay,Pagination,Navigation]);
 import "swiper/swiper-bundle.min.css"
 
 
@@ -26,6 +26,10 @@ return (
     spaceBetween={30} 
     slidesPerGroup={1}  
     navigation={true}
+    autoplay={{
+      delay: 5000,
+      disableOnInteraction: true
+    }}
     breakpoints={{
       "1920": {
         "slidesPerView": 4,
@@ -113,7 +117,7 @@ return (
     </Swiper>
     <div className="comment-add">
       <p className="sloganText">klik op het plusje om je eigen commentaar toe te voegen!</p>
-      <Link href="#"><a title="ga naar comments"><Plus className="icoon"/></a></Link>
+      <Link  href="#"><a title="ga naar comments"><Plus className="icoon-comment"/></a></Link>
     </div>
   </div>
   )

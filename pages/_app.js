@@ -6,6 +6,7 @@ import restauratiestyle from "../styles/restauratiestyle.scss"
 import media from "../styles/mediastyle.scss"
 import treecyclestyle from "../styles/treecyclestyle.scss"
 import loginstyle from "../styles/loginstyle.scss"
+import contactstyle from "../styles/contactstyle.scss"
 
 
 

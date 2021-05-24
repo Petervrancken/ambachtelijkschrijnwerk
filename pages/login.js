@@ -10,8 +10,8 @@ export default function Login() {
         <div className="sloganTheme">
           <p className="sloganText">login</p>
           <form className="login-form" onSubmit={""}>
-            <input id="login-input" name="name" type="text" autoComplete="name" placeholder="email" required />
-            <input id="login-input" name="name" type="password" autoComplete="name" placeholder="wachtwoord" required />
+            <input className="login-input" id="name" name="name" type="text" autoComplete="name" placeholder="email" required />
+            <input className="login-input" id="password" name="name" type="password" autoComplete="name" placeholder="wachtwoord" required />
             <p className="infoRestauratie">Nog geen lid? Registreer <a href="#">hier!</a></p>
             <button className="button-submit" type="submit">verzenden</button>
           </form>

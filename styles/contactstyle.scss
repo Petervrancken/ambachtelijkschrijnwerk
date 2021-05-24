@@ -1,0 +1,32 @@
+.contact-title {
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: WoodHellCompany;
+  color: white;
+  font-size: 50px;
+  margin-top: 0px;
+}
+.onderwerp-contact {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .box {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    .onderwerp-titel {
+      font-family: WoodHellCompany;
+      font-size: 25px;
+      margin-top: 5px;
+    }
+    .onderwerp-icoon {
+      height: 200px;
+      width: 200px;
+      fill: rgb(216, 216, 216);
+    }
+  }
+}

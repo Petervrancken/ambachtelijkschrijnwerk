@@ -1,0 +1,18 @@
+.container-button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-to-shop {
+  font-family: WoodHellCompany;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: green;
+  border: none;
+  &:active {
+    background-color: lightgreen;
+  }
+}

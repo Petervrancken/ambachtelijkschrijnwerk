@@ -1,12 +1,7 @@
-// SVG imports"
-import Image from "next/image"
-import Timmerwerk from "../public/timmer.svg"
-import Zaag from "../public/zaag.svg"
-import Veiligheid from "../public/veiligheid.svg"
-
 
 //next imports
 import Link from 'next/link'
+import Image from "next/image"
 
 // import Swiper bundle
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -15,7 +10,7 @@ SwiperCore.use([Autoplay,Pagination,Navigation]);
 import "swiper/swiper-bundle.min.css"
 
 
-export default function treecycle() {
+export default function Treecycle() {
   return (
     <>
 

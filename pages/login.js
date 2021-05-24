@@ -2,8 +2,22 @@
 
 import Logo from '../public/logo.svg'
 
-export default function Restauratie() {
+export default function Login() {
   return (
-    <h1>Welcome login test</h1>
-  )
-}
+    <>
+  
+  <div className="backgroundTableTheme">
+        <div className="sloganTheme">
+          <p className="sloganText">login</p>
+          <form className="login-form" onSubmit={""}>
+            <input id="login-input" name="name" type="text" autoComplete="name" placeholder="email" required />
+            <input id="login-input" name="name" type="password" autoComplete="name" placeholder="wachtwoord" required />
+            <p className="infoRestauratie">Nog geen lid? Registreer <a href="#">hier!</a></p>
+            <button className="button-submit" type="submit">verzenden</button>
+          </form>
+        </div>
+    </div>
+    </>
+    )
+  }
+  

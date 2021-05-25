@@ -124,7 +124,7 @@ export default function Treecycle() {
     
     </Swiper>
     <div className="container-button">
-      <button className="button-to-shop">Bezoek onze webshop!</button>
+      <Link href="/treecycleshop"><button className="button-to-shop">Bezoek onze webshop!</button></Link>
     </div>
   </div>
   </>

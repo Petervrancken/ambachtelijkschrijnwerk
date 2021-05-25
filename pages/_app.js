@@ -7,7 +7,7 @@ import media from "../styles/mediastyle.scss"
 import treecyclestyle from "../styles/treecyclestyle.scss"
 import loginstyle from "../styles/loginstyle.scss"
 import contactstyle from "../styles/contactstyle.scss"
-import winkelkarstyle from "../styles/winkelkarstyle.scss"
+import shopstyle from "../styles/shopstyle.scss"
 
 
 

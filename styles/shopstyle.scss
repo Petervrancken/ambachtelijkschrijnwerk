@@ -1,0 +1,61 @@
+.shop-container {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 30px;
+  .swiper-icoon {
+    margin-right: 30px;
+  }
+  .swiper-icoon-grades {
+    p {
+      padding-left: 0px;
+    }
+  }
+  .product-info {
+    p {
+      margin: 5px;
+    }
+  }
+  .linkmenu {
+    button {
+      margin-top: 25px;
+      font-family: WoodHellCompany;
+      font-size: 20px;
+      padding: 10px;
+      padding-top: 12px;
+      border-radius: 10px;
+      background-color: green;
+      color: white;
+      border: none;
+    }
+  }
+  .dropdown-content {
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    a {
+      text-decoration: none;
+      color: grey;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+
+.button-add-item {
+  font-family: WoodHellCompany;
+  margin-top: 15px;
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: green;
+  border: none;
+  &:active {
+    background-color: lightgreen;
+  }
+}

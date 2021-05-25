@@ -2,6 +2,8 @@
 import Image from "next/image"
 import Profiel from '../public/profielicoon.svg'
 import { Swiper, SwiperSlide } from "swiper/react";
+import Link from 'next/link'
+
 
 // Import Swiper styles
 import "swiper/swiper.min.css";
@@ -10,12 +12,21 @@ import SwiperCore, {Pagination, Navigation} from 'swiper/core';
 
 SwiperCore.use([Pagination, Navigation]);
 
-export default function Winkelkar() {
+export default function Treecycleshop() {
   return (
     <>
     <div className="shop-container">
       <div className="sloganTheme">
           <p className="sloganText">treecycleshop</p>
+          <div className="dropdown">
+          <div className="linkmenu"><button>zoek op categorie</button></div>
+          <div className="dropdown-content">
+            <Link href="#"><a title="tafels"><p className="textdropdown">tafels</p></a></Link>
+            <Link href="#"><a title="snijplanken"><p className="textdropdown">snijplanken</p></a></Link>
+            <Link href="#"><a title="gadgets"><p className="textdropdown">gadgets</p></a></Link>
+            <Link href="#"><a title="meubels"><p className="textdropdown">meubels</p></a></Link>
+          </div>
+        </div>
       </div>
     <Swiper 
     slidesPerColumnFill={"row"} 
@@ -206,7 +217,7 @@ export default function Winkelkar() {
             <p>Breedte: 35cm</p>
             </div>
           </div>
-          <button className="button-add-item">in winkelmandje</button>
+          <Link href="#"><button className="button-add-item">in winkelmandje</button></Link>
         </div>
       </SwiperSlide>
     </Swiper>

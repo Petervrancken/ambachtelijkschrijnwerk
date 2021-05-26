@@ -35,6 +35,28 @@ export default function Treecycleshop() {
     spaceBetween={30} 
     navigation={true}
     pagination={{"clickable": true}} 
+    breakpoints={{
+      "1920": {
+        "slidesPerView": 3,
+        "slidesPerColumn": 2,
+      },
+      "1367": {
+        "slidesPerView": 3,
+        "slidesPerColumn": 2,
+      },
+      "768": {
+        "slidesPerView": 2,
+        "slidesPerColumn": 2,
+      },
+      "321": {
+        "slidesPerView": 1,
+        "slidesPerColumn": 2,
+      },
+      "10": {
+        "slidesPerView": 1,
+        "slidesPerColumn": 1,
+      },
+    }}
     className="mySwiper">
       <SwiperSlide>
         <div className="swiper-icoon">

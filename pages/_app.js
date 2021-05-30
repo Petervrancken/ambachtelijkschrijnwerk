@@ -9,7 +9,8 @@ import loginstyle from "../styles/loginstyle.scss"
 import contactstyle from "../styles/contactstyle.scss"
 import shopstyle from "../styles/shopstyle.scss"
 import winkelkarstyle from "../styles/winkelkarstyle.scss"
-
+import profilestyle from "../styles/profilestyle.scss"
+import commentstyle from "../styles/commentstyle.scss"
 
 
 //components

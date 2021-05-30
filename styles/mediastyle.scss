@@ -1,3 +1,26 @@
+//huge screen
+@media only screen and (max-width: 2560px) {
+  //restauratie
+  .onderwerp-bottom {
+    display: none;
+  }
+  .backgroundTableTheme {
+    margin-right: 250px;
+    margin-left: 250px;
+  }
+  //index
+  .slogan {
+    margin-top: 250px;
+  }
+  //shop
+  .shop-container {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .profiel-tabs-small {
+    display: none;
+  }
+}
 //bigscreen
 @media only screen and (max-width: 1920px) {
   //restauratie
@@ -16,6 +39,9 @@
   .shop-container {
     margin-left: 200px;
     margin-right: 200px;
+  }
+  .profiel-tabs-small {
+    display: none;
   }
 }
 
@@ -45,6 +71,9 @@
     margin-left: 200px;
     margin-right: 200px;
   }
+  .profiel-tabs-small {
+    display: none;
+  }
 }
 
 // ipad
@@ -69,11 +98,21 @@
     margin-left: 10px;
     margin-right: 10px;
   }
+  .profiel-tabs-small {
+    display: none;
+  }
 }
 
 // iphone 5
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 420px) {
   .infoRestauratie {
     width: 100%;
+  }
+  //profiel
+  .profiel-tabs-wide {
+    display: none;
+  }
+  .profiel-tabs-small {
+    display: block;
   }
 }

@@ -2,6 +2,8 @@
 import Image from "next/image"
 import Profiel from '../public/profielicoon.svg'
 import { Swiper, SwiperSlide } from "swiper/react";
+import Link from 'next/link'
+
 
 // Import Swiper styles
 import "swiper/swiper.min.css";
@@ -10,12 +12,12 @@ import SwiperCore, {Pagination, Navigation} from 'swiper/core';
 
 SwiperCore.use([Pagination, Navigation]);
 
-export default function Winkelkar() {
+export default function Treecycleshop() {
   return (
     <>
     <div className="shop-container">
       <div className="sloganTheme">
-          <p className="sloganText">treecycleshop</p>
+          <p className="sloganText">de winkelkar</p>
       </div>
     <Swiper 
     slidesPerColumnFill={"row"} 
@@ -24,6 +26,28 @@ export default function Winkelkar() {
     spaceBetween={30} 
     navigation={true}
     pagination={{"clickable": true}} 
+    breakpoints={{
+      "1920": {
+        "slidesPerView": 3,
+        "slidesPerColumn": 2,
+      },
+      "1367": {
+        "slidesPerView": 3,
+        "slidesPerColumn": 2,
+      },
+      "768": {
+        "slidesPerView": 2,
+        "slidesPerColumn": 2,
+      },
+      "321": {
+        "slidesPerView": 1,
+        "slidesPerColumn": 2,
+      },
+      "10": {
+        "slidesPerView": 1,
+        "slidesPerColumn": 1,
+      },
+    }}
     className="mySwiper">
       <SwiperSlide>
         <div className="swiper-icoon">
@@ -45,7 +69,7 @@ export default function Winkelkar() {
             <p>Breedte: 35cm</p>
             </div>
           </div>
-          <button className="button-add-item">in winkelmandje</button>
+          <button className="button-to-delete">verwijder</button>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -68,7 +92,7 @@ export default function Winkelkar() {
             <p>Breedte: 35cm</p>
             </div>
           </div>
-          <button className="button-add-item">in winkelmandje</button>
+          <button className="button-to-delete">verwijder</button>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -91,7 +115,7 @@ export default function Winkelkar() {
             <p>Breedte: 35cm</p>
             </div>
           </div>
-          <button className="button-add-item">in winkelmandje</button>
+          <button className="button-to-delete">verwijder</button>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -114,7 +138,7 @@ export default function Winkelkar() {
             <p>Breedte: 35cm</p>
             </div>
           </div>
-          <button className="button-add-item">in winkelmandje</button>
+          <button className="button-to-delete">verwijder</button>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -137,7 +161,7 @@ export default function Winkelkar() {
             <p>Breedte: 35cm</p>
             </div>
           </div>
-          <button className="button-add-item">in winkelmandje</button>
+          <button className="button-to-delete">verwijder</button>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -160,7 +184,7 @@ export default function Winkelkar() {
             <p>Breedte: 35cm</p>
             </div>
           </div>
-          <button className="button-add-item">in winkelmandje</button>
+          <button className="button-to-delete">verwijder</button>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -183,7 +207,7 @@ export default function Winkelkar() {
             <p>Breedte: 35cm</p>
             </div>
           </div>
-          <button className="button-add-item">in winkelmandje</button>
+          <button className="button-to-delete">verwijder</button>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -206,10 +230,16 @@ export default function Winkelkar() {
             <p>Breedte: 35cm</p>
             </div>
           </div>
-          <button className="button-add-item">in winkelmandje</button>
+          <button className="button-to-delete">verwijder</button>
         </div>
       </SwiperSlide>
     </Swiper>
+    <div className="sloganTheme">
+        <p className="sloganText">totaal: 198.99 euro</p>
+    </div>
+    <div className="sloganTheme">
+      <button className="button-buy">koop</button>
+    </div>
     </div>
   
     </>

@@ -1,3 +1,4 @@
+process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 import base from '../styles/base.scss'
 import navbarstyle from "../styles/navbarstyle.scss"
 import indexstyle from "../styles/indexstyle.scss"

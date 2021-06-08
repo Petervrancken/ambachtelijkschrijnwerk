@@ -5,6 +5,8 @@ import Timmerwerk from "../public/timmer.svg"
 import Zaag from "../public/zaag.svg"
 import Veiligheid from "../public/veiligheid.svg"
 
+import axios from "axios"
+
 
 //next imports
 import Link from 'next/link'
@@ -17,22 +19,21 @@ import "swiper/swiper-bundle.min.css"
 
 
 
-export default function Home() {
-
+export default function Restauratie(restoProps) {
+  //console.log(restoProps.restoProps.fotos)
+  const fotos = restoProps.restoProps.fotos;
+  //const fotoPath = "https://127.0.0.1:8000/images/afbeeldingen/image.php/" + fotos.length > 0 && fotos.map((oneFoto)=>(oneFoto.fotonaam)) + "?width=250&amp;height=250&amp;image=/images/afbeeldingen/gebintebouw.jpg" alt="Don't forget your alt text" ;
+  //console.log(fotoPath)
 
 return (
   <>
-
 <div className="backgroundTableTheme">
   <div className="sloganTheme">
-    <p className="sloganText">restauratie</p>
-    <p className="infoRestauratie"> Aangezien we een grote liefde hebben voor het vakmanschap van weleer,
-        hebben we ons gespecialiseerd in het restaureren van antiek houtwerk.
-        Zoals bij alle restauratiewerken trachten we zo veel mogelijk van de originele timmerwerken te behouden.
-        We voeren de herstellingen uit met de aloude technieken zoals liplassen of zwaluwstaarten. Ook doen we herstellingen
-        met moderne technieken zoals polymeerchemisch en glasvezel.
-    </p>
+    <p className="sloganText">{restoProps.restoProps.titel}</p>
+    <p className="infoRestauratie"> {restoProps.restoProps.beschrijving}</p>
   </div>
+
+
   <Swiper 
     slidesPerView={4} 
     spaceBetween={20} 
@@ -59,77 +60,21 @@ return (
         "slidesPerView": 1,
       },
     }}
+    //""https://127.0.0.1:8000/images/afbeeldingen/image.php/gebintebouw.jpg?width=250&amp;height=250&amp;image=/images/afbeeldingen/gebintebouw.jpg" alt="Don't forget your alt text"
     className="mySwiper">
-    <SwiperSlide className="slide-afbeelding">
+    {fotos.length > 0 && fotos.map((oneFoto)=>(
+    <SwiperSlide key={oneFoto.id} className="slide-afbeelding">
         <div className="swiper-afbeelding">
           <Link href="#">
             <a title="klik en vergroot!">
-          <Image 
-            src="/Restauratie1.jpg" 
-            alt="restauratie1"
-            width={250}
-            height={250}
-          />
+            <img src="https://127.0.0.1:8000/images/afbeeldingen/image.php/gebintebouw.jpg?width=250&amp;height=250&amp;image=/images/afbeeldingen/gebintebouw.jpg" alt="Don't forget your alt text" />
+
           </a>
           </Link>
         </div>
     </SwiperSlide>
-    <SwiperSlide className="slide-afbeelding">
-        <div className="swiper-afbeelding">
-          <Link href="#">
-            <a title="klik en vergroot!">
-          <Image 
-            src="/Restauratie2.jpg" 
-            alt="restauratie1"
-            width={250}
-            height={250}
-          />
-          </a>
-          </Link>
-        </div>
-    </SwiperSlide>
-    <SwiperSlide className="slide-afbeelding">
-        <div className="swiper-afbeelding">
-          <Link href="#">
-            <a title="klik en vergroot!">
-          <Image 
-            src="/Restauratie3.jpg" 
-            alt="restauratie1"
-            width={250}
-            height={250}
-          />
-          </a>
-          </Link>
-        </div>
-    </SwiperSlide>
-    <SwiperSlide className="slide-afbeelding">
-        <div className="swiper-afbeelding">
-          <Link href="#">
-            <a title="klik en vergroot!">
-          <Image 
-            src="/Restauratie4.jpg" 
-            alt="restauratie1"
-            width={250}
-            height={250}
-          />
-          </a>
-          </Link>
-        </div>
-    </SwiperSlide>
-    <SwiperSlide className="slide-afbeelding">
-        <div className="swiper-afbeelding">
-          <Link href="#">
-            <a title="klik en vergroot!">
-          <Image 
-            src="/Restauratie2.jpg" 
-            alt="restauratie1"
-            width={250}
-            height={250}
-          />
-          </a>
-          </Link>
-        </div>
-    </SwiperSlide>
+    ))} 
+    
     
     </Swiper>
     <div className="onderwerp">
@@ -203,4 +148,20 @@ return (
   </div>
   </>
   )
+}
+
+export async function getStaticProps(){
+  const resp = await axios(
+    'https://127.0.0.1:8000/api/themas/1.json'
+    
+  );
+  //const data = await resp.json();
+  const restoProps = resp.data;
+  //console.log(restoProps.beschrijving,"TEST")
+  return{
+    props: {
+      restoProps,
+    },
+    revalidate: 3600,
+  };
 }

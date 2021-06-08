@@ -1,16 +1,17 @@
 
-
+import axios from "axios"
 import Avatar from "../public/avatar.svg"
 
-export default function Contact() {
+export default function Contact(contactProps) {
+
+
+
   return (
     <>
     <div className="backgroundTableTheme">
       <div className="sloganTheme">
-        <p className="sloganText">wie zijn wij</p>
-        <p className="infoRestauratie">Ambachtelijkschrijnwerk.be is ontstaan uit de samenwerking van twee gepassioneerde restauratieschrijnwerkers.
-            Samen Hebben we meer dan 20 jaar ervaring in restauratieschrijnwerk en algemeen massief schrijnwerk.
-            In ons atelier zijn we goed uitgerust voor iedere job met massief hout.</p>
+        <p className="sloganText">{contactProps.contactProps.titel}</p>
+        <p className="infoRestauratie"> {contactProps.contactProps.beschrijving}</p>
       </div>
         <div className="onderwerp-contact">
             <div className="box">
@@ -34,4 +35,20 @@ export default function Contact() {
     </div>
     </>
     )
+}
+
+export async function getStaticProps(){
+  const resp = await axios(
+    'https://127.0.0.1:8000/api/themas/4.json'
+    
+  );
+  //const data = await resp.json();
+  const contactProps = resp.data;
+  //console.log(restoProps.beschrijving,"TEST")
+  return{
+    props: {
+      contactProps,
+    },
+    revalidate: 3600,
+  };
 }

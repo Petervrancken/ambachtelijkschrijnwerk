@@ -21,6 +21,8 @@ export default function schrijnentimmerwerken(schrijnProps) {
 
     //Put all foto's in an array.
     const fotos = schrijnProps.schrijnProps.fotos;
+    //sorteerd op datum/id
+    fotos.sort((a, b) => b.id - a.id)
 
     //Put all foto's in an array with URL path attached.
     const fotoFile = fotos.length > 0 && fotos.map((oneFoto)=>(

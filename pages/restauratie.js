@@ -21,11 +21,14 @@ export default function Restauratie(restoProps) {
   
   //Put all foto's in an array.
   const fotos = restoProps.restoProps.fotos;
+  //sorteerd op datum/id
+  fotos.sort((a, b) => b.id - a.id)
 
   //Put all foto's in an array with URL path attached.
   const fotoFile = fotos.length > 0 && fotos.map((oneFoto)=>(
     "http://localhost:8080/eindwerk-be/image.php/" + oneFoto.fotonaam + 
     "?width=250&height=250&image=/eindwerk-be/public/images/afbeeldingen/" + oneFoto.fotonaam )) ;
+    console.log(fotos)
   
   //Put all topics in an array.
   const onderwerpen = restoProps.restoProps.onderwerp;

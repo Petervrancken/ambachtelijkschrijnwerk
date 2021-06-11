@@ -23,7 +23,6 @@ export default function Home({comments}) {
 return (
 
 <div className="backgroundTable">
-{console.log(comments)}
   <div className="slogan">
     <p className="sloganText">wij maken geschiedenis van onze toekomst!</p>
   </div>
@@ -84,7 +83,6 @@ export async function getStaticProps(){
   );
   //const data = await resp.json();
   const comments = resp.data;
-  console.log(resp.data);
   return{
     props: {
       comments,

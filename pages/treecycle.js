@@ -15,6 +15,8 @@ export default function Treecycle(treeProps) {
 
   //Put all foto's in an array.
   const fotos = treeProps.treeProps.fotos;
+  //sorteren van de fotos via id/datum
+  fotos.sort((a, b) => b.id - a.id)
 
   //Put all foto's in an array with URL path attached.
   const fotoFile = fotos.length > 0 && fotos.map((oneFoto)=>(

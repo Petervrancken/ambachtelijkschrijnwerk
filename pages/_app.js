@@ -12,6 +12,7 @@ import shopstyle from "../styles/shopstyle.scss"
 import winkelkarstyle from "../styles/winkelkarstyle.scss"
 import profilestyle from "../styles/profilestyle.scss"
 import commentstyle from "../styles/commentstyle.scss"
+import { CartProvider } from 'react-use-cart';
 
 
 //components
@@ -23,8 +24,10 @@ function MyApp({ Component, pageProps }) {
 
   return(
     <div className="bg">
+    <CartProvider>
     <Navbar/>
     <Component {...pageProps} />
+    </CartProvider>
     </div>
   ) 
 }

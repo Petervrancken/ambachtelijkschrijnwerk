@@ -69,9 +69,20 @@
     padding-right: 10px;
   }
   .linkwinkelkar {
+    position: relative;
     width: 20px;
     padding-left: 10px;
     padding-right: 18px;
+    .count-items {
+      height: 20px;
+      width: 20px;
+      padding-left: 10px;
+      border-radius: 5px;
+      background-color: red;
+      position: absolute;
+      color: white;
+      top: 30px;
+    }
     .icoon {
       fill: white;
       width: 30px;

@@ -3,12 +3,17 @@ import Logo from '../public/logo.svg'
 import Winkelkar from "../public/winkelkar.svg"
 import Profiel from "../public/profielicoon.svg"
 import Menu from "../public/menu.svg"
+import { useCart } from "react-use-cart";
 
 
 import Link from 'next/link'
 
 
 export default function Navbar() {
+
+  const {totalItems} = useCart();
+  const countItems = {totalItems};
+  console.log(countItems.totalItems);
   return (
     <>
     <nav className="navfullscreen">
@@ -19,7 +24,14 @@ export default function Navbar() {
         <li className="linktreecycle"><Link href="/treecycle"><a title="ga naar treecyleshop"><p>treecycleshop</p></a></Link></li>
         <li className="linkcontact"><Link href="/contact"><a title="ga naar contact"><p>contact</p></a></Link></li>
         <li className="linklogin"><Link href="/login"><a title="ga naar login"><p>login</p></a></Link></li>
-        <li className="linkwinkelkar"><Link href="/winkelkar"><a title="ga naar winkelkar"><Winkelkar className="icoon" /></a></Link></li>
+        <li className="linkwinkelkar">
+          <Link href="/winkelkar">
+            <a title="ga naar winkelkar">
+              <Winkelkar className="icoon" />
+              {countItems.totalItems !== 0 ? <div className="count-items">{countItems.totalItems}</div>: null}
+            </a>
+          </Link>
+        </li>
         <li className="linkprofiel"><Link href="/profiel"><a title="ga naar profiel"><Profiel className="icoon"  /></a></Link></li>
       </ul>
     </nav>
@@ -27,7 +39,14 @@ export default function Navbar() {
       <ul className="navbar">
         <li className="marginLogo"><Link href="/"><a title="ga naar home"><Logo className="logo" /></a></Link></li>
         <div className="iphonesize">
-        <li className="linkwinkelkar"><Link href="/winkelkar"><a title="ga naar winkelkar"><Winkelkar className="icoon" /></a></Link></li>
+        <li className="linkwinkelkar">
+          <Link href="/winkelkar">
+            <a title="ga naar winkelkar">
+              <Winkelkar className="icoon" />
+              {countItems.totalItems !== 0 ? <div className="count-items">{countItems.totalItems}</div>: null}
+            </a>
+          </Link>
+        </li>
         <li className="linkprofiel">
           <Link href="/profiel">
             <a title="ga naar profiel">

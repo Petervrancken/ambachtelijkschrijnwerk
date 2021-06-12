@@ -1,10 +1,8 @@
 
-import Image from "next/image"
-import Profiel from '../public/profielicoon.svg'
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from 'next/link'
-import formShop from "../comps/formShop"
 import moment from 'moment';
+import {useState} from "react";
 moment.locale("nl")
 
 import axios from "axios"
@@ -17,7 +15,26 @@ import SwiperCore, {Pagination, Navigation} from 'swiper/core';
 
 SwiperCore.use([Pagination, Navigation]);
 
+//winkelmandje producten.id opslaan
+
+const cardTotale = [];
+//console.log(cardTotale)
+
+
+
 export default function Treecycleshop(shopProps) {
+
+  const [card, setCard] = useState([]);
+  card && cardTotale.push(card);
+  //console.log(cardTotale)
+
+  if(typeof(Storage)!== "undefined"){
+    sessionStorage.setItem("productId", cardTotale);
+    console.log(sessionStorage.getItem(["productId"]))
+  }else{
+    console.log("no support")
+  }
+  
 
   // array aanmaken van producten
   const productenArray = shopProps.shopProps["hydra:member"];
@@ -102,7 +119,9 @@ export default function Treecycleshop(shopProps) {
               <p>Breedte: {oneProduct.breedte}cm</p>
               </div>
             </div>
-            <button onClick={()=> Form(oneProduct)} className="button-add-item">in winkelmandje</button>
+            <button 
+              onClick={() => setCard(oneProduct.id)}
+              className="button-add-item">in winkelmandje</button>
           </div>
         </SwiperSlide>)
       })}
@@ -113,39 +132,8 @@ export default function Treecycleshop(shopProps) {
   
     </>
   )
-
-
-  //Button on click tryout stuur de gegevens door met een post om een bestelling aan te maken
-  function Form(oneProduct) {
-    const addToShop = async event => {
-      event.preventDefault()
   
-      const res = await axios({
-          method: 'post',
-          url: 'https://127.0.0.1:8000/api/bestellings.json',
-          data: {
-            bestelnummer: oneProduct.id,
-            factuurnummer: oneProduct.id,
-            user: 1,
-  
-          }
-      })
-  
-      const bestellingPost = resp.data;
-      console.log(bestellingPost)
-    }
-  
-    return (
-      <form onSubmit={addToShop}>
-        <input type="submit" id="name" name="bestelnummer" type="number" autoComplete="name" required />
-      </form>
-    )
-  }
 }
-
-
-
-
 
 
 

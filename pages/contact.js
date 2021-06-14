@@ -1,51 +1,69 @@
-
-import axios from "axios"
-import Avatar from "../public/avatar.svg"
+import axios from "axios";
+import Avatar from "../public/avatar.svg";
 
 export default function Contact(contactProps) {
-
-
-
   return (
     <>
-    <div className="backgroundTableTheme">
-      <div className="sloganTheme">
-        <p className="sloganText">{contactProps.contactProps.titel}</p>
-        <p className="infoRestauratie"> {contactProps.contactProps.beschrijving}</p>
-      </div>
+      <div className="backgroundTableTheme">
+        <div className="sloganTheme">
+          <p className="sloganText">{contactProps.contactProps.titel}</p>
+          <p className="infoRestauratie">
+            {" "}
+            {contactProps.contactProps.beschrijving}
+          </p>
+        </div>
         <div className="onderwerp-contact">
-            <div className="box">
-              <Avatar className="onderwerp-icoon"/>
-              <p className="onderwerp-titel">anton destrooper</p>
-            </div>
-            <div className="box">
-              <Avatar className="onderwerp-icoon"/>
-              <p className="onderwerp-titel">kristof van dooren</p>
-            </div>
+          <div className="box">
+            <Avatar className="onderwerp-icoon" />
+            <p className="onderwerp-titel">anton destrooper</p>
+          </div>
+          <div className="box">
+            <Avatar className="onderwerp-icoon" />
+            <p className="onderwerp-titel">kristof van dooren</p>
+          </div>
         </div>
         <div className="sloganTheme">
-        <p className="sloganText">contact</p>
+          <p className="sloganText">contact</p>
           <form className="login-form" onSubmit={""}>
-            <input className="login-input" id="name" name="name" type="text" autoComplete="name" placeholder="email" required />
-            <input className="login-input" id="password" name="wachtwoord" type="password" autoComplete="name" placeholder="wachtwoord" required />
-            <textarea className="login-input" id="question" placeholder="stel hier uw vraag..."></textarea>
-            <button className="button-submit" type="submit">verzenden</button>
+            <input
+              className="login-input"
+              id="name"
+              name="name"
+              type="text"
+              autoComplete="name"
+              placeholder="email"
+              required
+            />
+            <input
+              className="login-input"
+              id="password"
+              name="wachtwoord"
+              type="password"
+              autoComplete="name"
+              placeholder="wachtwoord"
+              required
+            />
+            <textarea
+              className="login-input"
+              id="question"
+              placeholder="stel hier uw vraag..."
+            ></textarea>
+            <button className="button-submit" type="submit">
+              verzenden
+            </button>
           </form>
         </div>
-    </div>
+      </div>
     </>
-    )
+  );
 }
 
-export async function getStaticProps(){
-  const resp = await axios(
-    'https://127.0.0.1:8000/api/themas/4.json'
-    
-  );
+export async function getStaticProps() {
+  const resp = await axios("https://127.0.0.1:8000/api/themas/4.json");
   //const data = await resp.json();
   const contactProps = resp.data;
   //console.log(restoProps.beschrijving,"TEST")
-  return{
+  return {
     props: {
       contactProps,
     },

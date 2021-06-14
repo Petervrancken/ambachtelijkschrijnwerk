@@ -28,7 +28,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
       (oneFoto) =>
         "http://localhost:8080/eindwerk-be/image.php/" +
         oneFoto.fotonaam +
-        "?width=250&height=250&image=/eindwerk-be/public/images/afbeeldingen/" +
+        "?width=250&height=250&cropratio=1:1&image=/eindwerk-be/public/images/afbeeldingen/" +
         oneFoto.fotonaam
     );
 

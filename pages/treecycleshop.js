@@ -115,7 +115,7 @@ export default function Treecycleshop(shopProps) {
               const pathFoto =
                 "http://localhost:8080/eindwerk-be/image.php/" +
                 oneProduct.fotos[0].fotonaam +
-                "?width=100&height=100&image=/eindwerk-be/public/images/afbeeldingen/" +
+                "?width=100&height=100&cropratio=1:1&image=/eindwerk-be/public/images/afbeeldingen/" +
                 oneProduct.fotos[0].fotonaam;
               //console.log(oneProduct);
               //maken van nieuwe array om mee te sturen in addItems, anders geeft hij geen prijs weer.

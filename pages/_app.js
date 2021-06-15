@@ -12,6 +12,7 @@ import shopstyle from "../styles/shopstyle.scss";
 import winkelkarstyle from "../styles/winkelkarstyle.scss";
 import profilestyle from "../styles/profilestyle.scss";
 import commentstyle from "../styles/commentstyle.scss";
+import historystyle from "../styles/historystyle.scss";
 import { CartProvider } from "react-use-cart";
 
 //components

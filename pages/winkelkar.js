@@ -1,4 +1,3 @@
-import Image from "next/image";
 import axios from "axios";
 import moment from "moment";
 moment.locale("nl");
@@ -14,41 +13,43 @@ SwiperCore.use([Pagination, Navigation]);
 export default function Treecycleshop(winkelKarProps) {
   const { removeItem, emptyCart, totalUniqueItems, items, isEmpty, cartTotal } =
     useCart();
-  //const [card, setCard] = useState([]);
-  //card && cardTotale.push(card);
+
   const getItemsFromCard = { items };
   const productenArray = getItemsFromCard.items;
-  //console.log(productenArrayTest);
 
   //Array van producten aanmaken met de juiste berekeningen en doorgeven aan de submitFunctie "POST"
   const buyProductArray = [];
-  productenArray.forEach(
-    (product) =>
-      console.log(product) ||
-      buyProductArray.push({
-        besteldetailnetto: Number(
-          (product.price - (21 / 100) * product.price).toFixed(2)
-        ),
-        besteldetailbtwbedrag: Number(((21 / 100) * product.price).toFixed(2)),
-        besteldetailbruto: product.price,
-        producten: `/api/productens/${product.id}`,
-      })
+  productenArray.forEach((product) =>
+    buyProductArray.push({
+      besteldetailnetto: Number(
+        (product.price - (21 / 100) * product.price).toFixed(2)
+      ),
+      besteldetailbtwbedrag: Number(((21 / 100) * product.price).toFixed(2)),
+      besteldetailbruto: product.price,
+      producten: `/api/productens/${product.id}`,
+    })
   );
-
-  //console.log(buyProductArray[0].besteldetailnetto);
-  //console.log([JSON.stringify(buyProductArray)] + ",");
 
   // Vergeet met login niet de  user dynamisch te maken!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   function submitProducts() {
     console.log("button works");
-    console.log(JSON.stringify(buyProductArray));
+    const besteldetail = buyProductArray.map((buyProduct) => {
+      //console.log(buyProduct);
+      return {
+        producten: buyProduct.producten,
+        besteldetailbtwbedrag: buyProduct.besteldetailbtwbedrag,
+        besteldetailbruto: buyProduct.besteldetailbruto,
+        besteldetailnetto: buyProduct.besteldetailnetto,
+      };
+    });
+    console.log();
     axios
       .post("https://127.0.0.1:8000/api/bestellings", {
         bestelnummer: Math.floor(Math.random() * 10000000000),
         //factuurdatum: "2021-06-13T18:06:57.195Z",
         factuurnummer: Math.floor(Math.random() * 10000000000),
         user: "/api/users/4",
-        bestellingdetail: JSON.stringify([buyProductArray]),
+        bestellingdetail: besteldetail,
         totaalprijs: Number(cartTotal.toFixed(2)),
       })
       .then(function (response) {
@@ -108,9 +109,6 @@ export default function Treecycleshop(winkelKarProps) {
         >
           {productenArray.length > 0 &&
             productenArray.map((oneProduct) => {
-              //if(productIdArray[0].includes(oneProduct.id) === "true"){"hello"}
-              //console.log(oneProduct.id)
-              //console.log(oneProduct)
               return (
                 <SwiperSlide key={oneProduct.id}>
                   <div className="swiper-icoon">

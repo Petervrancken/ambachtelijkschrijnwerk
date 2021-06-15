@@ -20,19 +20,45 @@ export default function Treecycleshop(winkelKarProps) {
   const productenArray = getItemsFromCard.items;
   //console.log(productenArrayTest);
 
+  //Array van producten aanmaken met de juiste berekeningen en doorgeven aan de submitFunctie "POST"
   const buyProductArray = [];
-  productenArray.forEach((product) =>
-    buyProductArray.push({
-      besteldetailnetto: 122,
-      besteldetailbtwbedrag: 12,
-      besteldetailbruto: 150,
-      producten: "/api/productens/1",
-    })
+  productenArray.forEach(
+    (product) =>
+      console.log(product) ||
+      buyProductArray.push({
+        besteldetailnetto: Number(
+          (product.price - (21 / 100) * product.price).toFixed(2)
+        ),
+        besteldetailbtwbedrag: Number(((21 / 100) * product.price).toFixed(2)),
+        besteldetailbruto: product.price,
+        producten: `/api/productens/${product.id}`,
+      })
   );
 
-  // array aanmaken van producten
-  //const productenArrayTest = winkelKarProps.winkelKarProps["hydra:member"];
-  console.log(productenArray);
+  //console.log(buyProductArray[0].besteldetailnetto);
+  //console.log([JSON.stringify(buyProductArray)] + ",");
+
+  // Vergeet met login niet de  user dynamisch te maken!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  function submitProducts() {
+    console.log("button works");
+    console.log(JSON.stringify(buyProductArray));
+    axios
+      .post("https://127.0.0.1:8000/api/bestellings", {
+        bestelnummer: Math.floor(Math.random() * 10000000000),
+        //factuurdatum: "2021-06-13T18:06:57.195Z",
+        factuurnummer: Math.floor(Math.random() * 10000000000),
+        user: "/api/users/4",
+        bestellingdetail: JSON.stringify([buyProductArray]),
+        totaalprijs: Number(cartTotal.toFixed(2)),
+      })
+      .then(function (response) {
+        console.log(response);
+        emptyCart();
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
 
   //sorteren via datum
   productenArray.sort((a, b) => b.id - a.id);
@@ -100,13 +126,10 @@ export default function Treecycleshop(winkelKarProps) {
                       </h3>
                     </div>
                     <div className="swiper-icoon-grades">
-                      <img
-                        src={oneProduct.fotoPath}
-                        alt="Don't forget your alt text"
-                      />
+                      <img src={oneProduct.fotoPath} alt="Iets" />
                       <div className="product-info">
-                        <p>Type: {oneProduct.type}</p>
-                        <p>Hout: {oneProduct.houtsoort}</p>
+                        <p>Type: {oneProduct.name}</p>
+                        <p>Hout: {oneProduct.wood}</p>
                         <p>Hoogte: {oneProduct.height}cm</p>
                         <p>Breedte: {oneProduct.width}cm</p>
                       </div>
@@ -133,19 +156,4 @@ export default function Treecycleshop(winkelKarProps) {
       </div>
     </>
   );
-  function submitProducts() {
-    console.log("button works");
-    axios.post("");
-    {
-      //bestelnummer: 155,
-      //factuurdatum: "2021-06-13T18:06:57.195Z",
-      //factuurnummer: 155,
-      //user: "/api/users/1",
-      //bestellingdetail: [
-      //{
-      //},
-      //],
-      //totaalprijs: 155
-    }
-  }
 }

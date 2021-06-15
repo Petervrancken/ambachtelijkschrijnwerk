@@ -2,7 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useCart } from "react-use-cart";
 import Link from "next/link";
 import moment from "moment";
-//import {useState} from "react";
+import { useState } from "react";
+
 moment.locale("nl");
 
 import axios from "axios";
@@ -23,13 +24,6 @@ export default function Treecycleshop(shopProps) {
   //const [card, setCard] = useState([]);
   //card && cardTotale.push(card);
   console.log({ items });
-
-  //if(typeof(Storage)!== "undefined"){
-  //sessionStorage.setItem("productId", cardTotale);
-  //console.log(sessionStorage.getItem(["productId"]))
-  //}else{
-  //console.log("no support")
-  //}
 
   // array aanmaken van producten
   const productenArray = shopProps.shopProps["hydra:member"];
@@ -126,11 +120,13 @@ export default function Treecycleshop(shopProps) {
                   date: oneProduct.fotos[0].datum,
                   width: oneProduct.breedte,
                   height: oneProduct.hoogte,
-                  wood: oneProduct.type,
+                  name: oneProduct.type,
+                  wood: oneProduct.houtsoort,
                   price: oneProduct.prijs[0].prijs,
                 },
               ];
-              //console.log(products[0])
+              const [disable, setDisable] = useState();
+              console.log(disable);
               return (
                 <SwiperSlide key={oneProduct.id}>
                   <div className="swiper-icoon">
@@ -155,8 +151,10 @@ export default function Treecycleshop(shopProps) {
                       </div>
                     </div>
                     <button
-                      onClick={() => addItem(products[0])}
+                      id="button-add-item"
+                      onClick={() => addItem(products[0]) || setDisable(true)}
                       className="button-add-item"
+                      disabled={disable}
                     >
                       in winkelmandje
                     </button>

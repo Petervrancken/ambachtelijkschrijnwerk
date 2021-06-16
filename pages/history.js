@@ -8,7 +8,10 @@ export default function History(historyProps) {
   //array maken van bestellingen
   const bestellingArray = historyProps.historyProps.bestelling;
 
-  console.log(historyProps.historyProps.adres);
+  //sorteren via datum
+  bestellingArray.sort((a, b) => b.id - a.id);
+
+  //console.log(historyProps.historyProps.adres);
   return (
     <>
       <div className="shop-container">
@@ -62,7 +65,7 @@ export default function History(historyProps) {
           </div>
           {bestellingArray.length > 0 &&
             bestellingArray.map((bestelling) => {
-              console.log(bestelling);
+              //console.log(bestelling);
               return (
                 <div key={bestelling.id} className="bestelling">
                   <p>
@@ -94,6 +97,7 @@ export default function History(historyProps) {
   );
 }
 
+// nog een dynamische user id toevoegen !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 export async function getStaticProps() {
   const resp = await axios("https://127.0.0.1:8000/api/users/4.json");
   //const data = await resp.json();

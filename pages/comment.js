@@ -1,7 +1,30 @@
+import axios from "axios";
 import Link from "next/link";
 import DownArrow from "../public/downarrow.svg";
+import { useForm } from "react-hook-form";
 
 export default function Comment() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = async (data) => {
+    console.log(data);
+    axios
+      .post("https://127.0.0.1:8000/api/comments", {
+        rating: Number(data.rating),
+        beschrijving: data.beschrijving,
+        user: data.user, //Hier nog de user dynamisch maken, pas aan in form onderaan.!!!!!!!!!
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
+
   return (
     <>
       <div className="shop-container">
@@ -52,8 +75,10 @@ export default function Comment() {
         <div className="profile-container">
           <div className="sloganTheme">
             <p className="profile-title">wij horen het graag van u:</p>
-            <form className="login-form" onSubmit={""}>
+
+            <form className="login-form" onSubmit={handleSubmit(onSubmit)}>
               <input
+                {...register("rating", { required: true })}
                 className="comment-rating"
                 type="number"
                 id="rating"
@@ -62,32 +87,18 @@ export default function Comment() {
                 max="10"
               />
               <p className="score">/10</p>
-              <input
-                className="login-input"
-                id="voornaam"
-                type="text"
-                placeholder="voornaam"
-                required
-              />
-              <input
-                className="login-input"
-                id="naam"
-                type="text"
-                placeholder="naam"
-                required
-              />
-              <input
-                className="login-input"
-                id="email"
-                type="email"
-                placeholder="email"
-                required
-              />
               <textarea
+                {...register("beschrijving", { required: true })}
                 className="login-input"
                 id="question"
                 placeholder="zet hier uw commentaar..."
               ></textarea>
+              <input
+                type="hidden"
+                defaultValue="/api/users/8"
+                {...register("user")}
+              />
+              {errors.exampleRequired && <span>This field is required</span>}
               <button className="button-submit" type="submit">
                 verzenden
               </button>

@@ -2,23 +2,30 @@ import axios from "axios";
 import Link from "next/link";
 import DownArrow from "../public/downarrow.svg";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
+
+// verander hier je URL endpoints
+const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
+//const URL = "https://127.0.0.1:8000";  // local url
 
 export default function Comment() {
+  const [data, setData] = useState([]);
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    console.log(data);
+    //console.log(data);
     axios
-      .post("https://127.0.0.1:8000/api/comments", {
+      .post(URL + "/api/comments", {
         rating: Number(data.rating),
         beschrijving: data.beschrijving,
         user: data.user, //Hier nog de user dynamisch maken, pas aan in form onderaan.!!!!!!!!!
       })
       .then(function (response) {
-        console.log(response);
+        setData(response);
+        console.log(data.length);
       })
       .catch(function (error) {
         console.log(error);
@@ -75,6 +82,11 @@ export default function Comment() {
         <div className="profile-container">
           <div className="sloganTheme">
             <p className="profile-title">wij horen het graag van u:</p>
+            {data.length >= 1 && (
+              <p fontSize="12px" color="green">
+                post gelukt
+              </p>
+            )}
 
             <form className="login-form" onSubmit={handleSubmit(onSubmit)}>
               <input

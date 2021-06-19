@@ -13,6 +13,10 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 import "swiper/swiper-bundle.min.css";
 
+// verander hier je URL endpoints
+const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
+//const URL = "https://127.0.0.1:8000";  // local url
+
 export default function Home({ comments }) {
   return (
     <div className="backgroundTable">
@@ -52,12 +56,7 @@ export default function Home({ comments }) {
             <SwiperSlide key={oneComment.id}>
               <div className="swiper-icoon">
                 <div className="swiper-icoon-grades">
-                  <p>
-                    {moment
-                      .parseZone(oneComment.datum)
-                      .subtract(10, "days")
-                      .calendar()}
-                  </p>
+                  <p>{moment.parseZone(oneComment.datum).format("L")}</p>
                   <h3 className="swiper-grades">{oneComment.rating}/10</h3>
                 </div>
                 <div className="swiper-icoon-grades">
@@ -89,10 +88,7 @@ export default function Home({ comments }) {
 }
 
 export async function getStaticProps() {
-  const resp = await axios(
-    "https://127.0.0.1:8000/api/comments.json?order%5Bdatum%5D=desc"
-  );
-  //const data = await resp.json();
+  const resp = await axios(URL + "/api/comments.json?order%5Bdatum%5D=desc");
   const comments = resp.data;
   return {
     props: {

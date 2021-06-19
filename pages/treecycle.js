@@ -9,6 +9,10 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 import "swiper/swiper-bundle.min.css";
 
+//Verander hier je URL vergeet niet op deze pagina ook je foto url aan te passen
+const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
+//const URL = "https://127.0.0.1:8000";  // local url
+
 export default function Treecycle(treeProps) {
   //Put all foto's in an array.
   const fotos = treeProps.treeProps.fotos;
@@ -20,9 +24,9 @@ export default function Treecycle(treeProps) {
     fotos.length > 0 &&
     fotos.map(
       (oneFoto) =>
-        "http://localhost:8080/eindwerk-be/image.php/" +
+        "https://wdev2.be/peter21/eindwerk/system/image.php/" +
         oneFoto.fotonaam +
-        "?width=250&height=250&cropratio=1:1&image=/eindwerk-be/public/images/afbeeldingen/" +
+        "?image=/peter21/eindwerk/images/afbeeldingen/" +
         oneFoto.fotonaam
     );
 
@@ -68,7 +72,12 @@ export default function Treecycle(treeProps) {
                   <div className="swiper-afbeelding">
                     <Link href="#">
                       <a title="klik en vergroot!">
-                        <img src={oneFoto} alt="Don't forget your alt text" />
+                        <img
+                          src={oneFoto}
+                          height={250}
+                          width={250}
+                          alt="Don't forget your alt text"
+                        />
                       </a>
                     </Link>
                   </div>
@@ -87,7 +96,7 @@ export default function Treecycle(treeProps) {
 }
 
 export async function getStaticProps() {
-  const resp = await axios("https://127.0.0.1:8000/api/themas/3.json");
+  const resp = await axios(URL + "/api/themas/3.json");
   //const data = await resp.json();
   const treeProps = resp.data;
   //console.log(restoProps.beschrijving,"TEST")

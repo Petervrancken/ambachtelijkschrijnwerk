@@ -14,16 +14,14 @@ import SwiperCore, { Pagination, Navigation } from "swiper/core";
 
 SwiperCore.use([Pagination, Navigation]);
 
-//winkelmandje producten.id opslaan
-
-//const cardTotale = [];
-//console.log(cardTotale)
+//Verander hier je URL vergeet niet op deze pagina ook je foto url aan te passen
+const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
+//const URL = "https://127.0.0.1:8000";  // local url
 
 export default function Treecycleshop(shopProps) {
   const { addItem, emptyCart, totalUniqueItems, items } = useCart();
-  //const [card, setCard] = useState([]);
-  //card && cardTotale.push(card);
   console.log({ items });
+  console.log(shopProps);
 
   // array aanmaken van producten
   const productenArray = shopProps.shopProps["hydra:member"];
@@ -106,12 +104,18 @@ export default function Treecycleshop(shopProps) {
         >
           {productenArray.length > 0 &&
             productenArray.map((oneProduct) => {
+              console.log(oneProduct);
               const pathFoto =
-                "http://localhost:8080/eindwerk-be/image.php/" +
+                "https://wdev2.be/peter21/eindwerk/system/image.php/" +
                 oneProduct.fotos[0].fotonaam +
-                "?width=100&height=100&cropratio=1:1&image=/eindwerk-be/public/images/afbeeldingen/" +
+                "?image=/peter21/eindwerk/images/afbeeldingen/" +
                 oneProduct.fotos[0].fotonaam;
-              //console.log(oneProduct);
+              //const pathFoto =
+              //"http://localhost:8080/eindwerk-be/image.php/" +
+              //oneProduct.fotos[0].fotonaam +
+              //"?width=100&height=100&cropratio=1:1&image=/eindwerk-be/public/images/afbeeldingen/" +
+              //oneProduct.fotos[0].fotonaam;
+
               //maken van nieuwe array om mee te sturen in addItems, anders geeft hij geen prijs weer.
               const products = [
                 {
@@ -134,15 +138,19 @@ export default function Treecycleshop(shopProps) {
                       <p>
                         {moment
                           .parseZone(oneProduct.fotos[0].datum)
-                          .subtract(10, "days")
-                          .calendar()}
+                          .format("L")}
                       </p>
                       <h3 className="swiper-grades">
                         Prijs: €{oneProduct.prijs[0].prijs}
                       </h3>
                     </div>
                     <div className="swiper-icoon-grades">
-                      <img src={pathFoto} alt="Don't forget your alt text" />
+                      <img
+                        src={pathFoto}
+                        width={100}
+                        height={100}
+                        alt="Don't forget your alt text"
+                      />
                       <div className="product-info">
                         <p>Type: {oneProduct.type}</p>
                         <p>Hout: {oneProduct.houtsoort}</p>
@@ -170,7 +178,7 @@ export default function Treecycleshop(shopProps) {
 
 export async function getStaticProps() {
   const resp = await axios(
-    "https://127.0.0.1:8000/api/productens?page=1&order%5Bfotos.datum%5D=desc.json"
+    URL + "/api/productens?page=1&order%5Bfotos.datum%5D=desc.json"
   );
   //const data = await resp.json();
   const shopProps = resp.data;

@@ -4,6 +4,10 @@ import axios from "axios";
 import moment from "moment";
 moment.locale("nl");
 
+//Verander hier je URL vergeet niet op deze pagina ook je foto url aan te passen
+const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
+//const URL = "https://127.0.0.1:8000";  // local url
+
 export default function History(historyProps) {
   //array maken van bestellingen
   const bestellingArray = historyProps.historyProps.bestelling;
@@ -82,12 +86,7 @@ export default function History(historyProps) {
                     <strong>adres verzending:</strong>{" "}
                     {historyProps.historyProps.adres}
                   </p>
-                  <p>
-                    {moment
-                      .parseZone(bestelling.factuurdatum)
-                      .subtract(10, "days")
-                      .calendar()}
-                  </p>
+                  <p>{moment.parseZone(bestelling.factuurdatum).format("L")}</p>
                 </div>
               );
             })}
@@ -99,7 +98,7 @@ export default function History(historyProps) {
 
 // nog een dynamische user id toevoegen !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 export async function getStaticProps() {
-  const resp = await axios("https://127.0.0.1:8000/api/users/4.json");
+  const resp = await axios(URL + "/api/users/4.json");
   //const data = await resp.json();
   const historyProps = resp.data;
   //console.log(shopProps,"TEST")

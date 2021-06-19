@@ -10,6 +10,10 @@ import SwiperCore, { Pagination, Navigation } from "swiper/core";
 
 SwiperCore.use([Pagination, Navigation]);
 
+//Verander hier je URL vergeet niet op deze pagina ook je foto url aan te passen
+const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
+//const URL = "https://127.0.0.1:8000";  // local url
+
 export default function Treecycleshop(winkelKarProps) {
   const { removeItem, emptyCart, totalUniqueItems, items, isEmpty, cartTotal } =
     useCart();
@@ -44,7 +48,7 @@ export default function Treecycleshop(winkelKarProps) {
     });
     console.log();
     axios
-      .post("https://127.0.0.1:8000/api/bestellings", {
+      .post(URL + "/api/bestellings", {
         bestelnummer: Math.floor(Math.random() * 10000000000),
         //factuurdatum: "2021-06-13T18:06:57.195Z",
         factuurnummer: Math.floor(Math.random() * 10000000000),
@@ -113,18 +117,18 @@ export default function Treecycleshop(winkelKarProps) {
                 <SwiperSlide key={oneProduct.id}>
                   <div className="swiper-icoon">
                     <div className="swiper-icoon-grades">
-                      <p>
-                        {moment
-                          .parseZone(oneProduct.date)
-                          .subtract(10, "days")
-                          .calendar()}
-                      </p>
+                      <p>{moment.parseZone(oneProduct.date).format("L")}</p>
                       <h3 className="swiper-grades">
                         Prijs: €{oneProduct.price}
                       </h3>
                     </div>
                     <div className="swiper-icoon-grades">
-                      <img src={oneProduct.fotoPath} alt="Iets" />
+                      <img
+                        height={100}
+                        width={100}
+                        src={oneProduct.fotoPath}
+                        alt="Iets"
+                      />
                       <div className="product-info">
                         <p>Type: {oneProduct.name}</p>
                         <p>Hout: {oneProduct.wood}</p>

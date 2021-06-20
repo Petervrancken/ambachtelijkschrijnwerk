@@ -16,7 +16,7 @@ import "swiper/swiper-bundle.min.css";
 
 //Verander hier je URL vergeet niet op deze pagina ook je foto url aan te passen
 const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
-//const URL = "https://127.0.0.1:8000";  // local url
+//const URL = "https://127.0.0.1:8000"; // local url
 
 export default function Restauratie(restoProps) {
   //Put all foto's in an array.
@@ -44,10 +44,12 @@ export default function Restauratie(restoProps) {
       <div className="backgroundTableTheme">
         <div className="sloganTheme">
           <p className="sloganText">{restoProps.restoProps.titel}</p>
-          <p className="infoRestauratie">
-            {" "}
-            {restoProps.restoProps.beschrijving}
-          </p>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: restoProps.restoProps.beschrijving,
+            }}
+            className="infoRestauratie"
+          ></p>
         </div>
 
         <Swiper
@@ -104,17 +106,26 @@ export default function Restauratie(restoProps) {
           <div className="box">
             <p className="onderwerp-titel">{onderwerpen[0].titel}</p>
             <Timmerwerk className="onderwerp-icoon" />
-            <p>{onderwerpen[0].beschrijving}</p>
+            <div
+              className="swiper-comment"
+              dangerouslySetInnerHTML={{ __html: onderwerpen[0].beschrijving }}
+            ></div>
           </div>
           <div className="box">
             <p className="onderwerp-titel">{onderwerpen[1].titel}</p>
             <Zaag className="onderwerp-icoon" />
-            <p>{onderwerpen[1].beschrijving}</p>
+            <div
+              className="swiper-comment"
+              dangerouslySetInnerHTML={{ __html: onderwerpen[1].beschrijving }}
+            ></div>
           </div>
           <div className="box">
             <p className="onderwerp-titel">{onderwerpen[2].titel}</p>
             <Veiligheid className="onderwerp-icoon" />
-            <p>{onderwerpen[2].beschrijving}</p>
+            <div
+              className="swiper-comment"
+              dangerouslySetInnerHTML={{ __html: onderwerpen[2].beschrijving }}
+            ></div>
           </div>
         </div>
       </div>
@@ -122,17 +133,26 @@ export default function Restauratie(restoProps) {
         <div className="box">
           <p className="onderwerp-titel">{onderwerpen[0].titel}</p>
           <Timmerwerk className="onderwerp-icoon" />
-          <p>{onderwerpen[0].beschrijving}</p>
+          <div
+            className="swiper-comment"
+            dangerouslySetInnerHTML={{ __html: onderwerpen[0].beschrijving }}
+          ></div>
         </div>
         <div className="box">
           <p className="onderwerp-titel">{onderwerpen[1].titel}</p>
           <Zaag className="onderwerp-icoon" />
-          <p>{onderwerpen[1].beschrijving}</p>
+          <div
+            className="swiper-comment"
+            dangerouslySetInnerHTML={{ __html: onderwerpen[1].beschrijving }}
+          ></div>
         </div>
         <div className="box">
           <p className="onderwerp-titel">{onderwerpen[2].titel}</p>
           <Veiligheid className="onderwerp-icoon" />
-          <p>{onderwerpen[2].beschrijving}</p>
+          <div
+            className="swiper-comment"
+            dangerouslySetInnerHTML={{ __html: onderwerpen[2].beschrijving }}
+          ></div>
         </div>
       </div>
     </>

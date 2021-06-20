@@ -101,17 +101,26 @@ export default function schrijnentimmerwerken(schrijnProps) {
           <div className="box">
             <p className="onderwerp-titel">{onderwerpen[0].titel}</p>
             <Timmerwerk className="onderwerp-icoon" />
-            <p>{onderwerpen[0].beschrijving}</p>
+            <div
+              className="swiper-comment"
+              dangerouslySetInnerHTML={{ __html: onderwerpen[0].beschrijving }}
+            ></div>
           </div>
           <div className="box">
             <p className="onderwerp-titel">{onderwerpen[1].titel}</p>
             <Zaag className="onderwerp-icoon" />
-            <p>{onderwerpen[1].beschrijving}</p>
+            <div
+              className="swiper-comment"
+              dangerouslySetInnerHTML={{ __html: onderwerpen[1].beschrijving }}
+            ></div>
           </div>
           <div className="box">
             <p className="onderwerp-titel">{onderwerpen[2].titel}</p>
             <Veiligheid className="onderwerp-icoon" />
-            <p>{onderwerpen[2].beschrijving}</p>
+            <div
+              className="swiper-comment"
+              dangerouslySetInnerHTML={{ __html: onderwerpen[2].beschrijving }}
+            ></div>
           </div>
         </div>
       </div>
@@ -119,17 +128,26 @@ export default function schrijnentimmerwerken(schrijnProps) {
         <div className="box">
           <p className="onderwerp-titel">{onderwerpen[0].titel}</p>
           <Timmerwerk className="onderwerp-icoon" />
-          <p>{onderwerpen[0].beschrijving}</p>
+          <div
+            className="swiper-comment"
+            dangerouslySetInnerHTML={{ __html: onderwerpen[0].beschrijving }}
+          ></div>
         </div>
         <div className="box">
           <p className="onderwerp-titel">{onderwerpen[1].titel}</p>
           <Zaag className="onderwerp-icoon" />
-          <p>{onderwerpen[1].beschrijving}</p>
+          <div
+            className="swiper-comment"
+            dangerouslySetInnerHTML={{ __html: onderwerpen[1].beschrijving }}
+          ></div>
         </div>
         <div className="box">
           <p className="onderwerp-titel">{onderwerpen[2].titel}</p>
           <Veiligheid className="onderwerp-icoon" />
-          <p>{onderwerpen[2].beschrijving}</p>
+          <div
+            className="swiper-comment"
+            dangerouslySetInnerHTML={{ __html: onderwerpen[2].beschrijving }}
+          ></div>
         </div>
       </div>
     </>

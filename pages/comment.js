@@ -40,6 +40,7 @@ export default function Comment() {
       .then(function (response) {
         setData(response.data);
         console.log(response.data);
+        router.push("/");
       })
       .catch(function (error) {
         console.log(error);

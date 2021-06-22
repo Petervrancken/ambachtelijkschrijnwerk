@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import Cookies from "js-cookie";
+import router, { useRouter } from "next/router";
 import Logo from "../public/logo.svg";
 
 // verander hier je URL endpoints
@@ -24,6 +25,7 @@ export default function Login() {
       .then(function (response) {
         console.log(response.data);
         Cookies.set("cookieData", response.data, { expires: 1 });
+        router.push("/comment");
         //console.log(Cookies.get("cookieData"));
       })
       .catch(function (error) {

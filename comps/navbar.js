@@ -4,13 +4,15 @@ import Winkelkar from "../public/winkelkar.svg";
 import Profiel from "../public/profielicoon.svg";
 import Menu from "../public/menu.svg";
 import { useCart } from "react-use-cart";
+import Cookies from "js-cookie";
 
 import Link from "next/link";
 
 export default function Navbar() {
   const { totalItems } = useCart();
   const countItems = { totalItems };
-  console.log(countItems.totalItems);
+  //console.log(countItems.totalItems);
+
   return (
     <>
       <nav className="navfullscreen">
@@ -53,7 +55,11 @@ export default function Navbar() {
           <li className="linklogin">
             <Link href="/login">
               <a title="ga naar login">
-                <p>login</p>
+                {Cookies.get("cookieData") ? (
+                  <p onClick={() => Cookies.remove("cookieData")}>logout</p>
+                ) : (
+                  <p>login</p>
+                )}
               </a>
             </Link>
           </li>

@@ -2,30 +2,44 @@ import axios from "axios";
 import Link from "next/link";
 import DownArrow from "../public/downarrow.svg";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import Cookies from "js-cookie";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 // verander hier je URL endpoints
 const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
 //const URL = "https://127.0.0.1:8000";  // local url
 
 export default function Comment() {
+  const router = useRouter();
+  const [privateCookie, setPrivateCookie] = useState({});
+  useEffect(() => {
+    Cookies.get("cookieData")
+      ? setPrivateCookie(JSON.parse(Cookies.get("cookieData")))
+      : router.push("/login");
+  }, []);
+
+  console.log(privateCookie);
+
+  //console.log(privateCookie.data.id);
   const [data, setData] = useState([]);
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    //console.log(data);
+    //console.log(data.user);
     axios
       .post(URL + "/api/comments", {
         rating: Number(data.rating),
         beschrijving: data.beschrijving,
-        user: data.user, //Hier nog de user dynamisch maken, pas aan in form onderaan.!!!!!!!!!
+        user: "/api/users/" + privateCookie.data.id, //dynamisch via doorgegeven CookieID
       })
       .then(function (response) {
-        setData(response);
-        console.log(data.length);
+        setData(response.data);
+        console.log(response.data);
       })
       .catch(function (error) {
         console.log(error);
@@ -82,8 +96,8 @@ export default function Comment() {
         <div className="profile-container">
           <div className="sloganTheme">
             <p className="profile-title">wij horen het graag van u:</p>
-            {data.length >= 1 && (
-              <p fontSize="12px" color="green">
+            {data && (
+              <p fontSize="12px" color="white">
                 post gelukt
               </p>
             )}

@@ -136,7 +136,16 @@ export default function Navbar() {
                 </Link>
                 <Link href="/login">
                   <a title="ga naar login">
-                    <p className="textdropdown">login</p>
+                    {Cookies.get("cookieData") ? (
+                      <p
+                        className="textdropdown"
+                        onClick={() => Cookies.remove("cookieData")}
+                      >
+                        logout
+                      </p>
+                    ) : (
+                      <p className="textdropdown">login</p>
+                    )}
                   </a>
                 </Link>
               </div>

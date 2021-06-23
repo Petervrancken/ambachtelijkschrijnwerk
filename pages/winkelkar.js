@@ -2,6 +2,9 @@ import axios from "axios";
 import moment from "moment";
 moment.locale("nl");
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useRouter } from "next/router";
+import Cookies from "js-cookie";
+import { useState, useEffect } from "react";
 
 // Import Swiper styles
 import "swiper/swiper-bundle.min.css";
@@ -15,6 +18,14 @@ const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
 //const URL = "https://127.0.0.1:8000";  // local url
 
 export default function Treecycleshop(winkelKarProps) {
+  const router = useRouter();
+  const [privateCookie, setPrivateCookie] = useState({});
+  useEffect(() => {
+    Cookies.get("cookieData")
+      ? setPrivateCookie(JSON.parse(Cookies.get("cookieData")))
+      : router.push("/login");
+  }, []);
+
   const { removeItem, emptyCart, totalUniqueItems, items, isEmpty, cartTotal } =
     useCart();
 
@@ -33,7 +44,7 @@ export default function Treecycleshop(winkelKarProps) {
       producten: `/api/productens/${product.id}`,
     })
   );
-
+  console.log(privateCookie);
   // Vergeet met login niet de  user dynamisch te maken!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   function submitProducts() {
     console.log("button works");
@@ -52,7 +63,7 @@ export default function Treecycleshop(winkelKarProps) {
         bestelnummer: Math.floor(Math.random() * 10000000000),
         //factuurdatum: "2021-06-13T18:06:57.195Z",
         factuurnummer: Math.floor(Math.random() * 10000000000),
-        user: "/api/users/4",
+        user: "/api/users/" + privateCookie.data.id,
         bestellingdetail: besteldetail,
         totaalprijs: Number(cartTotal.toFixed(2)),
       })

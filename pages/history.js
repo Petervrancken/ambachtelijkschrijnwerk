@@ -2,13 +2,25 @@ import Link from "next/link";
 import DownArrow from "../public/downarrow.svg";
 import axios from "axios";
 import moment from "moment";
+import { useRouter } from "next/router";
+import Cookies from "js-cookie";
+import { useState, useEffect } from "react";
 moment.locale("nl");
 
 //Verander hier je URL vergeet niet op deze pagina ook je foto url aan te passen
 const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
 //const URL = "https://127.0.0.1:8000";  // local url
-
+const cookieId = [{}];
+console.log(cookieId[1]);
 export default function History(historyProps) {
+  const router = useRouter();
+  const [privateCookie, setPrivateCookie] = useState({});
+  useEffect(() => {
+    Cookies.get("cookieData")
+      ? cookieId.push(JSON.parse(Cookies.get("cookieData")).data.id)
+      : router.push("/login");
+  }, []);
+
   //array maken van bestellingen
   const bestellingArray = historyProps.historyProps.bestelling;
 
@@ -98,7 +110,7 @@ export default function History(historyProps) {
 
 // nog een dynamische user id toevoegen !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 export async function getStaticProps() {
-  const resp = await axios(URL + "/api/users/4.json");
+  const resp = await axios(URL + "/api/users/" + 1 + ".json");
   //const data = await resp.json();
   const historyProps = resp.data;
   //console.log(shopProps,"TEST")

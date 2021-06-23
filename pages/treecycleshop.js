@@ -2,8 +2,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useCart } from "react-use-cart";
 import Link from "next/link";
 import moment from "moment";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import Cookies from "js-cookie";
 moment.locale("nl");
 
 import axios from "axios";
@@ -19,6 +20,14 @@ const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
 //const URL = "https://127.0.0.1:8000";  // local url
 
 export default function Treecycleshop(shopProps) {
+  const router = useRouter();
+  const [privateCookie, setPrivateCookie] = useState({});
+  useEffect(() => {
+    Cookies.get("cookieData")
+      ? setPrivateCookie(JSON.parse(Cookies.get("cookieData")))
+      : router.push("/login");
+  }, []);
+
   const { addItem, emptyCart, totalUniqueItems, items } = useCart();
   console.log({ items });
   console.log(shopProps);
@@ -110,11 +119,6 @@ export default function Treecycleshop(shopProps) {
                 oneProduct.fotos[0].fotonaam +
                 "?image=/peter21/eindwerk/images/afbeeldingen/" +
                 oneProduct.fotos[0].fotonaam;
-              //const pathFoto =
-              //"http://localhost:8080/eindwerk-be/image.php/" +
-              //oneProduct.fotos[0].fotonaam +
-              //"?width=100&height=100&cropratio=1:1&image=/eindwerk-be/public/images/afbeeldingen/" +
-              //oneProduct.fotos[0].fotonaam;
 
               //maken van nieuwe array om mee te sturen in addItems, anders geeft hij geen prijs weer.
               const products = [

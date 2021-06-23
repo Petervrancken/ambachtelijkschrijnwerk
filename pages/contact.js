@@ -1,6 +1,10 @@
 import axios from "axios";
 import Avatar from "../public/avatar.svg";
 
+//Verander hier je URL vergeet niet op deze pagina ook je foto url aan te passen
+const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
+//const URL = "https://127.0.0.1:8000";  // local url
+
 export default function Contact(contactProps) {
   return (
     <>
@@ -59,7 +63,7 @@ export default function Contact(contactProps) {
 }
 
 export async function getStaticProps() {
-  const resp = await axios("https://127.0.0.1:8000/api/themas/4.json");
+  const resp = await axios(URL + "/api/themas/4.json");
   //const data = await resp.json();
   const contactProps = resp.data;
   //console.log(restoProps.beschrijving,"TEST")

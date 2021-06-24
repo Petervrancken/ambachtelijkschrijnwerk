@@ -5,17 +5,20 @@ import { useForm } from "react-hook-form";
 import Cookies from "js-cookie";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import { parseCookies, setCookie, destroyCookie } from "nookies";
 
 // verander hier je URL endpoints
 const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
 //const URL = "https://127.0.0.1:8000";  // local url
+
+const cookies = parseCookies();
 
 export default function Comment() {
   const router = useRouter();
   const [privateCookie, setPrivateCookie] = useState({});
   useEffect(() => {
     Cookies.get("cookieData")
-      ? setPrivateCookie(JSON.parse(Cookies.get("cookieData")))
+      ? setPrivateCookie(Cookies.get("cookieData"))
       : router.push("/login");
   }, []);
 
@@ -35,7 +38,7 @@ export default function Comment() {
       .post(URL + "/api/comments", {
         rating: Number(data.rating),
         beschrijving: data.beschrijving,
-        user: "/api/users/" + privateCookie.data.id, //dynamisch via doorgegeven CookieID
+        user: "/api/users/" + cookies.Id, //dynamisch via doorgegeven CookieID
       })
       .then(function (response) {
         setData(response.data);

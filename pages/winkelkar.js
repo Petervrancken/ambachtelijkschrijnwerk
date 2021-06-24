@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useRouter } from "next/router";
 import Cookies from "js-cookie";
 import { useState, useEffect } from "react";
+import { parseCookies } from "nookies";
 
 // Import Swiper styles
 import "swiper/swiper-bundle.min.css";
@@ -17,12 +18,14 @@ SwiperCore.use([Pagination, Navigation]);
 const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
 //const URL = "https://127.0.0.1:8000";  // local url
 
+const cookies = parseCookies();
+
 export default function Treecycleshop(winkelKarProps) {
   const router = useRouter();
   const [privateCookie, setPrivateCookie] = useState({});
   useEffect(() => {
     Cookies.get("cookieData")
-      ? setPrivateCookie(JSON.parse(Cookies.get("cookieData")))
+      ? setPrivateCookie(Cookies.get("cookieData"))
       : router.push("/login");
   }, []);
 
@@ -63,7 +66,7 @@ export default function Treecycleshop(winkelKarProps) {
         bestelnummer: Math.floor(Math.random() * 10000000000),
         //factuurdatum: "2021-06-13T18:06:57.195Z",
         factuurnummer: Math.floor(Math.random() * 10000000000),
-        user: "/api/users/" + privateCookie.data.id,
+        user: "/api/users/" + cookies.Id,
         bestellingdetail: besteldetail,
         totaalprijs: Number(cartTotal.toFixed(2)),
       })

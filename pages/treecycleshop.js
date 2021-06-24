@@ -24,7 +24,7 @@ export default function Treecycleshop(shopProps) {
   const [privateCookie, setPrivateCookie] = useState({});
   useEffect(() => {
     Cookies.get("cookieData")
-      ? setPrivateCookie(JSON.parse(Cookies.get("cookieData")))
+      ? setPrivateCookie(Cookies.get("cookieData"))
       : router.push("/login");
   }, []);
 

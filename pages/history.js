@@ -5,20 +5,28 @@ import moment from "moment";
 import { useRouter } from "next/router";
 import Cookies from "js-cookie";
 import { useState, useEffect } from "react";
+import nookies from "nookies";
 moment.locale("nl");
 
 //Verander hier je URL vergeet niet op deze pagina ook je foto url aan te passen
 const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
 //const URL = "https://127.0.0.1:8000";  // local url
-const cookieId = [{}];
-console.log(cookieId[1]);
+
+var cookieId = [];
+const testCookie = {};
+//console.log([cookieId][0]);
+//console.log(cookieId);
+
 export default function History(historyProps) {
   const router = useRouter();
   const [privateCookie, setPrivateCookie] = useState({});
+
   useEffect(() => {
+    const finalCookie = Cookies.get("cookieData");
     Cookies.get("cookieData")
-      ? cookieId.push(JSON.parse(Cookies.get("cookieData")).data.id)
+      ? setPrivateCookie(finalCookie)
       : router.push("/login");
+    //console.log(finalCookie);
   }, []);
 
   //array maken van bestellingen
@@ -109,8 +117,13 @@ export default function History(historyProps) {
 }
 
 // nog een dynamische user id toevoegen !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-export async function getStaticProps() {
-  const resp = await axios(URL + "/api/users/" + 1 + ".json");
+
+export async function getServerSideProps(ctx) {
+  console.log("test");
+  const cookies = nookies.get(ctx);
+  console.log(cookies.Id);
+  //console.log(JSON.parse(cookies.cookieData.token));
+  const resp = await axios(URL + "/api/users/" + cookies.Id + ".json");
   //const data = await resp.json();
   const historyProps = resp.data;
   //console.log(shopProps,"TEST")
@@ -118,6 +131,6 @@ export async function getStaticProps() {
     props: {
       historyProps,
     },
-    revalidate: 3600,
+    //revalidate: 3600,
   };
 }

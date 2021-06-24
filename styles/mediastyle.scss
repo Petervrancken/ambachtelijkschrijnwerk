@@ -46,7 +46,7 @@
 }
 
 //normal small screen
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1550px) {
   //restauratie
   .onderwerp {
     display: none;
@@ -114,5 +114,31 @@
   }
   .profiel-tabs-small {
     display: block;
+  }
+}
+
+.foto-beschrijving {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.foto-vergroot {
+  width: 100%;
+  //width: 800px;
+  //margin-left: 300px;
+  //margin-right: 300px;
+}
+.foto-size {
+  width: 800px;
+  padding: 0;
+}
+.previous {
+  text-align: center;
+  font-family: WoodHellCompany;
+  color: white;
+  font-size: 25px;
+  margin: 0;
+  &:hover {
+    cursor: pointer;
   }
 }

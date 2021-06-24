@@ -88,7 +88,7 @@ export default function Treecycleshop(shopProps) {
           spaceBetween={30}
           navigation={true}
           breakpoints={{
-            1920: {
+            1500: {
               slidesPerView: 3,
               slidesPerColumn: 2,
             },

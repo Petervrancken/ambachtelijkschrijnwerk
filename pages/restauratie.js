@@ -23,17 +23,6 @@ export default function Restauratie(restoProps) {
   const fotos = restoProps.restoProps.fotos;
   //sorteerd op datum/id
   fotos.sort((a, b) => b.id - a.id);
-
-  //Put all foto's in an array with URL path attached.
-  //const fotoFile =
-  //fotos.length > 0 &&
-  //fotos.map(
-  //(oneFoto) =>
-  //"https://wdev2.be/peter21/eindwerk/system/image.php/" +
-  //oneFoto.fotonaam +
-  //"?image=/peter21/eindwerk/images/afbeeldingen/" +
-  //oneFoto.fotonaam
-  //);
   console.log(fotos);
 
   //Put all topics in an array.
@@ -62,7 +51,7 @@ export default function Restauratie(restoProps) {
             disableOnInteraction: true,
           }}
           breakpoints={{
-            1920: {
+            1500: {
               slidesPerView: 4,
             },
             1366: {

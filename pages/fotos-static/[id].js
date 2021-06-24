@@ -1,4 +1,5 @@
 import axios from "axios";
+import router, { useRouter } from "next/router";
 
 //Verander hier je URL vergeet niet op deze pagina ook je foto url aan te passen
 const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
@@ -6,6 +7,7 @@ const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
 
 // De foto met de gevraagde id komt hier binnen.
 export default function fotoDetail({ foto }) {
+  const router = useRouter();
   console.log(foto);
   const fotoPath =
     "https://wdev2.be/peter21/eindwerk/system/image.php/" +
@@ -14,8 +16,21 @@ export default function fotoDetail({ foto }) {
     foto.fotonaam;
   return (
     <>
-      <img width={800} height={800} src={fotoPath} alt="fotovergroting"></img>
-      <p>{foto.beschrijving}</p>
+      <div className="backgroundTableTheme">
+        <p onClick={() => router.back()} className="previous">
+          Terug
+        </p>
+        <div className="sloganTheme">
+          <div className="foto-size">
+            <img
+              className="foto-vergroot"
+              src={fotoPath}
+              alt="fotovergroting"
+            ></img>
+          </div>
+        </div>
+        <p className="foto-beschrijving">{foto.beschrijving}</p>
+      </div>
     </>
   );
 }

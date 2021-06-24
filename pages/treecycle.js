@@ -20,15 +20,6 @@ export default function Treecycle(treeProps) {
   fotos.sort((a, b) => b.id - a.id);
 
   //Put all foto's in an array with URL path attached.
-  const fotoFile =
-    fotos.length > 0 &&
-    fotos.map(
-      (oneFoto) =>
-        "https://wdev2.be/peter21/eindwerk/system/image.php/" +
-        oneFoto.fotonaam +
-        "?image=/peter21/eindwerk/images/afbeeldingen/" +
-        oneFoto.fotonaam
-    );
 
   return (
     <>
@@ -52,7 +43,7 @@ export default function Treecycle(treeProps) {
             disableOnInteraction: true,
           }}
           breakpoints={{
-            1920: {
+            1500: {
               slidesPerView: 4,
             },
             1366: {
@@ -70,15 +61,20 @@ export default function Treecycle(treeProps) {
           }}
           className="mySwiper"
         >
-          {fotoFile.length > 0 &&
-            fotoFile.map((oneFoto) => {
+          {fotos.length > 0 &&
+            fotos.map((oneFoto) => {
+              const fotoPath =
+                "https://wdev2.be/peter21/eindwerk/system/image.php/" +
+                oneFoto.fotonaam +
+                "?image=/peter21/eindwerk/images/afbeeldingen/" +
+                oneFoto.fotonaam;
               return (
-                <SwiperSlide key={oneFoto} className="slide-afbeelding">
+                <SwiperSlide key={oneFoto.id} className="slide-afbeelding">
                   <div className="swiper-afbeelding">
-                    <Link href="#">
+                    <Link href={"/fotos-static/" + String(oneFoto.id)}>
                       <a title="klik en vergroot!">
                         <img
-                          src={oneFoto}
+                          src={fotoPath}
                           height={250}
                           width={250}
                           alt="Don't forget your alt text"

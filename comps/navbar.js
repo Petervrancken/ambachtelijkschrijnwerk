@@ -56,7 +56,13 @@ export default function Navbar() {
             <Link href="/login">
               <a title="ga naar login">
                 {Cookies.get("cookieData") ? (
-                  <p onClick={() => Cookies.remove("cookieData")}>logout</p>
+                  <p
+                    onClick={() =>
+                      Cookies.remove("cookieData") & Cookies.remove("Id")
+                    }
+                  >
+                    logout
+                  </p>
                 ) : (
                   <p>login</p>
                 )}

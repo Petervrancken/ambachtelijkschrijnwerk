@@ -22,8 +22,6 @@ export default function Comment() {
       : router.push("/login");
   }, []);
 
-  console.log(privateCookie);
-
   //console.log(privateCookie.data.id);
   const [data, setData] = useState([]);
 

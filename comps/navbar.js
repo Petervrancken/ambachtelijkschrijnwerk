@@ -145,7 +145,9 @@ export default function Navbar() {
                     {Cookies.get("cookieData") ? (
                       <p
                         className="textdropdown"
-                        onClick={() => Cookies.remove("cookieData")}
+                        onClick={() =>
+                          Cookies.remove("cookieData") & Cookies.remove("Id")
+                        }
                       >
                         logout
                       </p>

@@ -12,7 +12,6 @@ export default function Contact(contactProps) {
         <div className="sloganTheme">
           <p className="sloganText">{contactProps.contactProps.titel}</p>
           <p className="infoRestauratie">
-            {" "}
             {contactProps.contactProps.beschrijving}
           </p>
         </div>
@@ -64,9 +63,7 @@ export default function Contact(contactProps) {
 
 export async function getStaticProps() {
   const resp = await axios(URL + "/api/themas/4.json");
-  //const data = await resp.json();
   const contactProps = resp.data;
-  //console.log(restoProps.beschrijving,"TEST")
   return {
     props: {
       contactProps,

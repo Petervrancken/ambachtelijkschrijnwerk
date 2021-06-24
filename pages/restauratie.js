@@ -23,7 +23,6 @@ export default function Restauratie(restoProps) {
   const fotos = restoProps.restoProps.fotos;
   //sorteerd op datum/id
   fotos.sort((a, b) => b.id - a.id);
-  console.log(fotos);
 
   //Put all topics in an array.
   const onderwerpen = restoProps.restoProps.onderwerp;
@@ -77,8 +76,7 @@ export default function Restauratie(restoProps) {
                 oneFoto.fotonaam +
                 "?image=/peter21/eindwerk/images/afbeeldingen/" +
                 oneFoto.fotonaam;
-              console.log(fotoPath);
-              console.log(String(oneFoto.id));
+
               return (
                 <SwiperSlide key={oneFoto.id} className="slide-afbeelding">
                   <div className="swiper-afbeelding">
@@ -157,9 +155,7 @@ export default function Restauratie(restoProps) {
 
 export async function getStaticProps() {
   const resp = await axios(URL + "/api/themas/1.json");
-  //const data = await resp.json();
   const restoProps = resp.data;
-  //console.log(restoProps.beschrijving,"TEST")
   return {
     props: {
       restoProps,

@@ -34,7 +34,6 @@ export default function schrijnentimmerwerken(schrijnProps) {
         <div className="sloganTheme">
           <p className="sloganText">{schrijnProps.schrijnProps.titel}</p>
           <p className="infoRestauratie">
-            {" "}
             {schrijnProps.schrijnProps.beschrijving}
           </p>
         </div>
@@ -150,9 +149,9 @@ export default function schrijnentimmerwerken(schrijnProps) {
 
 export async function getStaticProps() {
   const resp = await axios(URL + "/api/themas/2.json");
-  //const data = await resp.json();
+
   const schrijnProps = resp.data;
-  //console.log(restoProps.beschrijving,"TEST")
+
   return {
     props: {
       schrijnProps,

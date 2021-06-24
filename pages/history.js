@@ -12,11 +12,6 @@ moment.locale("nl");
 const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
 //const URL = "https://127.0.0.1:8000";  // local url
 
-var cookieId = [];
-const testCookie = {};
-//console.log([cookieId][0]);
-//console.log(cookieId);
-
 export default function History(historyProps) {
   const router = useRouter();
   const [privateCookie, setPrivateCookie] = useState({});
@@ -26,7 +21,6 @@ export default function History(historyProps) {
     Cookies.get("cookieData")
       ? setPrivateCookie(finalCookie)
       : router.push("/login");
-    //console.log(finalCookie);
   }, []);
 
   //array maken van bestellingen
@@ -35,7 +29,6 @@ export default function History(historyProps) {
   //sorteren via datum
   bestellingArray.sort((a, b) => b.id - a.id);
 
-  //console.log(historyProps.historyProps.adres);
   return (
     <>
       <div className="shop-container">
@@ -89,7 +82,6 @@ export default function History(historyProps) {
           </div>
           {bestellingArray.length > 0 &&
             bestellingArray.map((bestelling) => {
-              //console.log(bestelling);
               return (
                 <div key={bestelling.id} className="bestelling">
                   <p>
@@ -116,17 +108,11 @@ export default function History(historyProps) {
   );
 }
 
-// nog een dynamische user id toevoegen !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
+// Voorlopig nog serverside props
 export async function getServerSideProps(ctx) {
-  console.log("test");
   const cookies = nookies.get(ctx);
-  console.log(cookies.Id);
-  //console.log(JSON.parse(cookies.cookieData.token));
   const resp = await axios(URL + "/api/users/" + cookies.Id + ".json");
-  //const data = await resp.json();
   const historyProps = resp.data;
-  //console.log(shopProps,"TEST")
   return {
     props: {
       historyProps,

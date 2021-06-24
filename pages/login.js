@@ -1,10 +1,8 @@
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import Cookies from "js-cookie";
 import router, { useRouter } from "next/router";
 import { parseCookies, setCookie, destroyCookie } from "nookies";
-import Logo from "../public/logo.svg";
 
 // verander hier je URL endpoints
 const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
@@ -17,7 +15,6 @@ export default function Login() {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    //console.log(data.username);
     axios
       .post(URL + "/api/login_check", {
         username: data.username,
@@ -28,7 +25,6 @@ export default function Login() {
         setCookie(null, "cookieData", response.data.token);
         setCookie(null, "Id", response.data.data.id);
         router.push("/comment");
-        //console.log(Cookies.get("cookieData"));
       })
       .catch(function (error) {
         console.log(error);

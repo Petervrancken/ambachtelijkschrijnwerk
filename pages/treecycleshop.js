@@ -28,23 +28,13 @@ export default function Treecycleshop(shopProps) {
       : router.push("/login");
   }, []);
 
-  const { addItem, emptyCart, totalUniqueItems, items } = useCart();
-  console.log({ items });
-  console.log(shopProps);
+  const { addItem, items } = useCart();
 
   // array aanmaken van producten
   const productenArray = shopProps.shopProps["hydra:member"];
 
   //sorteren via datum
   productenArray.sort((a, b) => b.fotos[0].id - a.fotos[0].id);
-
-  //get categories, zoeken op unieke naam in alle categorieen. nog uitwerken.
-  const categorieArray =
-    productenArray.length > 0 &&
-    productenArray.map((oneProduct) => oneProduct.categorie);
-  const uniqueCategorieArray = "leeg";
-
-  //console.log(sortProducten)
 
   function checkCategorie(name) {}
 
@@ -113,7 +103,6 @@ export default function Treecycleshop(shopProps) {
         >
           {productenArray.length > 0 &&
             productenArray.map((oneProduct) => {
-              console.log(oneProduct);
               const pathFoto =
                 "https://wdev2.be/peter21/eindwerk/system/image.php/" +
                 oneProduct.fotos[0].fotonaam +
@@ -134,7 +123,6 @@ export default function Treecycleshop(shopProps) {
                 },
               ];
               const [disable, setDisable] = useState();
-              console.log(disable);
               return (
                 <SwiperSlide key={oneProduct.id}>
                   <div className="swiper-icoon">
@@ -184,9 +172,9 @@ export async function getStaticProps() {
   const resp = await axios(
     URL + "/api/productens?page=1&order%5Bfotos.datum%5D=desc.json"
   );
-  //const data = await resp.json();
+
   const shopProps = resp.data;
-  //console.log(shopProps,"TEST")
+
   return {
     props: {
       shopProps,

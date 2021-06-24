@@ -8,7 +8,6 @@ const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
 // De foto met de gevraagde id komt hier binnen.
 export default function fotoDetail({ foto }) {
   const router = useRouter();
-  console.log(foto);
   const fotoPath =
     "https://wdev2.be/peter21/eindwerk/system/image.php/" +
     foto.fotonaam +
@@ -38,9 +37,7 @@ export default function fotoDetail({ foto }) {
 export async function getStaticProps(context) {
   const { id } = context.params;
   const resp = await axios(URL + "/api/fotos/" + id + ".json");
-  //const data = await resp.json();
   const foto = resp.data;
-  console.log(foto, "TEST");
   return {
     props: {
       foto,

@@ -1,6 +1,5 @@
 //next imports
 import Link from "next/link";
-import Image from "next/image";
 
 import axios from "axios";
 // import Swiper bundle
@@ -98,9 +97,9 @@ export default function Treecycle(treeProps) {
 
 export async function getStaticProps() {
   const resp = await axios(URL + "/api/themas/3.json");
-  //const data = await resp.json();
+
   const treeProps = resp.data;
-  //console.log(restoProps.beschrijving,"TEST")
+
   return {
     props: {
       treeProps,

@@ -1,4 +1,3 @@
-import Logo from "../public/logo.svg";
 import { useForm } from "react-hook-form";
 import router, { useRouter } from "next/router";
 import axios from "axios";
@@ -14,7 +13,6 @@ export default function Registreer() {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    console.log(data.voornaam);
     axios
       .post(URL + "/api/users", {
         email: data.email,

@@ -33,7 +33,6 @@ export default function Comment() {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    //console.log(data.user);
     axios
       .post(URL + "/api/comments", {
         rating: Number(data.rating),

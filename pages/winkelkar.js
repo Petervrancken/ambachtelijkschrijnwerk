@@ -47,7 +47,7 @@ export default function Treecycleshop(winkelKarProps) {
       producten: `/api/productens/${product.id}`,
     })
   );
-  console.log(privateCookie);
+  //console.log(privateCookie);
   // Vergeet met login niet de  user dynamisch te maken!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   function submitProducts() {
     console.log("button works");

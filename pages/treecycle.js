@@ -35,7 +35,12 @@ export default function Treecycle(treeProps) {
       <div className="backgroundTableTheme">
         <div className="sloganTheme">
           <p className="sloganText">{treeProps.treeProps.titel}</p>
-          <p className="infoRestauratie"> {treeProps.treeProps.beschrijving}</p>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: treeProps.treeProps.beschrijving,
+            }}
+            className="infoRestauratie"
+          ></p>
         </div>
         <Swiper
           slidesPerView={4}

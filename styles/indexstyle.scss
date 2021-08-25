@@ -10,46 +10,14 @@
   flex-wrap: wrap;
   font-family: WoodHellCompany;
 }
-.comment-link {
-  margin-top: 20px;
-}
+
 .sloganText {
   margin: auto;
   text-align: center;
-  font-size: 45px;
+  font-size: 55px;
   color: white;
+  text-shadow: 2px 2px 8px #474646;
   width: 100%;
   min-width: 175px;
   padding: 0px;
-}
-.comment-add {
-  font-family: WoodHellCompany;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  .sloganText {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 150%;
-    color: white;
-    width: 100%;
-    padding: 0px;
-  }
-  .icoon {
-    fill: rgb(168, 168, 168);
-    height: 50px;
-    width: 50px;
-    &:hover {
-      fill: white;
-    }
-  }
-}
-.icoon-comment {
-  fill: rgb(168, 168, 168);
-  height: 50px;
-  width: 50px;
-  margin-top: 10px;
-  &:hover {
-    fill: white;
-  }
 }

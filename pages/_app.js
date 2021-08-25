@@ -13,10 +13,12 @@ import winkelkarstyle from "../styles/winkelkarstyle.scss";
 import profilestyle from "../styles/profilestyle.scss";
 import commentstyle from "../styles/commentstyle.scss";
 import historystyle from "../styles/historystyle.scss";
+import footerstyle from "../styles/footerstyle.scss";
 import { CartProvider } from "react-use-cart";
 
 //components
 import Navbar from "../comps/navbar";
+import Footer from "../comps/footer";
 
 // includes Navbar + dropdown.
 function MyApp({ Component, pageProps }) {
@@ -25,6 +27,7 @@ function MyApp({ Component, pageProps }) {
       <CartProvider>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </CartProvider>
     </div>
   );

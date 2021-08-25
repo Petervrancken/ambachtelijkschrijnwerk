@@ -1,18 +1,9 @@
 // SVG imports!
 import Logo from "../public/logo.svg";
-import Winkelkar from "../public/winkelkar.svg";
-import Profiel from "../public/profielicoon.svg";
 import Menu from "../public/menu.svg";
-import { useCart } from "react-use-cart";
-import Cookies from "js-cookie";
-
 import Link from "next/link";
 
 export default function Navbar() {
-  const { totalItems } = useCart();
-  const countItems = { totalItems };
-  //console.log(countItems.totalItems);
-
   return (
     <>
       <nav className="navfullscreen">

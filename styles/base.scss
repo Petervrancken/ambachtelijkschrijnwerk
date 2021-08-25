@@ -1,14 +1,34 @@
+@charset "UTF-8";
+
 .bg {
   /* The image used */
   background-image: url(../afbeeldingen/backgroundpic.jpg);
 
   /* Full height */
-  height: 1329px; // voorlopig laten staan, veranderen als website klaar is
+  width: 100%;
+  height: 100vh; // voorlopig laten staan, veranderen als website klaar is
 
   /* Center and scale the image nicely */
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  backface-visibility: hidden;
+  animation: slideBg 25s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes slideBg {
+  0% {
+    background-image: url(../afbeeldingen/backgroundpic.jpg);
+  }
+  30% {
+    background-image: url(../afbeeldingen/backgroundpic2.jpg);
+  }
+  60% {
+    background-image: url(../afbeeldingen/backgroundpic3.jpg);
+  }
+  100% {
+    background-image: url(../afbeeldingen/backgroundpic.jpg);
+  }
 }
 
 body {

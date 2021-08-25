@@ -41,7 +41,7 @@ export default function Navbar() {
           <li className="linktreecycle">
             <Link href="/treecycle">
               <a title="ga naar treecyleshop">
-                <p>treecycleshop</p>
+                <p>treecycle</p>
               </a>
             </Link>
           </li>
@@ -49,40 +49,6 @@ export default function Navbar() {
             <Link href="/contact">
               <a title="ga naar contact">
                 <p>contact</p>
-              </a>
-            </Link>
-          </li>
-          <li className="linklogin">
-            <Link href="/login">
-              <a title="ga naar login">
-                {Cookies.get("cookieData") ? (
-                  <p
-                    onClick={() =>
-                      Cookies.remove("cookieData") & Cookies.remove("Id")
-                    }
-                  >
-                    logout
-                  </p>
-                ) : (
-                  <p>login</p>
-                )}
-              </a>
-            </Link>
-          </li>
-          <li className="linkwinkelkar">
-            <Link href="/winkelkar">
-              <a title="ga naar winkelkar">
-                <Winkelkar className="icoon" />
-                {countItems.totalItems !== 0 ? (
-                  <div className="count-items">{countItems.totalItems}</div>
-                ) : null}
-              </a>
-            </Link>
-          </li>
-          <li className="linkprofiel">
-            <Link href="/profiel">
-              <a title="ga naar profiel">
-                <Profiel className="icoon" />
               </a>
             </Link>
           </li>
@@ -98,23 +64,6 @@ export default function Navbar() {
             </Link>
           </li>
           <div className="iphonesize">
-            <li className="linkwinkelkar">
-              <Link href="/winkelkar">
-                <a title="ga naar winkelkar">
-                  <Winkelkar className="icoon" />
-                  {countItems.totalItems !== 0 ? (
-                    <div className="count-items">{countItems.totalItems}</div>
-                  ) : null}
-                </a>
-              </Link>
-            </li>
-            <li className="linkprofiel">
-              <Link href="/profiel">
-                <a title="ga naar profiel">
-                  <Profiel className="icoon" />
-                </a>
-              </Link>
-            </li>
             <div className="dropdown">
               <div className="linkmenu">
                 <Menu className="menuicoon" height={25} />
@@ -132,28 +81,12 @@ export default function Navbar() {
                 </Link>
                 <Link href="/treecycle">
                   <a title="ga naar treecyleshop">
-                    <p className="textdropdown">treecycleshop</p>
+                    <p className="textdropdown">treecycle</p>
                   </a>
                 </Link>
                 <Link href="/contact">
                   <a title="ga naar contact">
                     <p className="textdropdown">contact</p>
-                  </a>
-                </Link>
-                <Link href="/login">
-                  <a title="ga naar login">
-                    {Cookies.get("cookieData") ? (
-                      <p
-                        className="textdropdown"
-                        onClick={() =>
-                          Cookies.remove("cookieData") & Cookies.remove("Id")
-                        }
-                      >
-                        logout
-                      </p>
-                    ) : (
-                      <p className="textdropdown">login</p>
-                    )}
                   </a>
                 </Link>
               </div>

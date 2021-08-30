@@ -1,9 +1,14 @@
 .navfullscreen {
+  z-index: 15;
   display: block; // hier display nog aanpassen
   background-color: black;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 25px;
+  //position: fixed;
+  //left: 0;
+  //top: 0;
+  //width: 100%;
 }
 .navsmallscreen {
   display: none; // hier display nog aanpassen

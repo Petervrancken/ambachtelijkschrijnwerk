@@ -2,18 +2,18 @@
 
 .bg {
   /* The image used */
-  background-image: url(../afbeeldingen/backgroundpic.jpg);
+  background-image: url(../afbeeldingen/backgroundpictest.jpg);
 
   /* Full height */
   width: 100%;
-  height: 100vh; // voorlopig laten staan, veranderen als website klaar is
+  height: 1440px; // voorlopig laten staan, veranderen als website klaar is
 
   /* Center and scale the image nicely */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   backface-visibility: hidden;
-  animation: slideBg 25s linear infinite 0s;
+  animation: 25s linear 0s normal none infinite slideBg;
   animation-timing-function: ease-in-out;
 }
 @keyframes slideBg {

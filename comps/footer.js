@@ -12,7 +12,7 @@ export default function Footer() {
             <Instagram className="instagram-logo" />
           </a>
         </Link>
-        <p className="footer-text">Volg ons test</p>
+        <p className="footer-text">Volg ons</p>
         <Link href="https://m.facebook.com/destrooperwoodworks/">
           <a title="onze facebook">
             <Facebook className="instagram-logo" />

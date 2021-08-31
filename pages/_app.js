@@ -5,14 +5,7 @@ import indexstyle from "../styles/indexstyle.scss";
 import swiper from "../styles/swiper.scss";
 import restauratiestyle from "../styles/restauratiestyle.scss";
 import media from "../styles/mediastyle.scss";
-import treecyclestyle from "../styles/treecyclestyle.scss";
-import loginstyle from "../styles/loginstyle.scss";
 import contactstyle from "../styles/contactstyle.scss";
-import shopstyle from "../styles/shopstyle.scss";
-import winkelkarstyle from "../styles/winkelkarstyle.scss";
-import profilestyle from "../styles/profilestyle.scss";
-import commentstyle from "../styles/commentstyle.scss";
-import historystyle from "../styles/historystyle.scss";
 import footerstyle from "../styles/footerstyle.scss";
 import { CartProvider } from "react-use-cart";
 

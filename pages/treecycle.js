@@ -1,5 +1,6 @@
 //next imports
 import Link from "next/link";
+import Image from "next/image";
 
 import axios from "axios";
 // import Swiper bundle
@@ -85,11 +86,6 @@ export default function Treecycle(treeProps) {
               );
             })}
         </Swiper>
-        <div className="container-button">
-          <Link href="/treecycleshop">
-            <button className="button-to-shop">Bezoek onze webshop!</button>
-          </Link>
-        </div>
       </div>
     </>
   );

@@ -27,34 +27,6 @@ export default function Contact(contactProps) {
         </div>
         <div className="sloganTheme">
           <p className="sloganText">contact</p>
-          <form className="login-form" onSubmit={""}>
-            <input
-              className="login-input"
-              id="name"
-              name="name"
-              type="text"
-              autoComplete="name"
-              placeholder="email"
-              required
-            />
-            <input
-              className="login-input"
-              id="password"
-              name="wachtwoord"
-              type="password"
-              autoComplete="name"
-              placeholder="wachtwoord"
-              required
-            />
-            <textarea
-              className="login-input"
-              id="question"
-              placeholder="stel hier uw vraag..."
-            ></textarea>
-            <button className="button-submit" type="submit">
-              verzenden
-            </button>
-          </form>
         </div>
       </div>
     </>

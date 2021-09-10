@@ -20,21 +20,15 @@ const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
 //const URL = "https://127.0.0.1:8000";  // local url
 
 export default function schrijnentimmerwerken(schrijnProps) {
-  //Put all foto's in an array.
-  const fotos = schrijnProps.schrijnProps.fotos;
-  //sorteerd op datum/id
-  fotos.sort((a, b) => b.id - a.id);
-
-  //Put all topics in an array.
-  const onderwerpen = schrijnProps.schrijnProps.onderwerp;
-
   return (
     <>
       <div className="backgroundTableTheme">
         <div className="sloganTheme">
-          <p className="sloganText">{schrijnProps.schrijnProps.titel}</p>
+          <p className="sloganText">schrijn en timmerwerken</p>
           <p className="infoRestauratie">
-            {schrijnProps.schrijnProps.beschrijving}
+            Wij maken ons massief schrijnwerk met oog op duurzaamheid en
+            esthetiek. We zijn ook gespecialiseerd in het maken van replica’s
+            van bestaand schrijn- of timmerwerk.
           </p>
         </div>
         <Swiper
@@ -65,97 +59,159 @@ export default function schrijnentimmerwerken(schrijnProps) {
           }}
           className="mySwiper"
         >
-          {fotos.length > 0 &&
-            fotos.map((oneFoto) => {
-              const fotoPath =
-                "https://wdev2.be/peter21/eindwerk/system/image.php/" +
-                oneFoto.fotonaam +
-                "?image=/peter21/eindwerk/images/afbeeldingen/" +
-                oneFoto.fotonaam;
-              return (
-                <SwiperSlide key={oneFoto.id} className="slide-afbeelding">
-                  <div className="swiper-afbeelding">
-                    <Link href={"/fotos-static/" + String(oneFoto.id)}>
-                      <a title="klik en vergroot!">
-                        <img
-                          src={fotoPath}
-                          height={250}
-                          width={250}
-                          alt="Don't forget your alt text"
-                        />
-                      </a>
-                    </Link>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
+          <SwiperSlide key="afbeelding1" className="slide-afbeelding">
+            <div className="swiper-afbeelding">
+              <Link href="/fotos-static/schrijnentimmerwerken-01.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    src="/SmallPhoto/schrijnentimmerwerken-01.jpg"
+                    alt="Don't forget your alt text"
+                  />
+                </a>
+              </Link>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide key="afbeelding2" className="slide-afbeelding">
+            <div className="swiper-afbeelding">
+              <Link href="/fotos-static/schrijnentimmerwerken-02.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    src="/SmallPhoto/schrijnentimmerwerken-02.jpg"
+                    alt="Don't forget your alt text"
+                  />
+                </a>
+              </Link>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide key="afbeelding3" className="slide-afbeelding">
+            <div className="swiper-afbeelding">
+              <Link href="/fotos-static/schrijnentimmerwerken-03.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    src="/SmallPhoto/schrijnentimmerwerken-03.jpg"
+                    alt="Don't forget your alt text"
+                  />
+                </a>
+              </Link>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide key="afbeelding4" className="slide-afbeelding">
+            <div className="swiper-afbeelding">
+              <Link href="/fotos-static/schrijnentimmerwerken-04.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    src="/SmallPhoto/schrijnentimmerwerken-04.jpg"
+                    alt="Don't forget your alt text"
+                  />
+                </a>
+              </Link>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide key="afbeelding5" className="slide-afbeelding">
+            <div className="swiper-afbeelding">
+              <Link href="/fotos-static/schrijnentimmerwerken-05.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    src="/SmallPhoto/schrijnentimmerwerken-05.jpg"
+                    alt="Don't forget your alt text"
+                  />
+                </a>
+              </Link>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide key="afbeelding6" className="slide-afbeelding">
+            <div className="swiper-afbeelding">
+              <Link href="/fotos-static/schrijnentimmerwerken-06.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    src="/SmallPhoto/schrijnentimmerwerken-06.jpg"
+                    alt="Don't forget your alt text"
+                  />
+                </a>
+              </Link>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide key="afbeelding7" className="slide-afbeelding">
+            <div className="swiper-afbeelding">
+              <Link href="/fotos-static/schrijnentimmerwerken-07.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    src="/SmallPhoto/schrijnentimmerwerken-07.jpg"
+                    alt="Don't forget your alt text"
+                  />
+                </a>
+              </Link>
+            </div>
+          </SwiperSlide>
         </Swiper>
         <div className="onderwerp">
           <div className="box">
-            <p className="onderwerp-titel">{onderwerpen[0].titel}</p>
+            <p className="onderwerp-titel">timmerwerken</p>
             <Timmerwerk className="onderwerp-icoon" />
-            <div
-              className="swiper-comment"
-              dangerouslySetInnerHTML={{ __html: onderwerpen[0].beschrijving }}
-            ></div>
+            <p className="swiper-comment">
+              Wij maken nieuwe dakgebinten, structuren voor dakkapellen en
+              torens.
+            </p>
           </div>
           <div className="box">
-            <p className="onderwerp-titel">{onderwerpen[1].titel}</p>
+            <p className="onderwerp-titel">buiten schrijnwerk</p>
             <Zaag className="onderwerp-icoon" />
-            <div
-              className="swiper-comment"
-              dangerouslySetInnerHTML={{ __html: onderwerpen[1].beschrijving }}
-            ></div>
+            <p className="swiper-comment">
+              Wij vervaardigen oerdegelijke tuinpoorten, deuren, schuttingen in
+              duurzame houtsoort naar keuze zoals padoek, afzelia of eik.
+              Klanten mogen bij ons steeds eigen ontwerpen insturen.
+            </p>
           </div>
           <div className="box">
-            <p className="onderwerp-titel">{onderwerpen[2].titel}</p>
+            <p className="onderwerp-titel">binnen schrijnwerk</p>
             <Veiligheid className="onderwerp-icoon" />
-            <div
-              className="swiper-comment"
-              dangerouslySetInnerHTML={{ __html: onderwerpen[2].beschrijving }}
-            ></div>
+            <p className="swiper-comment">
+              Je kan bij ons zijn voor trappen, massieve binnendeuren, op maat
+              gemaakte meubels…
+            </p>
           </div>
         </div>
       </div>
       <div className="onderwerp-bottom">
         <div className="box">
-          <p className="onderwerp-titel">{onderwerpen[0].titel}</p>
+          <p className="onderwerp-titel">timmerwerken</p>
           <Timmerwerk className="onderwerp-icoon" />
-          <div
-            className="swiper-comment"
-            dangerouslySetInnerHTML={{ __html: onderwerpen[0].beschrijving }}
-          ></div>
+          <p className="swiper-comment">
+            Wij maken nieuwe dakgebinten, structuren voor dakkapellen en torens.
+          </p>
         </div>
         <div className="box">
-          <p className="onderwerp-titel">{onderwerpen[1].titel}</p>
+          <p className="onderwerp-titel">buiten schrijnwerk</p>
           <Zaag className="onderwerp-icoon" />
-          <div
-            className="swiper-comment"
-            dangerouslySetInnerHTML={{ __html: onderwerpen[1].beschrijving }}
-          ></div>
+          <p className="swiper-comment">
+            Wij vervaardigen oerdegelijke tuinpoorten, deuren, schuttingen in
+            duurzame houtsoort naar keuze zoals padoek, afzelia of eik. Klanten
+            mogen bij ons steeds eigen ontwerpen insturen.
+          </p>
         </div>
         <div className="box">
-          <p className="onderwerp-titel">{onderwerpen[2].titel}</p>
+          <p className="onderwerp-titel">binnen schrijnwerk</p>
           <Veiligheid className="onderwerp-icoon" />
-          <div
-            className="swiper-comment"
-            dangerouslySetInnerHTML={{ __html: onderwerpen[2].beschrijving }}
-          ></div>
+          <p className="swiper-comment">
+            Je kan bij ons zijn voor trappen, massieve binnendeuren, op maat
+            gemaakte meubels…
+          </p>
         </div>
       </div>
     </>
   );
-}
-
-export async function getStaticProps() {
-  const resp = await axios(URL + "/api/themas/2.json");
-
-  const schrijnProps = resp.data;
-
-  return {
-    props: {
-      schrijnProps,
-    },
-    revalidate: 3600,
-  };
 }

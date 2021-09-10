@@ -177,7 +177,6 @@ export default function Restauratie() {
               </Link>
             </div>
           </SwiperSlide>
-          );
         </Swiper>
 
         <div className="onderwerp">

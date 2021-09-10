@@ -10,9 +10,13 @@ export default function Contact(contactProps) {
     <>
       <div className="backgroundTableTheme">
         <div className="sloganTheme">
-          <p className="sloganText">{contactProps.contactProps.titel}</p>
+          <p className="sloganText">Wie zijn wij</p>
           <p className="infoRestauratie">
-            {contactProps.contactProps.beschrijving}
+            Ambachtelijkschrijnwerk.be is ontstaan uit de samenwerking van twee
+            gepassioneerde restauratieschrijnwerkers. Samen Hebben we meer dan
+            20 jaar ervaring in restauratieschrijnwerk en algemeen massief
+            schrijnwerk. In ons atelier zijn we goed uitgerust voor iedere job
+            met massief hout.
           </p>
         </div>
         <div className="onderwerp-contact">
@@ -27,19 +31,13 @@ export default function Contact(contactProps) {
         </div>
         <div className="sloganTheme">
           <p className="sloganText">contact</p>
+          <p className="infoRestauratie">anton@ambachtelijkschrijnwerk.be</p>
+          <p className="infoRestauratie">
+            ambachtelijkelaan 258, 5001 houtdorp
+          </p>
+          <p className="infoRestauratie">+32 484 84 84 84 84</p>
         </div>
       </div>
     </>
   );
-}
-
-export async function getStaticProps() {
-  const resp = await axios(URL + "/api/themas/4.json");
-  const contactProps = resp.data;
-  return {
-    props: {
-      contactProps,
-    },
-    revalidate: 3600,
-  };
 }

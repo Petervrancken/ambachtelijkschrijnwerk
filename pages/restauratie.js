@@ -15,10 +15,6 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 import "swiper/swiper-bundle.min.css";
 
-//Verander hier je URL vergeet niet op deze pagina ook je foto url aan te passen
-const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
-//const URL = "https://127.0.0.1:8000"; // local url
-
 export default function Restauratie() {
   return (
     <>

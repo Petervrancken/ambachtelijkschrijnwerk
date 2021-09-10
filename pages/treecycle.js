@@ -9,18 +9,7 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 import "swiper/swiper-bundle.min.css";
 
-//Verander hier je URL vergeet niet op deze pagina ook je foto url aan te passen
-const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
-//const URL = "https://127.0.0.1:8000";  // local url
-
 export default function Treecycle(treeProps) {
-  //Put all foto's in an array.
-  const fotos = treeProps.treeProps.fotos;
-  //sorteren van de fotos via id/datum
-  fotos.sort((a, b) => b.id - a.id);
-
-  //Put all foto's in an array with URL path attached.
-
   return (
     <>
       <div className="backgroundTableTheme">
@@ -182,17 +171,4 @@ export default function Treecycle(treeProps) {
       </div>
     </>
   );
-}
-
-export async function getStaticProps() {
-  const resp = await axios(URL + "/api/themas/3.json");
-
-  const treeProps = resp.data;
-
-  return {
-    props: {
-      treeProps,
-    },
-    revalidate: 3600,
-  };
 }

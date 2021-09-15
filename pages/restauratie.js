@@ -21,8 +21,40 @@ export default function Restauratie() {
     <>
       <div className="backgroundTableTheme">
         <div className="sloganTheme">
-          <p className="sloganText">restauratie</p>
-          <p className="infoRestauratie">
+          <motion.p
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                opacity: 0,
+              },
+              visible: {
+                opacity: 1,
+                transition: {
+                  delay: 0.5,
+                },
+              },
+            }}
+            className="sloganText"
+          >
+            restauratie
+          </motion.p>
+          <motion.p
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                opacity: 0,
+              },
+              visible: {
+                opacity: 1,
+                transition: {
+                  delay: 1,
+                },
+              },
+            }}
+            className="infoRestauratie"
+          >
             Aangezien we een grote liefde hebben voor het vakmanschap van
             weleer, hebben we ons gespecialiseerd in het restaureren van antiek
             houtwerk. Zoals bij alle restauratiewerken trachten we zo veel
@@ -30,249 +62,215 @@ export default function Restauratie() {
             herstellingen uit met de aloude technieken zoals liplassen of
             zwaluwstaarten. Ook doen we herstellingen met moderne technieken
             zoals polymeerchemisch en glasvezel.
-          </p>
+          </motion.p>
         </div>
-
-        <Swiper
-          slidesPerView={4}
-          spaceBetween={20}
-          slidesPerGroup={1}
-          navigation={true}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: true,
-          }}
-          breakpoints={{
-            1500: {
-              slidesPerView: 4,
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              opacity: 0,
             },
-            1366: {
-              slidesPerView: 3,
-            },
-            768: {
-              slidesPerView: 2,
-            },
-            320: {
-              slidesPerView: 1,
-            },
-            10: {
-              slidesPerView: 1,
+            visible: {
+              opacity: 1,
+              transition: {
+                delay: 1.5,
+              },
             },
           }}
-          // elke foto uitprinten met juiste fotonaam in zijn path
-          className="mySwiper"
         >
-          <SwiperSlide key="afbeelding1" className="slide-afbeelding">
-            <div className="swiper-afbeelding">
-              <Link href="/fotos-static/restauratie-afbeelding1.jpg">
-                <a title="klik en vergroot!">
-                  <motion.div
-                    initial="hidden"
-                    animate="visible"
-                    variants={{
-                      hidden: {
-                        opacity: 0,
-                      },
-                      visible: {
-                        opacity: 1,
-                        transition: {
-                          delay: 1,
-                        },
-                      },
-                    }}
-                  >
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={20}
+            slidesPerGroup={1}
+            navigation={true}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: true,
+            }}
+            breakpoints={{
+              1500: {
+                slidesPerView: 4,
+              },
+              1366: {
+                slidesPerView: 3,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              320: {
+                slidesPerView: 1,
+              },
+              10: {
+                slidesPerView: 1,
+              },
+            }}
+            // elke foto uitprinten met juiste fotonaam in zijn path
+            className="mySwiper"
+          >
+            <SwiperSlide key="afbeelding1" className="slide-afbeelding">
+              <div className="swiper-afbeelding">
+                <Link href="/fotos-static/restauratie-afbeelding1.jpg">
+                  <a title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding1.jpg"
                       alt="Don't forget your alt text"
                     />
-                  </motion.div>
-                </a>
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide key="afbeelding2" className="slide-afbeelding">
-            <div className="swiper-afbeelding">
-              <Link href="/fotos-static/restauratie-afbeelding2.jpg">
-                <a title="klik en vergroot!">
-                  <motion.div
-                    initial="hidden"
-                    animate="visible"
-                    variants={{
-                      hidden: {
-                        opacity: 0,
-                      },
-                      visible: {
-                        opacity: 1,
-                        transition: {
-                          delay: 1.5,
-                        },
-                      },
-                    }}
-                  >
+                  </a>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide key="afbeelding2" className="slide-afbeelding">
+              <div className="swiper-afbeelding">
+                <Link href="/fotos-static/restauratie-afbeelding2.jpg">
+                  <a title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding2.jpg"
                       alt="Don't forget your alt text"
                     />
-                  </motion.div>
-                </a>
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide key="afbeelding3" className="slide-afbeelding">
-            <div className="swiper-afbeelding">
-              <Link href="/fotos-static/restauratie-afbeelding3.jpg">
-                <a title="klik en vergroot!">
-                  <motion.div
-                    initial="hidden"
-                    animate="visible"
-                    variants={{
-                      hidden: {
-                        opacity: 0,
-                      },
-                      visible: {
-                        opacity: 1,
-                        transition: {
-                          delay: 2,
-                        },
-                      },
-                    }}
-                  >
+                  </a>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide key="afbeelding3" className="slide-afbeelding">
+              <div className="swiper-afbeelding">
+                <Link href="/fotos-static/restauratie-afbeelding3.jpg">
+                  <a title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding3.jpg"
                       alt="Don't forget your alt text"
                     />
-                  </motion.div>
-                </a>
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide key="afbeelding4" className="slide-afbeelding">
-            <div className="swiper-afbeelding">
-              <Link href="/fotos-static/restauratie-afbeelding4.jpg">
-                <a title="klik en vergroot!">
-                  <motion.div
-                    initial="hidden"
-                    animate="visible"
-                    variants={{
-                      hidden: {
-                        opacity: 0,
-                      },
-                      visible: {
-                        opacity: 1,
-                        transition: {
-                          delay: 2.5,
-                        },
-                      },
-                    }}
-                  >
+                  </a>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide key="afbeelding4" className="slide-afbeelding">
+              <div className="swiper-afbeelding">
+                <Link href="/fotos-static/restauratie-afbeelding4.jpg">
+                  <a title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding4.jpg"
                       alt="Don't forget your alt text"
                     />
-                  </motion.div>
-                </a>
-              </Link>
+                  </a>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide key="afbeelding5" className="slide-afbeelding">
+              <div className="swiper-afbeelding">
+                <Link href="/fotos-static/restauratie-afbeelding5.jpg">
+                  <a title="klik en vergroot!">
+                    <Image
+                      height={250}
+                      width={250}
+                      src="/static/SmallPhoto/restauratie-afbeelding5.jpg"
+                      alt="Don't forget your alt text"
+                    />
+                  </a>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide key="afbeelding6" className="slide-afbeelding">
+              <div className="swiper-afbeelding">
+                <Link href="/fotos-static/restauratie-afbeelding6.jpg">
+                  <a title="klik en vergroot!">
+                    <Image
+                      height={250}
+                      width={250}
+                      src="/static/SmallPhoto/restauratie-afbeelding6.jpg"
+                      alt="Don't forget your alt text"
+                    />
+                  </a>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide key="afbeelding7" className="slide-afbeelding">
+              <div className="swiper-afbeelding">
+                <Link href="/fotos-static/restauratie-afbeelding7.jpg">
+                  <a title="klik en vergroot!">
+                    <Image
+                      height={250}
+                      width={250}
+                      src="/static/SmallPhoto/restauratie-afbeelding7.jpg"
+                      alt="Don't forget your alt text"
+                    />
+                  </a>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide key="afbeelding8" className="slide-afbeelding">
+              <div className="swiper-afbeelding">
+                <Link href="/fotos-static/restauratie-afbeelding8.jpg">
+                  <a title="klik en vergroot!">
+                    <Image
+                      height={250}
+                      width={250}
+                      src="/static/SmallPhoto/restauratie-afbeelding8.jpg"
+                      alt="Don't forget your alt text"
+                    />
+                  </a>
+                </Link>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              opacity: 0,
+            },
+            visible: {
+              opacity: 1,
+              transition: {
+                delay: 2,
+              },
+            },
+          }}
+        >
+          <div className="onderwerp">
+            <div className="box">
+              <p className="onderwerp-titel">Restauratietimmerwerk</p>
+              <Timmerwerk className="onderwerp-icoon" />
+              <p className="swiper-comment">
+                Dakstrukturen en andere structurele elementen (bv. moerbalken)
+                in monumenten of andere oude gebouwen zijn meestal gemaakt in
+                hout. Hoewel hout een zeer duurzaam bouwmateriaal is, kan na
+                jarenlange blootstelling aan de elementen of door aantasting van
+                beestjes, restauratie van doen zijn.{" "}
+              </p>
             </div>
-          </SwiperSlide>
-          <SwiperSlide key="afbeelding5" className="slide-afbeelding">
-            <div className="swiper-afbeelding">
-              <Link href="/fotos-static/restauratie-afbeelding5.jpg">
-                <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    src="/static/SmallPhoto/restauratie-afbeelding5.jpg"
-                    alt="Don't forget your alt text"
-                  />
-                </a>
-              </Link>
+            <div className="box">
+              <p className="onderwerp-titel">Restauratieschrijnwerk</p>
+              <Zaag className="onderwerp-icoon" />
+              <p className="swiper-comment">
+                Dit gaat van ramen en deuren tot trappen en ander interieur
+                schrijnwerk. We streven steeds na zo veel mogelijk van het
+                originele schrijnwerk te behouden, enkel delen die niet meer
+                gered kunnen worden volgens de regels van de kunst geheel of
+                gedeeltelijk vervangen.
+              </p>
             </div>
-          </SwiperSlide>
-          <SwiperSlide key="afbeelding6" className="slide-afbeelding">
-            <div className="swiper-afbeelding">
-              <Link href="/fotos-static/restauratie-afbeelding6.jpg">
-                <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    src="/static/SmallPhoto/restauratie-afbeelding6.jpg"
-                    alt="Don't forget your alt text"
-                  />
-                </a>
-              </Link>
+            <div className="box">
+              <p className="onderwerp-titel">Bereikbaarheid en veiligheid</p>
+              <Veiligheid className="onderwerp-icoon" />
+              <p className="swiper-comment">
+                Platformen en loopbruggen om moeilijk bereikbare plaatsen toch
+                gemakkelijk en veilig te kunnen bereiken kunnen we ook
+                vervaardigen.
+              </p>
             </div>
-          </SwiperSlide>
-          <SwiperSlide key="afbeelding7" className="slide-afbeelding">
-            <div className="swiper-afbeelding">
-              <Link href="/fotos-static/restauratie-afbeelding7.jpg">
-                <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    src="/static/SmallPhoto/restauratie-afbeelding7.jpg"
-                    alt="Don't forget your alt text"
-                  />
-                </a>
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide key="afbeelding8" className="slide-afbeelding">
-            <div className="swiper-afbeelding">
-              <Link href="/fotos-static/restauratie-afbeelding8.jpg">
-                <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    src="/static/SmallPhoto/restauratie-afbeelding8.jpg"
-                    alt="Don't forget your alt text"
-                  />
-                </a>
-              </Link>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-
-        <div className="onderwerp">
-          <div className="box">
-            <p className="onderwerp-titel">Restauratietimmerwerk</p>
-            <Timmerwerk className="onderwerp-icoon" />
-            <p className="swiper-comment">
-              Dakstrukturen en andere structurele elementen (bv. moerbalken) in
-              monumenten of andere oude gebouwen zijn meestal gemaakt in hout.
-              Hoewel hout een zeer duurzaam bouwmateriaal is, kan na jarenlange
-              blootstelling aan de elementen of door aantasting van beestjes,
-              restauratie van doen zijn.{" "}
-            </p>
           </div>
-          <div className="box">
-            <p className="onderwerp-titel">Restauratieschrijnwerk</p>
-            <Zaag className="onderwerp-icoon" />
-            <p className="swiper-comment">
-              Dit gaat van ramen en deuren tot trappen en ander interieur
-              schrijnwerk. We streven steeds na zo veel mogelijk van het
-              originele schrijnwerk te behouden, enkel delen die niet meer gered
-              kunnen worden volgens de regels van de kunst geheel of
-              gedeeltelijk vervangen.
-            </p>
-          </div>
-          <div className="box">
-            <p className="onderwerp-titel">Bereikbaarheid en veiligheid</p>
-            <Veiligheid className="onderwerp-icoon" />
-            <p className="swiper-comment">
-              Platformen en loopbruggen om moeilijk bereikbare plaatsen toch
-              gemakkelijk en veilig te kunnen bereiken kunnen we ook
-              vervaardigen.
-            </p>
-          </div>
-        </div>
+        </motion.div>
       </div>
       <div className="onderwerp-bottom">
         <div className="box">

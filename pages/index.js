@@ -1,6 +1,7 @@
 // import Swiper bundle
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
+import { motion } from "framer-motion";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 import "swiper/swiper-bundle.min.css";
 
@@ -12,7 +13,27 @@ export default function Home({ comments }) {
   return (
     <div className="backgroundTable">
       <div className="slogan">
-        <p className="sloganText">wij maken geschiedenis van onze toekomst!</p>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.5,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.4,
+              },
+            },
+          }}
+        >
+          <p className="sloganText">
+            wij maken geschiedenis van onze toekomst!
+          </p>
+        </motion.div>
       </div>
     </div>
   );

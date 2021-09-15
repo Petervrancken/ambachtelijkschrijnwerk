@@ -8,18 +8,36 @@ import media from "../styles/mediastyle.scss";
 import contactstyle from "../styles/contactstyle.scss";
 import footerstyle from "../styles/footerstyle.scss";
 import { CartProvider } from "react-use-cart";
+import { motion } from "framer-motion";
 
 //components
 import Navbar from "../comps/navbar";
 import Footer from "../comps/footer";
 
 // includes Navbar + dropdown.
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (
     <div className="bg">
       <CartProvider>
         <Navbar />
-        <Component {...pageProps} />
+        <motion.div
+          key={router.route}
+          initial="pageInitial"
+          animate="pageAnimate"
+          variants={{
+            pageInitial: {
+              opacity: 0,
+            },
+            pageAnimate: {
+              opacity: 1,
+              transition: {
+                delay: 0.4,
+              },
+            },
+          }}
+        >
+          <Component {...pageProps} />
+        </motion.div>
         <Footer />
       </CartProvider>
     </div>

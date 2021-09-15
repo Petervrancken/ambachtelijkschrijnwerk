@@ -3,6 +3,7 @@ import Timmerwerk from "../public/timmer.svg";
 import Zaag from "../public/zaag.svg";
 import Veiligheid from "../public/veiligheid.svg";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import axios from "axios";
 
@@ -65,12 +66,28 @@ export default function Restauratie() {
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/restauratie-afbeelding1.jpg">
                 <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    src="/SmallPhoto/restauratie-afbeelding1.jpg"
-                    alt="Don't forget your alt text"
-                  />
+                  <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={{
+                      hidden: {
+                        opacity: 0,
+                      },
+                      visible: {
+                        opacity: 1,
+                        transition: {
+                          delay: 1,
+                        },
+                      },
+                    }}
+                  >
+                    <Image
+                      height={250}
+                      width={250}
+                      src="/SmallPhoto/restauratie-afbeelding1.jpg"
+                      alt="Don't forget your alt text"
+                    />
+                  </motion.div>
                 </a>
               </Link>
             </div>
@@ -79,12 +96,28 @@ export default function Restauratie() {
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/restauratie-afbeelding2.jpg">
                 <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    src="/SmallPhoto/restauratie-afbeelding2.jpg"
-                    alt="Don't forget your alt text"
-                  />
+                  <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={{
+                      hidden: {
+                        opacity: 0,
+                      },
+                      visible: {
+                        opacity: 1,
+                        transition: {
+                          delay: 1.5,
+                        },
+                      },
+                    }}
+                  >
+                    <Image
+                      height={250}
+                      width={250}
+                      src="/SmallPhoto/restauratie-afbeelding2.jpg"
+                      alt="Don't forget your alt text"
+                    />
+                  </motion.div>
                 </a>
               </Link>
             </div>
@@ -93,12 +126,28 @@ export default function Restauratie() {
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/restauratie-afbeelding3.jpg">
                 <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    src="/SmallPhoto/restauratie-afbeelding3.jpg"
-                    alt="Don't forget your alt text"
-                  />
+                  <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={{
+                      hidden: {
+                        opacity: 0,
+                      },
+                      visible: {
+                        opacity: 1,
+                        transition: {
+                          delay: 2,
+                        },
+                      },
+                    }}
+                  >
+                    <Image
+                      height={250}
+                      width={250}
+                      src="/SmallPhoto/restauratie-afbeelding3.jpg"
+                      alt="Don't forget your alt text"
+                    />
+                  </motion.div>
                 </a>
               </Link>
             </div>
@@ -107,12 +156,28 @@ export default function Restauratie() {
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/restauratie-afbeelding4.jpg">
                 <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    src="/SmallPhoto/restauratie-afbeelding4.jpg"
-                    alt="Don't forget your alt text"
-                  />
+                  <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={{
+                      hidden: {
+                        opacity: 0,
+                      },
+                      visible: {
+                        opacity: 1,
+                        transition: {
+                          delay: 2.5,
+                        },
+                      },
+                    }}
+                  >
+                    <Image
+                      height={250}
+                      width={250}
+                      src="/SmallPhoto/restauratie-afbeelding4.jpg"
+                      alt="Don't forget your alt text"
+                    />
+                  </motion.div>
                 </a>
               </Link>
             </div>

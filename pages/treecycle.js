@@ -62,7 +62,7 @@ export default function Treecycle(treeProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/treecycle-01.jpg"
+                    src="/static/SmallPhoto/treecycle-01.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -76,7 +76,7 @@ export default function Treecycle(treeProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/treecycle-02.jpg"
+                    src="/static/SmallPhoto/treecycle-02.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -90,7 +90,7 @@ export default function Treecycle(treeProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/treecycle-03.jpg"
+                    src="/static/SmallPhoto/treecycle-03.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -104,7 +104,7 @@ export default function Treecycle(treeProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/treecycle-04.jpg"
+                    src="/static/SmallPhoto/treecycle-04.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -118,7 +118,7 @@ export default function Treecycle(treeProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/treecycle-05.jpg"
+                    src="/static/SmallPhoto/treecycle-05.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -132,7 +132,7 @@ export default function Treecycle(treeProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/treecycle-06.jpg"
+                    src="/static/SmallPhoto/treecycle-06.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -146,7 +146,7 @@ export default function Treecycle(treeProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/treecycle-07.jpg"
+                    src="/static/SmallPhoto/treecycle-07.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -160,7 +160,7 @@ export default function Treecycle(treeProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/treecycle-08.jpg"
+                    src="/static/SmallPhoto/treecycle-08.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>

@@ -62,7 +62,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/schrijnentimmerwerken-01.jpg"
+                    src="/static/SmallPhoto/schrijnentimmerwerken-01.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -76,7 +76,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/schrijnentimmerwerken-02.jpg"
+                    src="/static/SmallPhoto/schrijnentimmerwerken-02.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -90,7 +90,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/schrijnentimmerwerken-03.jpg"
+                    src="/static/SmallPhoto/schrijnentimmerwerken-03.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -104,7 +104,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/schrijnentimmerwerken-04.jpg"
+                    src="/static/SmallPhoto/schrijnentimmerwerken-04.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -118,7 +118,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/schrijnentimmerwerken-05.jpg"
+                    src="/static/SmallPhoto/schrijnentimmerwerken-05.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -132,7 +132,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/schrijnentimmerwerken-06.jpg"
+                    src="/static/SmallPhoto/schrijnentimmerwerken-06.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -146,7 +146,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/schrijnentimmerwerken-07.jpg"
+                    src="/static/SmallPhoto/schrijnentimmerwerken-07.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>

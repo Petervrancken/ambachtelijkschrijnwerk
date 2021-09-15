@@ -84,7 +84,7 @@ export default function Restauratie() {
                     <Image
                       height={250}
                       width={250}
-                      src="/SmallPhoto/restauratie-afbeelding1.jpg"
+                      src="/static/SmallPhoto/restauratie-afbeelding1.jpg"
                       alt="Don't forget your alt text"
                     />
                   </motion.div>
@@ -114,7 +114,7 @@ export default function Restauratie() {
                     <Image
                       height={250}
                       width={250}
-                      src="/SmallPhoto/restauratie-afbeelding2.jpg"
+                      src="/static/SmallPhoto/restauratie-afbeelding2.jpg"
                       alt="Don't forget your alt text"
                     />
                   </motion.div>
@@ -144,7 +144,7 @@ export default function Restauratie() {
                     <Image
                       height={250}
                       width={250}
-                      src="/SmallPhoto/restauratie-afbeelding3.jpg"
+                      src="/static/SmallPhoto/restauratie-afbeelding3.jpg"
                       alt="Don't forget your alt text"
                     />
                   </motion.div>
@@ -174,7 +174,7 @@ export default function Restauratie() {
                     <Image
                       height={250}
                       width={250}
-                      src="/SmallPhoto/restauratie-afbeelding4.jpg"
+                      src="/static/SmallPhoto/restauratie-afbeelding4.jpg"
                       alt="Don't forget your alt text"
                     />
                   </motion.div>
@@ -189,7 +189,7 @@ export default function Restauratie() {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/restauratie-afbeelding5.jpg"
+                    src="/static/SmallPhoto/restauratie-afbeelding5.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -203,7 +203,7 @@ export default function Restauratie() {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/restauratie-afbeelding6.jpg"
+                    src="/static/SmallPhoto/restauratie-afbeelding6.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -217,7 +217,7 @@ export default function Restauratie() {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/restauratie-afbeelding7.jpg"
+                    src="/static/SmallPhoto/restauratie-afbeelding7.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>
@@ -231,7 +231,7 @@ export default function Restauratie() {
                   <Image
                     height={250}
                     width={250}
-                    src="/SmallPhoto/restauratie-afbeelding8.jpg"
+                    src="/static/SmallPhoto/restauratie-afbeelding8.jpg"
                     alt="Don't forget your alt text"
                   />
                 </a>

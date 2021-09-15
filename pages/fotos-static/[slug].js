@@ -20,7 +20,7 @@ export default function fotoDetail() {
           <div className="foto-size">
             <Image
               className="foto-vergroot"
-              src={`/BigPhoto/${slug}`}
+              src={`/static/BigPhoto/${slug}`}
               width={1000}
               height={1000}
               alt="fotovergroting"

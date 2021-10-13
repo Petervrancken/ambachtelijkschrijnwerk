@@ -7,6 +7,7 @@ import restauratiestyle from "../styles/restauratiestyle.scss";
 import media from "../styles/mediastyle.scss";
 import contactstyle from "../styles/contactstyle.scss";
 import footerstyle from "../styles/footerstyle.scss";
+import timmerwerk from "../styles/timmerwerkStyle.scss";
 import { CartProvider } from "react-use-cart";
 import { motion } from "framer-motion";
 

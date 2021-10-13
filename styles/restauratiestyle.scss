@@ -41,6 +41,13 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  a {
+    text-decoration: none;
+    &:hover {
+      background-color: black;
+      border-radius: 25px;
+    }
+  }
   .box {
     width: 300px;
     margin: 20px;
@@ -54,6 +61,12 @@
       width: 100px;
       fill: rgb(216, 216, 216);
     }
+    &:hover {
+      color: green;
+      .onderwerp-icoon {
+        fill: green;
+      }
+    }
   }
 }
 
@@ -64,11 +77,21 @@
   flex-wrap: wrap;
   background-color: white;
   display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  a {
+    text-decoration: none;
+    &:hover {
+      background-color: black;
+      border-radius: 25px;
+    }
+  }
   .box {
     width: 300px;
     margin: 20px;
     text-align: center;
     color: black;
+
     .onderwerp-titel {
       font-family: WoodHellCompany;
     }
@@ -76,6 +99,12 @@
       height: 100px;
       width: 100px;
       fill: black;
+    }
+    &:hover {
+      color: green;
+      .onderwerp-icoon {
+        fill: green;
+      }
     }
   }
 }

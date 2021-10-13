@@ -238,71 +238,60 @@ export default function Restauratie() {
           }}
         >
           <div className="onderwerp">
-            <div className="box">
-              <p className="onderwerp-titel">Restauratietimmerwerk</p>
-              <Timmerwerk className="onderwerp-icoon" />
-              <p className="swiper-comment">
-                Dakstrukturen en andere structurele elementen (bv. moerbalken)
-                in monumenten of andere oude gebouwen zijn meestal gemaakt in
-                hout. Hoewel hout een zeer duurzaam bouwmateriaal is, kan na
-                jarenlange blootstelling aan de elementen of door aantasting van
-                beestjes, restauratie van doen zijn.{" "}
-              </p>
-            </div>
-            <div className="box">
-              <p className="onderwerp-titel">Restauratieschrijnwerk</p>
-              <Zaag className="onderwerp-icoon" />
-              <p className="swiper-comment">
-                Dit gaat van ramen en deuren tot trappen en ander interieur
-                schrijnwerk. We streven steeds na zo veel mogelijk van het
-                originele schrijnwerk te behouden, enkel delen die niet meer
-                gered kunnen worden volgens de regels van de kunst geheel of
-                gedeeltelijk vervangen.
-              </p>
-            </div>
-            <div className="box">
-              <p className="onderwerp-titel">Bereikbaarheid en veiligheid</p>
-              <Veiligheid className="onderwerp-icoon" />
-              <p className="swiper-comment">
-                Platformen en loopbruggen om moeilijk bereikbare plaatsen toch
-                gemakkelijk en veilig te kunnen bereiken kunnen we ook
-                vervaardigen.
-              </p>
-            </div>
+            <Link href="/restauratietimmerwerk">
+              <a title="naar timmerwerk">
+                <div className="box">
+                  <p className="onderwerp-titel">Restauratietimmerwerk</p>
+                  <Timmerwerk className="onderwerp-icoon" />
+                </div>
+              </a>
+            </Link>
+            <Link href="/restauratietimmerwerk">
+              <a title="naar timmerwerk">
+                <div className="box">
+                  <p className="onderwerp-titel">Restauratieschrijnwerk</p>
+                  <Zaag className="onderwerp-icoon" />
+                </div>
+              </a>
+            </Link>
+            <Link href="/restauratietimmerwerk">
+              <a title="naar timmerwerk">
+                <div className="box">
+                  <p className="onderwerp-titel">
+                    Bereikbaarheid en veiligheid
+                  </p>
+                  <Veiligheid className="onderwerp-icoon" />
+                </div>
+              </a>
+            </Link>
           </div>
         </motion.div>
       </div>
       <div className="onderwerp-bottom">
-        <div className="box">
-          <p className="onderwerp-titel">Restauratietimmerwerk</p>
-          <Timmerwerk className="onderwerp-icoon" />
-          <p className="swiper-comment">
-            Dakstrukturen en andere structurele elementen (bv. moerbalken) in
-            monumenten of andere oude gebouwen zijn meestal gemaakt in hout.
-            Hoewel hout een zeer duurzaam bouwmateriaal is, kan na jarenlange
-            blootstelling aan de elementen of door aantasting van beestjes,
-            restauratie van doen zijn.{" "}
-          </p>
-        </div>
-        <div className="box">
-          <p className="onderwerp-titel">Restauratieschrijnwerk</p>
-          <Zaag className="onderwerp-icoon" />
-          <p className="swiper-comment">
-            Dit gaat van ramen en deuren tot trappen en ander interieur
-            schrijnwerk. We streven steeds na zo veel mogelijk van het originele
-            schrijnwerk te behouden, enkel delen die niet meer gered kunnen
-            worden volgens de regels van de kunst geheel of gedeeltelijk
-            vervangen.
-          </p>
-        </div>
-        <div className="box">
-          <p className="onderwerp-titel">Bereikbaarheid en veiligheid</p>
-          <Veiligheid className="onderwerp-icoon" />
-          <p className="swiper-comment">
-            Platformen en loopbruggen om moeilijk bereikbare plaatsen toch
-            gemakkelijk en veilig te kunnen bereiken kunnen we ook vervaardigen.
-          </p>
-        </div>
+        <Link href="/restauratietimmerwerk">
+          <a title="naar timmerwerk">
+            <div className="box">
+              <p className="onderwerp-titel">Restauratietimmerwerk</p>
+              <Timmerwerk className="onderwerp-icoon" />
+            </div>
+          </a>
+        </Link>
+        <Link href="/restauratietimmerwerk">
+          <a title="naar timmerwerk">
+            <div className="box">
+              <p className="onderwerp-titel">Restauratieschrijnwerk</p>
+              <Zaag className="onderwerp-icoon" />
+            </div>
+          </a>
+        </Link>
+        <Link href="/restauratietimmerwerk">
+          <a title="naar timmerwerk">
+            <div className="box">
+              <p className="onderwerp-titel">Bereikbaarheid en veiligheid</p>
+              <Veiligheid className="onderwerp-icoon" />
+            </div>
+          </a>
+        </Link>
       </div>
     </>
   );

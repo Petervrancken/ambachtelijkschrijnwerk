@@ -33,6 +33,16 @@ export default function Home({ comments }) {
           <p className="sloganText">
             wij maken geschiedenis van onze toekomst!
           </p>
+          <p className="introductie-titel">Wie zijn we?</p>
+          <p className="introductie-text">
+            Ambachtelijkschrijnwerk.be is ontstaan uit de samenwerking van twee
+            gepassioneerde restauratieschrijnwerkers. Samen Hebben we meer dan
+            20 jaar ervaring in restauratieschrijnwerk en algemeen massief
+            schrijnwerk. In ons atelier zijn we goed uitgerust voor iedere job
+            met massief hout. Samen hebben we meer dan 20 jaar ervaring in zowel
+            restauratieschrijnwerk en algemeen massief schrijnwerk. In ons
+            atelier zijn we goed uitgerust voor iedere job met massief hout.
+          </p>
         </motion.div>
       </div>
     </div>

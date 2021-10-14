@@ -40,7 +40,42 @@ export default function Restauratietimmerwerk() {
             </Link>
           </div>
         </div>
-        <h1 className="onderwerp-titel">Restauratietimmerwerk</h1>
+        <div className="onderwerp-box">
+          <h1 className="onderwerp-titel">Restauratietimmerwerk</h1>
+          <p>
+            Dakstrukturen en andere structurele elementen (bv. moerbalken) in
+            monumenten of andere oude gebouwen zijn meestal gemaakt in hout.
+            Hoewel hout een zeer duurzaam bouwmateriaal is, kan na jarenlange
+            blootstelling aan de elementen of door aantasting van beestjes,
+            restauratie van doen zijn
+          </p>
+        </div>
+        <div className="image-box">
+          <Image
+            height={250}
+            width={250}
+            src="/static/SmallPhoto/schrijnentimmerwerken-01.jpg"
+            alt="Don't forget your alt text"
+          />
+          <Image
+            height={250}
+            width={250}
+            src="/static/SmallPhoto/schrijnentimmerwerken-01.jpg"
+            alt="Don't forget your alt text"
+          />
+          <Image
+            height={250}
+            width={250}
+            src="/static/SmallPhoto/schrijnentimmerwerken-01.jpg"
+            alt="Don't forget your alt text"
+          />
+          <Image
+            height={250}
+            width={250}
+            src="/static/SmallPhoto/schrijnentimmerwerken-01.jpg"
+            alt="Don't forget your alt text"
+          />
+        </div>
       </div>
     </>
   );

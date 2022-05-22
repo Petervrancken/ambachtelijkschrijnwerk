@@ -1,5 +1,6 @@
 import axios from "axios";
 import Avatar from "../public/avatar.svg";
+import Head from "next/head";
 
 //Verander hier je URL vergeet niet op deze pagina ook je foto url aan te passen
 const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
@@ -8,6 +9,12 @@ const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
 export default function Contact(contactProps) {
   return (
     <>
+    <Head>
+      <title>Contact | Ambachtelijkschrijnwerk.be</title>
+      <link rel="canonical" href="https://ambachtelijkschrijnwerk.be/contact/" />
+      <meta name="description" content="Ambachtelijkschrijnwerk.be is ontstaan uit de samenwerking van twee
+            gepassioneerde restauratieschrijnwerkers."/>
+    </Head>
       <div className="backgroundTableTheme">
         <div className="sloganTheme">
           <p className="sloganText">Wie zijn wij</p>

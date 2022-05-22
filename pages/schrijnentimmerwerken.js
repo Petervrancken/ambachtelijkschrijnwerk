@@ -4,6 +4,7 @@ import Timmerwerk from "../public/timmer.svg";
 import Zaag from "../public/zaag.svg";
 import Veiligheid from "../public/veiligheid.svg";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 import axios from "axios";
 
@@ -19,6 +20,13 @@ import "swiper/swiper-bundle.min.css";
 export default function schrijnentimmerwerken(schrijnProps) {
   return (
     <>
+    <Head>
+      <title>Schrijn en timmerwerken | Ambachtelijkschrijnwerk.be</title>
+      <link rel="canonical" href="https://ambachtelijkschrijnwerk.be/schrijnentimmerwerken" />
+      <meta name="description" content="Wij maken ons massief schrijnwerk met oog op duurzaamheid en
+            esthetiek. We zijn ook gespecialiseerd in het maken van replica’s
+            van bestaand schrijn- of timmerwerk."/>
+    </Head>
       <div className="backgroundTableTheme">
         <div className="sloganTheme">
           <motion.p
@@ -218,60 +226,59 @@ export default function schrijnentimmerwerken(schrijnProps) {
             },
           }}
         >
-          <div className="onderwerp">
-            <div className="box">
-              <p className="onderwerp-titel">timmerwerken</p>
-              <Timmerwerk className="onderwerp-icoon" />
-              <p className="swiper-comment">
-                Wij maken nieuwe dakgebinten, structuren voor dakkapellen en
-                torens.
-              </p>
-            </div>
-            <div className="box">
-              <p className="onderwerp-titel">buiten schrijnwerk</p>
-              <Zaag className="onderwerp-icoon" />
-              <p className="swiper-comment">
-                Wij vervaardigen oerdegelijke tuinpoorten, deuren, schuttingen
-                in duurzame houtsoort naar keuze zoals padoek, afzelia of eik.
-                Klanten mogen bij ons steeds eigen ontwerpen insturen.
-              </p>
-            </div>
-            <div className="box">
-              <p className="onderwerp-titel">binnen schrijnwerk</p>
-              <Veiligheid className="onderwerp-icoon" />
-              <p className="swiper-comment">
-                Je kan bij ons zijn voor trappen, massieve binnendeuren, op maat
-                gemaakte meubels…
-              </p>
-            </div>
-          </div>
         </motion.div>
       </div>
       <div className="onderwerp-bottom">
-        <div className="box">
-          <p className="onderwerp-titel">timmerwerken</p>
-          <Timmerwerk className="onderwerp-icoon" />
-          <p className="swiper-comment">
-            Wij maken nieuwe dakgebinten, structuren voor dakkapellen en torens.
-          </p>
-        </div>
-        <div className="box">
-          <p className="onderwerp-titel">buiten schrijnwerk</p>
-          <Zaag className="onderwerp-icoon" />
-          <p className="swiper-comment">
-            Wij vervaardigen oerdegelijke tuinpoorten, deuren, schuttingen in
-            duurzame houtsoort naar keuze zoals padoek, afzelia of eik. Klanten
-            mogen bij ons steeds eigen ontwerpen insturen.
-          </p>
-        </div>
-        <div className="box">
-          <p className="onderwerp-titel">binnen schrijnwerk</p>
-          <Veiligheid className="onderwerp-icoon" />
-          <p className="swiper-comment">
-            Je kan bij ons zijn voor trappen, massieve binnendeuren, op maat
-            gemaakte meubels…
-          </p>
-        </div>
+        <Link href="/restauratietimmerwerk">
+          <a title="naar timmerwerk">
+            <div className="box">
+              <p className="onderwerp-titel">Restauratie van timmerwerk </p>
+              <Timmerwerk className="onderwerp-icoon" />
+              <p className="swiper-comment">
+                Dak structuren en andere structurele elementen (bv. moerbalken)
+                in monumenten of andere oude gebouwen zijn meestal gemaakt in
+                eik. Hoewel hout een zeer duurzaam bouwmateriaal is, kan na
+                jarenlange blootstelling aan weer en wind, of door aantasting
+                van beestjes of slecht onderhoud restauratie van ...{" "}
+                <a href="/restauratietimmerwerk">
+                  Lees hier meer over resauratie timmerwerk
+                </a>
+              </p>
+            </div>
+          </a>
+        </Link>
+        <Link href="/restauratieschrijnwerk">
+          <a title="naar timmerwerk">
+            <div className="box">
+              <p className="onderwerp-titel">Restauratie van schrijnwerk </p>
+              <Zaag className="onderwerp-icoon" />
+              <p className="swiper-comment">
+                We streven steeds na zo veel mogelijk van het originele
+                schrijnwerk te behouden, enkel delen die niet meer gered kunnen
+                worden volgens de regels van de kunst geheel of gedeeltelijk
+                vervangen. <a href="/restauratieschrijnwerk">
+                  Lees hier meer over resauratie schrijnwerk
+                </a>
+              </p>
+            </div>
+          </a>
+        </Link>
+        <Link href="/veiligheid">
+          <a title="naar timmerwerk">
+            <div className="box">
+              <p className="onderwerp-titel">Bereikbaarheid en veiligheid</p>
+              <Veiligheid className="onderwerp-icoon" />
+              <p className="swiper-comment">
+                Platformen en loopbruggen om moeilijk bereikbare plaatsen toch
+                gemakkelijk en veilig te kunnen bereiken kunnen door ons
+                geplaatst worden. Deze structuren dienen om een beter onderhoud
+                te kunnen doen van de gebouwen. <a href="/veiligheid">
+                  Lees hier meer over veiligheid
+                </a>
+              </p>
+            </div>
+          </a>
+        </Link>
       </div>
     </>
   );

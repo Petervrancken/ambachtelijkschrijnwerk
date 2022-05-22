@@ -11,6 +11,8 @@ import timmerwerk from "../styles/timmerwerkStyle.scss";
 import { CartProvider } from "react-use-cart";
 import { motion } from "framer-motion";
 
+
+
 //components
 import Navbar from "../comps/navbar";
 import Footer from "../comps/footer";
@@ -18,6 +20,7 @@ import Footer from "../comps/footer";
 // includes Navbar + dropdown.
 function MyApp({ Component, pageProps, router }) {
   return (
+    <>
     <div className="bg">
       <CartProvider>
         <Navbar />
@@ -42,6 +45,7 @@ function MyApp({ Component, pageProps, router }) {
         <Footer />
       </CartProvider>
     </div>
+    </>
   );
 }
 export default MyApp;

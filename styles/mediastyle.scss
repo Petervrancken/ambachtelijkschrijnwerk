@@ -1,14 +1,14 @@
 //huge screen
 @media only screen and (max-width: 2560px) {
   //restauratie
-  .onderwerp-bottom {
-    display: none;
-  }
   .backgroundTableTheme {
     margin-right: 250px;
     margin-left: 250px;
   }
-
+  .onderwerp-bottom {
+    //height: 600px;
+    display: flex;
+  }
   //shop
   .shop-container {
     margin-left: 200px;
@@ -21,16 +21,13 @@
 //bigscreen
 @media only screen and (max-width: 1920px) {
   //restauratie
-  .onderwerp-bottom {
-    display: none;
-  }
   .backgroundTableTheme {
     margin-right: 250px;
     margin-left: 250px;
   }
   //index
   .slogan {
-    margin-top: 250px;
+    margin-top: 100px;
   }
   //shop
   .shop-container {
@@ -45,9 +42,7 @@
 //normal small screen
 @media only screen and (max-width: 1550px) {
   //restauratie
-  .onderwerp {
-    display: none;
-  }
+
   .onderwerp-bottom {
     //height: 600px;
     display: flex;
@@ -58,9 +53,12 @@
   }
   //index
   .slogan {
-    margin-top: 200px;
+    margin-top: 100px;
     .sloganText {
-      font-size: 35px;
+      font-size: 25px;
+    }
+    .sloganh1{
+      font-size: 45px;
     }
   }
   //shop
@@ -87,6 +85,14 @@
     margin-right: 10px;
   }
   //index
+  .introductie-text{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    font-size: 14px;
+    p{
+      width: 100%;
+    }
+  }
   .slogan {
     padding-top: 20px;
     margin-top: 60px;
@@ -109,8 +115,11 @@
   .onderwerp-bottom {
     padding-bottom: 100px;
   }
+  .sloganh1{
+    font-size: 45px;
+  }
   .sloganText {
-    font-size: 30px;
+    font-size: 20px;
   }
   //profiel
   .profiel-tabs-wide {
@@ -122,8 +131,10 @@
   .slogan {
     margin-top: 0;
   }
+  .usp{
+    font-size: 13px;
+  }
 }
-
 .foto-beschrijving {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;

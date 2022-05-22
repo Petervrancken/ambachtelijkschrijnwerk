@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
+import Head from "next/head";
 import axios from "axios";
 // import Swiper bundle
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,6 +13,13 @@ import "swiper/swiper-bundle.min.css";
 export default function Treecycle(treeProps) {
   return (
     <>
+    <Head>
+      <title>Treecycle | Ambachtelijkschrijnwerk.be</title>
+      <link rel="canonical" href="https://ambachtelijkschrijnwerk.be/treecycle" />
+      <meta name="description" content="‘Save a tree’ betekent bij de meeste bedrijven het zo min mogelijk
+            afdrukken op papier. Bij Ambachtelijkschrijnwerk.be interpreteren we
+            dit op een andere manier."/>
+    </Head>
       <div className="backgroundTableTheme">
         <div className="sloganTheme">
           <motion.p

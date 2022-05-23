@@ -44,6 +44,7 @@ function MyApp({ Component, pageProps, router }) {
         </motion.div>
         <Footer />
       </CartProvider>
+      <div className="redline diagonal-box"><div class="content"></div></div>
     </div>
     </>
   );

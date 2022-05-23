@@ -23,7 +23,7 @@ export default function fotoDetail() {
               src={`/static/BigPhoto/${slug}`}
               width={1000}
               height={1000}
-              alt="fotovergroting"
+              alt={`${slug}`}
             ></Image>
           </div>
         </div>

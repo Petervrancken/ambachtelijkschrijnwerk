@@ -21,7 +21,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
   return (
     <>
     <Head>
-      <title>Schrijn en timmerwerken | Ambachtelijkschrijnwerk.be</title>
+      <title>Nieuwe schrijn- en timmerwerken | Ambachtelijkschrijnwerk.be</title>
       <link rel="canonical" href="https://ambachtelijkschrijnwerk.be/schrijnentimmerwerken" />
       <meta name="description" content="Wij maken ons massief schrijnwerk met oog op duurzaamheid en
             esthetiek. We zijn ook gespecialiseerd in het maken van replica’s
@@ -29,7 +29,8 @@ export default function schrijnentimmerwerken(schrijnProps) {
     </Head>
       <div className="backgroundTableTheme">
         <div className="sloganTheme">
-          <motion.p
+        
+          <motion.h1
             initial="hidden"
             animate="visible"
             variants={{
@@ -45,8 +46,9 @@ export default function schrijnentimmerwerken(schrijnProps) {
             }}
             className="sloganText"
           >
-            schrijn en timmerwerken
-          </motion.p>
+            Nieuwe schrijn en timmerwerken
+          </motion.h1>
+          
           <motion.p
             initial="hidden"
             animate="visible"
@@ -240,9 +242,9 @@ export default function schrijnentimmerwerken(schrijnProps) {
                 eik. Hoewel hout een zeer duurzaam bouwmateriaal is, kan na
                 jarenlange blootstelling aan weer en wind, of door aantasting
                 van beestjes of slecht onderhoud restauratie van ...{" "}
-                <a href="/restauratietimmerwerk">
+                <span className="greentext">
                   Lees hier meer over resauratie timmerwerk
-                </a>
+                </span>
               </p>
             </div>
           </a>
@@ -256,9 +258,9 @@ export default function schrijnentimmerwerken(schrijnProps) {
                 We streven steeds na zo veel mogelijk van het originele
                 schrijnwerk te behouden, enkel delen die niet meer gered kunnen
                 worden volgens de regels van de kunst geheel of gedeeltelijk
-                vervangen. <a href="/restauratieschrijnwerk">
+                vervangen. <span className="greentext">
                   Lees hier meer over resauratie schrijnwerk
-                </a>
+                </span>
               </p>
             </div>
           </a>
@@ -272,9 +274,9 @@ export default function schrijnentimmerwerken(schrijnProps) {
                 Platformen en loopbruggen om moeilijk bereikbare plaatsen toch
                 gemakkelijk en veilig te kunnen bereiken kunnen door ons
                 geplaatst worden. Deze structuren dienen om een beter onderhoud
-                te kunnen doen van de gebouwen. <a href="/veiligheid">
+                te kunnen doen van de gebouwen. <span className="greentext">
                   Lees hier meer over veiligheid
-                </a>
+                </span>
               </p>
             </div>
           </a>

@@ -29,13 +29,52 @@
   margin-right: 400px;
   padding: 30px;
 }
-
+iframe {
+  border-top: 0px;
+}
+.redline{
+  position: absolute;
+  opacity: 0.8;
+  top: 0;
+  left: 30%;
+  margin-right: auto;
+  width: 50px;
+  height: 8.8%;
+  background-color: red;
+}
+.diagonal-box {
+	background-image: linear-gradient(45deg, black, red);
+  transform: skewY(150deg) rotate(210deg);
+} 
+.content { 	
+	max-width: 100px;
+    margin: 0 auto; 
+    transform: skewY(12deg);
+}
 .swiper-afbeelding {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-
+.darktext{
+  color: black;
+  text-align: left;
+  max-width: 320px;
+  justify-content: space-around;
+  padding-top: 5px;
+  margin: 0px 30px 0px 30px;
+}
+.buttongroup{
+  margin: 0px 30px 0px 30px;
+}
+.usp-group{
+  margin: 0px 30px 0px 30px;
+}
+.usp-button-group{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .onderwerp {
   margin-top: 20px;
   display: flex;

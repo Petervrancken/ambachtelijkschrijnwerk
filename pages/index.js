@@ -46,13 +46,15 @@ export default function Home(description) {
               Schrijnwerk in ere hersteld en klaar voor de toekomst!
             </h2>
             <p className="introductie-titel">Wie zijn we?</p>
-            <p className="introductie-text">
+            <div className="introductie-text">
               <p>
                 Ambachtelijk Schrijnwerk BV is ontstaan uit de samenwerking van
                 twee gepassioneerde schrijnwerkers: Anton Destrooper en Kristof
                 Van Dooren. Door onze krachten en ervaring te bundelen zijn we
-                klaar voor elk project in massief hout. Samen Hebben we meer dan
-                20 jaar ervaring in zowel <a href="/restaurtie">restauratieschrijnwerk</a> en algemeen
+                klaar voor elk project in massief hout. <br />
+                <br />
+                Samen hebben we meer dan 20 jaar ervaring in zowel{" "}
+                <a href="/restaurtie">restauratieschrijnwerk</a> en algemeen
                 massief schrijnwerk. Al ons schrijnwerk wordt vervaardigd in ons
                 eigen atelier!
               </p>
@@ -62,19 +64,23 @@ export default function Home(description) {
                 <div className="lastusp">
                   &#9989; Dé restauratie specialist in uw buurt
                 </div>
-                <a href="tel:0032495364587" className="Button1">
-                  <div className="uspbutton">Bel ons: +32 495 36 45 87 </div>
-                </a>
-                <a
-                  href="mailto:info@ambachtelijkschrijnwerk.be"
-                  className="Button1"
-                >
-                  <div className="uspbutton">
-                    Mail ons: info@ambachtelijkschrijnwerk.be
-                  </div>
-                </a>
+                <div className="Button1">
+                  <a href="tel:0032495364587" className="uspbutton">
+                    Bel ons: 0495 36 45 87
+                  </a>
+                </div>
+                <div className="Button1">
+                  <a
+                    href="mailto:info@ambachtelijkschrijnwerk.be"
+                    className="uspbutton"
+                  >
+                    <span className="buttonmargin">
+                      Mail ons: info@ambachtelijkschrijnwerk.be
+                    </span>
+                  </a>
+                </div>
               </div>
-            </p>
+            </div>
           </motion.div>
         </div>
       </div>

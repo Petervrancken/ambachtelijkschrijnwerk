@@ -54,7 +54,7 @@ export default function Home(description) {
                 klaar voor elk project in massief hout. <br />
                 <br />
                 Samen hebben we meer dan 20 jaar ervaring in zowel{" "}
-                <a href="/restaurtie">restauratieschrijnwerk</a> en algemeen
+                <a href="/restauratie">restauratieschrijnwerk</a> en algemeen
                 massief schrijnwerk. Al ons schrijnwerk wordt vervaardigd in ons
                 eigen atelier!
               </p>

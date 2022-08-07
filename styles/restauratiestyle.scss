@@ -32,6 +32,40 @@
 iframe {
   border-top: 0px;
 }
+ol._2jvtI li:first-child{
+  ::after{
+    content: "\003E";
+    margin-right:10px;
+    margin-left: 10px;
+    color: white;
+  }
+}
+.onderwerp-bottom.flexxed, .onderwerp-bottom {
+  border-top: 41px solid #a50000;
+  margin-top: 40px!important;
+}
+ol._2jvtI {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  background-color: #a50000;
+  padding: 10px 20px;
+  margin-top: 0px;
+  li{
+    &::first-letter{
+      text-transform: uppercase;
+    }
+    a{
+      color: white;
+      text-decoration:none;
+      transition: 0.5s;
+      &:hover{
+        color: black;
+        background: none;
+      }
+    }
+  }
+}
 .redline{
   position: absolute;
   opacity: 0.8;

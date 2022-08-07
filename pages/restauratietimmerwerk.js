@@ -5,7 +5,8 @@ import Veiligheid from "../public/veiligheid.svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
-import Iframe from "react-iframe";
+
+
 
 import axios from "axios";
 
@@ -284,14 +285,6 @@ export default function Restauratietimmerwerk() {
           </div>
         </div>
       </div>
-      <Iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d516.1092127115969!2d4.641672310513736!3d51.149581665424726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3fd9337827c4f%3A0xe87041190090591!2sGrote%20Steenweg%20105%2C%202560%20Nijlen!5e0!3m2!1sen!2sbe!4v1653338064563!5m2!1sen!2sbe"
-        width="100%"
-        height="450"
-        style={{ border: "0" }}
-        allowfullscreen=""
-        loading="lazy"
-      ></Iframe>
     </>
   );
 }

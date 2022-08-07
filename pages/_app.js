@@ -8,8 +8,8 @@ import media from "../styles/mediastyle.scss";
 import contactstyle from "../styles/contactstyle.scss";
 import footerstyle from "../styles/footerstyle.scss";
 import timmerwerk from "../styles/timmerwerkStyle.scss";
-import { CartProvider } from "react-use-cart";
 import { motion } from "framer-motion";
+import Breadcrumbs from 'nextjs-breadcrumbs';
 
 
 
@@ -22,8 +22,11 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <>
     <div className="bg">
-      <CartProvider>
         <Navbar />
+        <Breadcrumbs
+        useDefaultStyle={true}
+        replaceCharacterList={[{ from: '.', to: ' ' }]}
+      />
         <motion.div
           key={router.route}
           initial="pageInitial"
@@ -43,7 +46,6 @@ function MyApp({ Component, pageProps, router }) {
           <Component {...pageProps} />
         </motion.div>
         <Footer />
-      </CartProvider>
       <div className="redline diagonal-box"><div class="content"></div></div>
     </div>
     </>

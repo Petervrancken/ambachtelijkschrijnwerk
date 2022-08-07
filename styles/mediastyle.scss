@@ -42,7 +42,9 @@
 //normal small screen
 @media only screen and (max-width: 1550px) {
   //restauratie
-
+  .redline {
+    display: none;
+  }
   .onderwerp-bottom {
     //height: 600px;
     display: flex;

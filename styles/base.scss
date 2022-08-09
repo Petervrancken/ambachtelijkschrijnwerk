@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 .bg {
   /* The image used */
-  background-image: url(../afbeeldingen/backgroundpictest.jpg);
+  background-image: url('/backgroundpictest.jpg');
 
   /* Full height */
   width: 100%;
@@ -19,16 +19,16 @@
 }
 @keyframes slideBg {
   0% {
-    background-image: url(../afbeeldingen/backgroundpictest.jpg);
+    background-image: url('/backgroundpictest.jpg');
   }
   30% {
-    background-image: url(../afbeeldingen/backgroundpic3.jpg);
+    background-image: url('/backgroundpic3.jpg');
   }
   60% {
-    background-image: url(../afbeeldingen/backgroundpictest3.jpg);
+    background-image: url('/backgroundpictest3.jpg');
   }
   100% {
-    background-image: url(../afbeeldingen/backgroundpictest.jpg);
+    background-image: url('/backgroundpictest.jpg');
   }
 }
 
@@ -39,7 +39,7 @@ body {
 
 @font-face {
   font-family: WoodHellCompany;
-  src: url("font/WoodHellCompany.otf") format("opentype");
+  src: url("/WoodHellCompany.otf") format("opentype");
 }
 .contactFooter{
   display: flex;

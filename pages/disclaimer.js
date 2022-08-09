@@ -53,7 +53,7 @@ export default function Disclaimer() {
         Disclaimer
       </motion.h1>
       <div className="onderwerp-bottom">
-        <p className="swiper-comment info-page">
+        <div className="swiper-comment info-page">
           <div className="intro contentIntro">
             <p className="p-disclaimer"><strong>In deze disclaimer wordt verstaan onder:</strong></p>
             <ul>
@@ -145,7 +145,7 @@ export default function Disclaimer() {
             </p>
           </div>
           <p>&nbsp;</p>
-        </p>
+        </div>
       </div>
     </>
   );

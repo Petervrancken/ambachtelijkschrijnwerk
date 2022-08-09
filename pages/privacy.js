@@ -53,7 +53,7 @@ export default function Privacy() {
         Privacy policy
       </motion.h1>
       <div className="onderwerp-bottom">
-        <p className="swiper-comment info-page">
+        <div className="swiper-comment info-page">
         <h2>Ons gebruik van verzamelde gegevens</h2>
           <p>
             Wij zijn er van bewust dat u vertrouwen stelt in ons. Wij zien het
@@ -112,7 +112,7 @@ export default function Privacy() {
             privacyverklaring. Het is daarom raadzaam om regelmatig deze
             privacyverklaring te raadplegen.
           </p>
-        </p>
+        </div>
       </div>
     </>
   );

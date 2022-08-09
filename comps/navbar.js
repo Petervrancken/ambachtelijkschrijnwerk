@@ -2,6 +2,8 @@
 import Logo from "../public/logo.svg";
 import Menu from "../public/menu.svg";
 import Link from "next/link";
+import Instagram from "../public/phone.svg";
+import Mail from "../public/mail.svg";
 
 export default function Navbar() {
   return (
@@ -40,6 +42,20 @@ export default function Navbar() {
             <Link href="/contact">
               <a title="ga naar contact">
                 <p>contact</p>
+              </a>
+            </Link>
+          </li>
+          <li className="linkcontact phone-contact">
+            <Link href="tel:0032494364587">
+              <a title="Telefoneer ons!">
+                <Instagram className="instagram-logo phone-logo" />
+              </a>
+            </Link>
+          </li>
+          <li className="linkcontact">
+            <Link href="mailto:info@ambachtelijkschrijnwerk.be">
+              <a title="Mail ons!">
+                <Mail className="instagram-logo phone-logo" />
               </a>
             </Link>
           </li>

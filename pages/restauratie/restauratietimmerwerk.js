@@ -1,10 +1,12 @@
 // SVG imports"
-import Timmerwerk from "../public/timmer.svg";
-import Zaag from "../public/zaag.svg";
-import Veiligheid from "../public/veiligheid.svg";
+import Timmerwerk from "../../public/timmer.svg";
+import Zaag from "../../public/zaag.svg";
+import Veiligheid from "../../public/veiligheid.svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
+
+
 
 import axios from "axios";
 
@@ -17,14 +19,14 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 import "swiper/swiper-bundle.min.css";
 
-export default function Restauratie() {
+export default function Restauratietimmerwerk() {
   return (
     <>
       <Head>
-        <title>Restauratie | Ambachtelijkschrijnwerk.be</title>
+        <title>Restauratie van timmerwerk | Ambachtelijkschrijnwerk.be</title>
         <link
           rel="canonical"
-          href="https://ambachtelijkschrijnwerk.be/restauratie"
+          href="https://ambachtelijkschrijnwerk.be/restauratie/restauratietimmerwerk"
         />
         <meta
           name="description"
@@ -33,7 +35,9 @@ export default function Restauratie() {
             houtwerk."
         />
       </Head>
-      <motion.h1
+      <div className="backgroundTableTheme restauratie-blok">
+        <div className="sloganTheme">
+          <motion.h1
             initial="hidden"
             animate="visible"
             variants={{
@@ -47,11 +51,33 @@ export default function Restauratie() {
                 },
               },
             }}
-            className="sloganText retauratie-slogan"
+            className="sloganText"
           >
-            restauratie
+            Restauratie van timmerwerk
           </motion.h1>
-      <div className="backgroundTableTheme restauratie-blok">
+          <motion.p
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                opacity: 0,
+              },
+              visible: {
+                opacity: 1,
+                transition: {
+                  delay: 1,
+                },
+              },
+            }}
+            className="infoRestauratie"
+          >
+            Dak structuren en andere structurele elementen (bv. moerbalken) in
+            monumenten of andere oude gebouwen zijn meestal gemaakt in eik.
+            Hoewel hout een zeer duurzaam bouwmateriaal is, kan na jarenlange
+            blootstelling aan weer en wind, of door aantasting van beestjes of
+            slecht onderhoud restauratie van doen zijn.
+          </motion.p>
+        </div>
         <motion.div
           initial="hidden"
           animate="visible"
@@ -104,7 +130,7 @@ export default function Restauratie() {
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding1.jpg"
-                      alt="Kerktoren"
+                      alt="Don't forget your alt text"
                     />
                   </a>
                 </Link>
@@ -118,7 +144,7 @@ export default function Restauratie() {
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding2.jpg"
-                      alt="Toren"
+                      alt="Don't forget your alt text"
                     />
                   </a>
                 </Link>
@@ -132,7 +158,7 @@ export default function Restauratie() {
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding3.jpg"
-                      alt="Trap in toren"
+                      alt="Don't forget your alt text"
                     />
                   </a>
                 </Link>
@@ -146,7 +172,7 @@ export default function Restauratie() {
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding4.jpg"
-                      alt="plankjes restaureren"
+                      alt="Don't forget your alt text"
                     />
                   </a>
                 </Link>
@@ -160,7 +186,7 @@ export default function Restauratie() {
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding5.jpg"
-                      alt="Kader raam restauratie"
+                      alt="Don't forget your alt text"
                     />
                   </a>
                 </Link>
@@ -174,7 +200,7 @@ export default function Restauratie() {
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding6.jpg"
-                      alt="Tuinbank restauratie"
+                      alt="Don't forget your alt text"
                     />
                   </a>
                 </Link>
@@ -188,7 +214,7 @@ export default function Restauratie() {
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding7.jpg"
-                      alt="Raam restauratie"
+                      alt="Don't forget your alt text"
                     />
                   </a>
                 </Link>
@@ -202,7 +228,7 @@ export default function Restauratie() {
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding8.jpg"
-                      alt="Raamkader restauratie"
+                      alt="Don't forget your alt text"
                     />
                   </a>
                 </Link>
@@ -226,58 +252,38 @@ export default function Restauratie() {
           }}
         ></motion.div>
       </div>
-      <p className="introductie-titel titel-twee">Wat doen we?</p>
-      <div className="onderwerp-bottom bottom-restauratie">
-        <Link href="/restauratie/restauratietimmerwerk">
-          <a title="naar timmerwerk">
-            <div className="box">
-              <p className="onderwerp-titel">Restauratie van timmerwerk </p>
-              <Timmerwerk className="onderwerp-icoon" />
-              <p className="swiper-comment">
-                Dak structuren en andere structurele elementen (bv. moerbalken)
-                in monumenten of andere oude gebouwen zijn meestal gemaakt in
-                eik. Hoewel hout een zeer duurzaam bouwmateriaal is, kan na
-                jarenlange blootstelling aan weer en wind, of door aantasting
-                van beestjes of slecht onderhoud restauratie van ...{" "}
-                <span className="greentext">
-                  Lees hier meer over resauratie timmerwerk
-                </span>
-              </p>
+      <div className="onderwerp-bottom flexxed">
+        <motion.p
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              opacity: 0,
+            },
+            visible: {
+              opacity: 1,
+              transition: {
+                delay: 1,
+              },
+            },
+          }}
+          className="infoRestauratie darktext"
+        >
+          Zoals bij alle restauratiewerken trachten we zo veel mogelijk van de
+          originele timmerwerken te behouden. We voeren de herstellingen uit met
+          de aloude technieken zoals liplassen of zwaluwstaarten. Ook doen we
+          herstellingen met moderne technieken zoals polymeer-chemisch en
+          glasvezel.
+        </motion.p>
+        <div className="usp usp-button-group">
+          <div className="usp-group">
+            <div>&#9989; 20 jaar ervaring</div>
+            <div>&#9989; Wij gaan voor klantentevredenheid</div>
+            <div className="lastusp">
+              &#9989; Dé restauratie specialist in uw buurt
             </div>
-          </a>
-        </Link>
-        <Link href="/restauratieschrijnwerk">
-          <a title="naar timmerwerk">
-            <div className="box">
-              <p className="onderwerp-titel">Restauratie van schrijnwerk </p>
-              <Zaag className="onderwerp-icoon" />
-              <p className="swiper-comment">
-                We streven steeds na zo veel mogelijk van het originele
-                schrijnwerk te behouden, enkel delen die niet meer gered kunnen
-                worden volgens de regels van de kunst geheel of gedeeltelijk
-                vervangen. <span className="greentext">
-                  Lees hier meer over resauratie schrijnwerk
-                </span>
-              </p>
-            </div>
-          </a>
-        </Link>
-        <Link href="/veiligheid">
-          <a title="naar timmerwerk">
-            <div className="box">
-              <p className="onderwerp-titel">Bereikbaarheid en veiligheid</p>
-              <Veiligheid className="onderwerp-icoon" />
-              <p className="swiper-comment">
-                Platformen en loopbruggen om moeilijk bereikbare plaatsen toch
-                gemakkelijk en veilig te kunnen bereiken kunnen door ons
-                geplaatst worden. Deze structuren dienen om een beter onderhoud
-                te kunnen doen van de gebouwen. <span className="greentext">
-                  Lees hier meer over veiligheid
-                </span>
-              </p>
-            </div>
-          </a>
-        </Link>
+          </div>
+        </div>
       </div>
     </>
   );

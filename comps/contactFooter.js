@@ -1,3 +1,6 @@
+
+import Link from "next/link";
+
 export default function ContactFooter() {
   return (
     <>
@@ -24,9 +27,9 @@ export default function ContactFooter() {
         <div className="contactBlok">
           <h5>Extra</h5>
           <div className="blokInfo">
-          <a href="/restauratieschrijnwerk">Restauratie van schrijnwerk</a>
-          <a href="/restauratievtimmerwerk">Restauratie van timmerwerk</a>
-          <a href="/veiligheid">Bereikbaarheid en veiligheid</a>
+          <Link href="/restauratie/restauratieschrijnwerk">Restauratie van schrijnwerk</Link>
+          <Link href="/restauratie/restauratietimmerwerk">Restauratie van timmerwerk</Link>
+          <Link href="/restauratie/veiligheid">Bereikbaarheid en veiligheid</Link>
           </div>
         </div>
         <div className="contactBlok">

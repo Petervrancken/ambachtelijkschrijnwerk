@@ -31,7 +31,38 @@
     background-image: url('/backgroundpictest.jpg');
   }
 }
-
+.retauratie-slogan{
+  font-family: WoodHellCompany;
+  padding-top: 30px!important;
+}
+div.bottom-restauratie{
+  margin-top:0px!important;
+  border-top: none;
+}
+.phone-contact{
+  padding-left: 25px;
+}
+.restauratie-blok{
+  background-color: rgba(0, 0, 0, 0)!important;
+  margin-top: 0px!important;
+  padding-top:0px!important;
+  padding-bottom:0px!important;
+}
+.swiper-afbeelding img{
+  border-radius: 20px!important;
+  opacity: 0.8;
+  transition: 0.5s;
+  &:hover{
+    opacity: 1;
+  }
+}
+.phone-logo{
+  opacity: 0.7;
+  transition: 0.5s;
+  &:hover{
+    opacity: 1;
+  }
+}
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;

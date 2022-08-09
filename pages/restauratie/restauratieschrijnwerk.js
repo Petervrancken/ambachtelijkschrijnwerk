@@ -1,7 +1,7 @@
 // SVG imports"
-import Timmerwerk from "../public/timmer.svg";
-import Zaag from "../public/zaag.svg";
-import Veiligheid from "../public/veiligheid.svg";
+import Timmerwerk from "../../public/timmer.svg";
+import Zaag from "../../public/zaag.svg";
+import Veiligheid from "../../public/veiligheid.svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
@@ -19,14 +19,14 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 import "swiper/swiper-bundle.min.css";
 
-export default function Restauratietimmerwerk() {
+export default function Restauratieschrijnwerk() {
   return (
     <>
       <Head>
-        <title>Restauratie van timmerwerk | Ambachtelijkschrijnwerk.be</title>
+        <title>Restauratie van schrijnwerk | Ambachtelijkschrijnwerk.be</title>
         <link
           rel="canonical"
-          href="https://ambachtelijkschrijnwerk.be/restauratietimmerwerk"
+          href="https://ambachtelijkschrijnwerk.be/restauratie/restauratieschrijnwerk"
         />
         <meta
           name="description"

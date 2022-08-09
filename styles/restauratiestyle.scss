@@ -32,7 +32,12 @@
 iframe {
   border-top: 0px;
 }
-ol._2jvtI li:first-child{
+ol._2jvtI li:last-child{
+  ::after{
+    display: none;
+  }
+}
+ol._2jvtI li{
   ::after{
     content: "\003E";
     margin-right:10px;

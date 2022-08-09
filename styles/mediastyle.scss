@@ -90,6 +90,16 @@
     margin-right: 10px;
   }
   //index
+  p.introductie-titel.titel-twee {
+    font-size: 18px;
+    padding-top:15px;
+}
+  ol._2jvtI{
+    padding: 10px 20px;
+  }
+  ol._2jvtI li a{
+    font-size: 14px;
+  }
   .introductie-text{
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -114,6 +124,9 @@
 
 // iphone 5
 @media only screen and (max-width: 420px) {
+  .services-image-blocks {
+    flex-wrap: wrap;
+  }
   .infoRestauratie {
     width: 100%;
   }

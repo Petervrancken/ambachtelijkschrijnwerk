@@ -16,6 +16,7 @@ import Breadcrumbs from 'nextjs-breadcrumbs';
 //components
 import Navbar from "../comps/navbar";
 import Footer from "../comps/footer";
+import ContactFooter from "../comps/contactFooter";
 
 // includes Navbar + dropdown.
 function MyApp({ Component, pageProps, router }) {
@@ -45,8 +46,9 @@ function MyApp({ Component, pageProps, router }) {
         >
           <Component {...pageProps} />
         </motion.div>
+        <ContactFooter/>
         <Footer />
-      <div className="redline diagonal-box"><div class="content"></div></div>
+      <div className="redline diagonal-box"><div className="content"></div></div>
     </div>
     </>
   );

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 import "swiper/swiper-bundle.min.css";
 import Head from "next/head";
+import Image from "next/image";
 
 // verander hier je URL endpoints
 const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
@@ -48,15 +49,15 @@ export default function Home(description) {
             <p className="introductie-titel">Wie zijn we?</p>
             <div className="introductie-text">
               <p>
-                Ambachtelijk Schrijnwerk BV is ontstaan uit de samenwerking van
-                twee gepassioneerde schrijnwerkers: Anton Destrooper en Kristof
-                Van Dooren. Door onze krachten en ervaring te bundelen zijn we
-                klaar voor elk project in massief hout. <br />
+                Ambachtelijkschrijnwerk.be is ontstaan uit de samenwerking van
+                twee gepassioneerde restauratieschrijnwerkers: Kristof Van
+                Dooren en Anton Destrooper.
+                <br />
                 <br />
                 Samen hebben we meer dan 20 jaar ervaring in zowel{" "}
                 <a href="/restauratie">restauratieschrijnwerk</a> en algemeen
-                massief schrijnwerk. Al ons schrijnwerk wordt vervaardigd in ons
-                eigen atelier!
+                massief schrijnwerk. In ons atelier zijn we goed uitgerust voor
+                iedere job met massief hout.
               </p>
               <div className="usp">
                 <div>&#9989; 20 jaar ervaring</div>
@@ -64,6 +65,7 @@ export default function Home(description) {
                 <div className="lastusp">
                   &#9989; Dé restauratie specialist in uw buurt
                 </div>
+                
                 <div className="Button1">
                   <a href="tel:0032495364587" className="uspbutton">
                     Bel ons: 0495 36 45 87
@@ -83,6 +85,42 @@ export default function Home(description) {
             </div>
           </motion.div>
         </div>
+      </div>
+      <p className="introductie-titel titel-twee">Wat doen we?</p>
+      <div className="services-image-blocks">
+        <a href="/restauratie" className="image-block">
+          <span>Restauratie</span>
+          <Image
+            height="100%"
+            width="100%"
+            src="/static/BigPhoto/restauratie-afbeelding7.jpg"
+            layout="responsive"
+            objectFit="contain"
+            alt="raam restauratie"
+          />
+        </a>
+        <a href="/schrijnentimmerwerken" className="image-block">
+          <span>Schrijn en timmerwerken</span>
+          <Image
+            height="100%"
+            width="100%"
+            src="/static/BigPhoto/schrijnentimmerwerken-01.jpg"
+            layout="responsive"
+            objectFit="contain"
+            alt="tuinhuis"
+          />
+        </a>
+        <a href="/treecycle" className="image-block">
+          <span>Treecycle</span>
+          <Image
+            height="100%"
+            width="100%"
+            src="/static/BigPhoto/treecycle-08.jpg"
+            layout="responsive"
+            objectFit="contain"
+            alt="snijplank"
+          />
+        </a>
       </div>
     </>
   );

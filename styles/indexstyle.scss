@@ -10,14 +10,18 @@
   flex-wrap: wrap;
   font-family: WoodHellCompany;
   .introductie-titel {
-    color: black;
+    color: #ffffffe0;
     text-align: center;
     font-size: 25px;
-    background-color: white;
+    background-image: linear-gradient(177deg, black, #a50000);
     padding: 5px;
     padding-bottom: 0;
     border-radius: 10px;
   }
+}
+p.introductie-titel.titel-twee {
+  color: #ffffffe0;
+  padding-top: 25px;
 }
 p a {
   color: green;
@@ -33,7 +37,7 @@ p a:hover{
   margin: auto;
   text-align: center;
   font-size: 55px;
-  color: white;
+  color: black;
   text-shadow: 2px 2px 8px #474646;
   width: 100%;
   min-width: 175px;
@@ -41,7 +45,7 @@ p a:hover{
   margin-top: 10px;
 }
 .sloganh1{
-  color: lightgray;
+  color: black;
   font-size: 70px;
   opacity: 0.8;
 }
@@ -69,8 +73,10 @@ p a:hover{
   text-align: center;
   color: white;
   background-color: black;
-  border-radius: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   transition: 0.5s;
+  border: 1px solid #bbbbbb;
   &:hover{
     opacity: 0.8;
   }
@@ -94,7 +100,7 @@ p a:hover{
   text-align: left;
   max-width: 800px;
   padding: 25px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.747);
   border-radius: 20px;
   margin: auto;
   font-size: 18px;

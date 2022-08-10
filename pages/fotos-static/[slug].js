@@ -1,10 +1,8 @@
 import axios from "axios";
 import router, { useRouter } from "next/router";
 import Image from "next/image";
+import Head from "next/head";
 
-//Verander hier je URL vergeet niet op deze pagina ook je foto url aan te passen
-const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
-//const URL = "https://127.0.0.1:8000"; // local url
 
 // De foto met de gevraagde id komt hier binnen.
 export default function fotoDetail() {
@@ -12,6 +10,19 @@ export default function fotoDetail() {
   const { slug } = router.query;
   return (
     <>
+    <Head>
+        <title>Restauratie van timmerwerk | Ambachtelijkschrijnwerk.be</title>
+        <link
+          rel="canonical"
+          href={`https://ambachtelijkschrijnwerk.be/fotos-static/${slug}`}
+        />
+        <meta
+          name="description"
+          content="Aangezien we een grote liefde hebben voor het vakmanschap van
+            weleer, hebben we ons gespecialiseerd in het restaureren van antiek
+            houtwerk."
+        />
+      </Head>
       <div className="backgroundTableTheme">
         <p onClick={() => router.back()} className="previous">
           Terug

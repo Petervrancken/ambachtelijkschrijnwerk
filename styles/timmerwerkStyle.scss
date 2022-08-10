@@ -1,0 +1,32 @@
+.buttons-template {
+  .Button1 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    width: 100%;
+    a {
+      transition: 1.5s;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      &:hover {
+        color: black;
+        font-weight: bold;
+      }
+    }
+  }
+  h5 {
+    font-size: 14px;
+  }
+}
+.title-restauratie {
+  font-weight: 100;
+}
+.onderwerp-bottom.flexxed.bottom-restauratie {
+    justify-content: space-evenly;
+}
+.timmerwerken-bottom{
+    background-color: black;
+    color: white;
+    .slide-afbeelding {
+
+    }
+}

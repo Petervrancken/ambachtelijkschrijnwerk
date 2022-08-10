@@ -6,8 +6,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
 
-
-
 import axios from "axios";
 
 //next imports
@@ -51,7 +49,7 @@ export default function Restauratietimmerwerk() {
                 },
               },
             }}
-            className="sloganText"
+            className="sloganText timmerwerken-h1"
           >
             Restauratie van timmerwerk
           </motion.h1>
@@ -69,7 +67,7 @@ export default function Restauratietimmerwerk() {
                 },
               },
             }}
-            className="infoRestauratie"
+            className="infoRestauratie introductie-text"
           >
             Dak structuren en andere structurele elementen (bv. moerbalken) in
             monumenten of andere oude gebouwen zijn meestal gemaakt in eik.
@@ -88,171 +86,16 @@ export default function Restauratietimmerwerk() {
             visible: {
               opacity: 1,
               transition: {
-                delay: 1.5,
-              },
-            },
-          }}
-        >
-          <Swiper
-            slidesPerView={4}
-            spaceBetween={20}
-            slidesPerGroup={1}
-            navigation={true}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: true,
-            }}
-            breakpoints={{
-              1500: {
-                slidesPerView: 4,
-              },
-              1366: {
-                slidesPerView: 3,
-              },
-              768: {
-                slidesPerView: 2,
-              },
-              320: {
-                slidesPerView: 1,
-              },
-              10: {
-                slidesPerView: 1,
-              },
-            }}
-            // elke foto uitprinten met juiste fotonaam in zijn path
-            className="mySwiper"
-          >
-            <SwiperSlide key="afbeelding1" className="slide-afbeelding">
-              <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding1.jpg">
-                  <a title="klik en vergroot!">
-                    <Image
-                      height={250}
-                      width={250}
-                      src="/static/SmallPhoto/restauratie-afbeelding1.jpg"
-                      alt="Don't forget your alt text"
-                    />
-                  </a>
-                </Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide key="afbeelding2" className="slide-afbeelding">
-              <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding2.jpg">
-                  <a title="klik en vergroot!">
-                    <Image
-                      height={250}
-                      width={250}
-                      src="/static/SmallPhoto/restauratie-afbeelding2.jpg"
-                      alt="Don't forget your alt text"
-                    />
-                  </a>
-                </Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide key="afbeelding3" className="slide-afbeelding">
-              <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding3.jpg">
-                  <a title="klik en vergroot!">
-                    <Image
-                      height={250}
-                      width={250}
-                      src="/static/SmallPhoto/restauratie-afbeelding3.jpg"
-                      alt="Don't forget your alt text"
-                    />
-                  </a>
-                </Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide key="afbeelding4" className="slide-afbeelding">
-              <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding4.jpg">
-                  <a title="klik en vergroot!">
-                    <Image
-                      height={250}
-                      width={250}
-                      src="/static/SmallPhoto/restauratie-afbeelding4.jpg"
-                      alt="Don't forget your alt text"
-                    />
-                  </a>
-                </Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide key="afbeelding5" className="slide-afbeelding">
-              <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding5.jpg">
-                  <a title="klik en vergroot!">
-                    <Image
-                      height={250}
-                      width={250}
-                      src="/static/SmallPhoto/restauratie-afbeelding5.jpg"
-                      alt="Don't forget your alt text"
-                    />
-                  </a>
-                </Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide key="afbeelding6" className="slide-afbeelding">
-              <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding6.jpg">
-                  <a title="klik en vergroot!">
-                    <Image
-                      height={250}
-                      width={250}
-                      src="/static/SmallPhoto/restauratie-afbeelding6.jpg"
-                      alt="Don't forget your alt text"
-                    />
-                  </a>
-                </Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide key="afbeelding7" className="slide-afbeelding">
-              <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding7.jpg">
-                  <a title="klik en vergroot!">
-                    <Image
-                      height={250}
-                      width={250}
-                      src="/static/SmallPhoto/restauratie-afbeelding7.jpg"
-                      alt="Don't forget your alt text"
-                    />
-                  </a>
-                </Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide key="afbeelding8" className="slide-afbeelding">
-              <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding8.jpg">
-                  <a title="klik en vergroot!">
-                    <Image
-                      height={250}
-                      width={250}
-                      src="/static/SmallPhoto/restauratie-afbeelding8.jpg"
-                      alt="Don't forget your alt text"
-                    />
-                  </a>
-                </Link>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </motion.div>
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: {
-              opacity: 0,
-            },
-            visible: {
-              opacity: 1,
-              transition: {
                 delay: 2,
               },
             },
           }}
         ></motion.div>
       </div>
-      <div className="onderwerp-bottom flexxed">
+      <h2 className="introductie-titel titel-twee title-restauratie">
+        Bekijk onze projecten voor restauratie timmerwerken
+      </h2>
+      <div className="onderwerp-bottom flexxed bottom-restauratie">
         <motion.p
           initial="hidden"
           animate="visible"
@@ -263,7 +106,7 @@ export default function Restauratietimmerwerk() {
             visible: {
               opacity: 1,
               transition: {
-                delay: 1,
+                delay: 0,
               },
             },
           }}
@@ -282,6 +125,110 @@ export default function Restauratietimmerwerk() {
             <div className="lastusp">
               &#9989; Dé restauratie specialist in uw buurt
             </div>
+          </div>
+        </div>
+        <div className="buttons-template">
+          <h5>Wilt u graag meer weten over onze diensten?</h5>
+          <div className="Button1">
+            <a href="tel:0032495364587" className="uspbutton">
+              Bel ons: 0495 36 45 87
+            </a>
+          </div>
+          <div className="Button1">
+            <a
+              href="mailto:info@ambachtelijkschrijnwerk.be"
+              className="uspbutton"
+            >
+              <span className="buttonmargin">
+                Mail ons: info@ambachtelijkschrijnwerk.be
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
+        <div key="afbeelding1" className="slide-afbeelding">
+          <div className="swiper-afbeelding">
+            <Link href="/fotos-static/restauratie-afbeelding1.jpg">
+              <a title="klik en vergroot!">
+                <Image
+                  height={250}
+                  width={250}
+                  src="/static/SmallPhoto/restauratie-afbeelding1.jpg"
+                  alt="Kerktoren"
+                />
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div key="afbeelding2" className="slide-afbeelding">
+          <div className="swiper-afbeelding">
+            <Link href="/fotos-static/restauratie-afbeelding2.jpg">
+              <a title="klik en vergroot!">
+                <Image
+                  height={250}
+                  width={250}
+                  src="/static/SmallPhoto/restauratie-afbeelding2.jpg"
+                  alt="Toren"
+                />
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div key="afbeelding3" className="slide-afbeelding">
+          <div className="swiper-afbeelding">
+            <Link href="/fotos-static/restauratie-afbeelding3.jpg">
+              <a title="klik en vergroot!">
+                <Image
+                  height={250}
+                  width={250}
+                  src="/static/SmallPhoto/restauratie-afbeelding3.jpg"
+                  alt="Trap in toren"
+                />
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div key="afbeelding3" className="slide-afbeelding">
+          <div className="swiper-afbeelding">
+            <Link href="/fotos-static/restauratie-afbeelding3.jpg">
+              <a title="klik en vergroot!">
+                <Image
+                  height={250}
+                  width={250}
+                  src="/static/SmallPhoto/restauratie-afbeelding3.jpg"
+                  alt="Trap in toren"
+                />
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div key="afbeelding3" className="slide-afbeelding">
+          <div className="swiper-afbeelding">
+            <Link href="/fotos-static/restauratie-afbeelding3.jpg">
+              <a title="klik en vergroot!">
+                <Image
+                  height={250}
+                  width={250}
+                  src="/static/SmallPhoto/restauratie-afbeelding3.jpg"
+                  alt="Trap in toren"
+                />
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div key="afbeelding3" className="slide-afbeelding">
+          <div className="swiper-afbeelding">
+            <Link href="/fotos-static/restauratie-afbeelding3.jpg">
+              <a title="klik en vergroot!">
+                <Image
+                  height={250}
+                  width={250}
+                  src="/static/SmallPhoto/restauratie-afbeelding3.jpg"
+                  alt="Trap in toren"
+                />
+              </a>
+            </Link>
           </div>
         </div>
       </div>

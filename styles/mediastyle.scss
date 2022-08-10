@@ -75,6 +75,21 @@
 
 // ipad
 @media only screen and (max-width: 768px) {
+  .contactFooter .contactBlok {
+    width: 300px;
+    min-width: 250px;
+    font-size: 14px;
+}
+  h2.introductie-titel.titel-twee.title-restauratie {
+    font-size: 16px;
+}
+.buttons-template {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.usp.usp-button-group {
+  padding-top: 50px;
+}
   //restauratie
   .redline{
     display: none;

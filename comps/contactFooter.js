@@ -17,10 +17,10 @@ export default function ContactFooter() {
         <div className="contactBlok">
           <h5>Diensten</h5>
           <div className="blokInfo">
-            <a href="/restauratie">Restauratie</a>
-            <a href="/schrijnentimmerwerken">
+            <Link href="/restauratie">Restauratie</Link>
+            <Link href="/schrijnentimmerwerken">
               Schrijn en timmerwerken
-            </a>
+            </Link>
             <a href="/treecyle">Treecycle</a>
           </div>
         </div>
@@ -33,12 +33,12 @@ export default function ContactFooter() {
           </div>
         </div>
         <div className="contactBlok">
-          <h5>Contact info</h5>
+          <h5>Information</h5>
           <div className="blokInfo">
-            <a href="/privacy">Privacy Policy</a>
-            <a href="/disclaimer">
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/disclaimer">
               Disclaimer
-            </a>
+            </Link>
           </div>
           <p>Copyright © 2022</p>
           <p>All rights reserved.</p>

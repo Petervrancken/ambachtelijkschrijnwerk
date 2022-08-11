@@ -146,92 +146,143 @@ export default function Restauratietimmerwerk() {
           </div>
         </div>
       </div>
-      <div className="onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
-        <div key="afbeelding1" className="slide-afbeelding">
-          <div className="swiper-afbeelding">
-            <Link href="/fotos-static/restauratie-afbeelding1.jpg">
-              <a title="klik en vergroot!">
-                <Image
-                  height={250}
-                  width={250}
-                  src="/static/SmallPhoto/restauratie-afbeelding1.jpg"
-                  alt="Kerktoren"
-                />
-              </a>
-            </Link>
+      <div className="diensten-restauratie resto onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
+        <h2 className="project-titel">Restaurtatie van Duifhuis te Bokrijk</h2>
+        <div className="afbeeldingen-box">
+          <div
+            key="afbeelding1"
+            className="slide-afbeelding diensten-afbeeldingen"
+          >
+            <div className="swiper-afbeelding">
+              <Link href="/fotos-static/duifhuis-bokrijk-2.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    objectFit="cover"
+                    src="/static/SmallPhoto/duifhuis-bokrijk-2.jpg"
+                    alt="Kerktoren"
+                  />
+                </a>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div key="afbeelding2" className="slide-afbeelding">
-          <div className="swiper-afbeelding">
-            <Link href="/fotos-static/restauratie-afbeelding2.jpg">
-              <a title="klik en vergroot!">
-                <Image
-                  height={250}
-                  width={250}
-                  src="/static/SmallPhoto/restauratie-afbeelding2.jpg"
-                  alt="Toren"
-                />
-              </a>
-            </Link>
+          <div
+            key="afbeelding2"
+            className="slide-afbeelding diensten-afbeeldingen"
+          >
+            <div className="swiper-afbeelding">
+              <Link href="/fotos-static/duifhuis-bokrijk.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    objectFit="cover"
+                    src="/static/SmallPhoto/duifhuis-bokrijk.jpg"
+                    alt="Toren"
+                  />
+                </a>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div key="afbeelding3" className="slide-afbeelding">
-          <div className="swiper-afbeelding">
-            <Link href="/fotos-static/restauratie-afbeelding3.jpg">
-              <a title="klik en vergroot!">
-                <Image
-                  height={250}
-                  width={250}
-                  src="/static/SmallPhoto/restauratie-afbeelding3.jpg"
-                  alt="Trap in toren"
-                />
-              </a>
-            </Link>
+          <div
+            key="afbeelding3"
+            className="slide-afbeelding diensten-afbeeldingen"
+          >
+            <div className="swiper-afbeelding">
+              <Link href="/fotos-static/duifhuis-bokrijk-3.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    objectFit="cover"
+                    src="/static/SmallPhoto/duifhuis-bokrijk-3.jpg"
+                    alt="Trap in toren"
+                  />
+                </a>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div key="afbeelding3" className="slide-afbeelding">
-          <div className="swiper-afbeelding">
-            <Link href="/fotos-static/restauratie-afbeelding3.jpg">
-              <a title="klik en vergroot!">
-                <Image
-                  height={250}
-                  width={250}
-                  src="/static/SmallPhoto/restauratie-afbeelding3.jpg"
-                  alt="Trap in toren"
-                />
-              </a>
-            </Link>
-          </div>
-        </div>
-        <div key="afbeelding3" className="slide-afbeelding">
-          <div className="swiper-afbeelding">
-            <Link href="/fotos-static/restauratie-afbeelding3.jpg">
-              <a title="klik en vergroot!">
-                <Image
-                  height={250}
-                  width={250}
-                  src="/static/SmallPhoto/restauratie-afbeelding3.jpg"
-                  alt="Trap in toren"
-                />
-              </a>
-            </Link>
-          </div>
-        </div>
-        <div key="afbeelding3" className="slide-afbeelding">
-          <div className="swiper-afbeelding">
-            <Link href="/fotos-static/restauratie-afbeelding3.jpg">
-              <a title="klik en vergroot!">
-                <Image
-                  height={250}
-                  width={250}
-                  src="/static/SmallPhoto/restauratie-afbeelding3.jpg"
-                  alt="Trap in toren"
-                />
-              </a>
-            </Link>
+          <div
+            key="afbeelding3"
+            className="slide-afbeelding diensten-afbeeldingen"
+          >
+            <div className="swiper-afbeelding">
+              <Link href="/fotos-static/duifhuis-bokrijk-5.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    objectFit="cover"
+                    src="/static/SmallPhoto/duifhuis-bokrijk-5.jpg"
+                    alt="Trap in toren"
+                  />
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
+      <div className="diensten-restauratie diensten-restauratie-2 onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
+        <div className="afbeeldingen-box">
+          <div
+            key="afbeelding1"
+            className="slide-afbeelding diensten-afbeeldingen"
+          >
+            <div className="swiper-afbeelding">
+              <Link href="/fotos-static/duifhuis-bokrijk-2.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    objectFit="cover"
+                    src="/static/SmallPhoto/duifhuis-bokrijk-2.jpg"
+                    alt="Kerktoren"
+                  />
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div
+            key="afbeelding2"
+            className="slide-afbeelding diensten-afbeeldingen"
+          >
+            <div className="swiper-afbeelding">
+              <Link href="/fotos-static/duifhuis-bokrijk.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    objectFit="cover"
+                    src="/static/SmallPhoto/duifhuis-bokrijk.jpg"
+                    alt="Toren"
+                  />
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div
+            key="afbeelding3"
+            className="slide-afbeelding diensten-afbeeldingen"
+          >
+            <div className="swiper-afbeelding">
+              <Link href="/fotos-static/duifhuis-bokrijk-3.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    objectFit="cover"
+                    src="/static/SmallPhoto/duifhuis-bokrijk-3.jpg"
+                    alt="Trap in toren"
+                  />
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <h2 className="project-titel">Restaurtatie van Duifhuis te Bokrijk</h2>
+      </div>
+      <div className="background-diensten"></div>
     </>
   );
 }

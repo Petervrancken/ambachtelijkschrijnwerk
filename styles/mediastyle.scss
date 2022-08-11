@@ -41,6 +41,27 @@
 
 //normal small screen
 @media only screen and (max-width: 1550px) {
+  .diensten-restauratie.onderwerp-bottom.flexxed.bottom-restauratie.timmerwerken-bottom{
+    justify-content: center!important;
+  }
+  .diensten-restauratie-2{
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+  }
+  .afbeeldingen-box{
+    justify-content: center;
+    flex-wrap: wrap;
+    img{
+      width: 100%!important;
+      min-width: 100px!important;
+    }
+    .slide-afbeelding.diensten-afbeeldingen{
+      min-width: 100px;
+    }
+  }
+  .slide-afbeelding.diensten-afbeeldingen {
+   
+}
   //restauratie
   .redline {
     display: none;

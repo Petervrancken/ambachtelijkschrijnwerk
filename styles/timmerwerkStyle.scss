@@ -26,7 +26,63 @@
 .timmerwerken-bottom{
     background-color: black;
     color: white;
+    padding:0px;
     .slide-afbeelding {
 
     }
+}
+.diensten-afbeeldingen {
+  margin:10px;
+  &:hover{
+    transform: none;
+  }
+  img{
+    border-radius: 0px!important;
+    border: 0px!important;
+  }
+}
+.diensten-restauratie{
+  justify-content: right!important;
+}
+.project-titel{
+  text-align: center;
+  margin:auto;
+  font-family: WoodHellCompany;
+  font-weight: 100;
+  max-width: 300px;
+}
+.afbeeldingen-box{
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  img{
+
+  }
+}
+.background-diensten{
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-image: url("/static/BigPhoto/duifhuis-bokrijk-6.jpg");
+}
+.diensten-restauratie-2{
+  background-color: white;
+  h2{
+    color: black;
+    padding-top:50px;
+    padding-bottom: 30px;
+  }
+}
+.diensten-restauratie h2{
+  padding-top:50px;
+    padding-bottom: 30px;
+}
+.diensten-restauratie.resto.onderwerp-bottom.flexxed.bottom-restauratie.timmerwerken-bottom{
+  img{
+    opacity: 0.5;
+    transition: 0.5s;
+    &:hover{
+      opacity: 1;
+    }
+  }
 }

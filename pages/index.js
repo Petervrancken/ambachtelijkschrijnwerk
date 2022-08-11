@@ -6,6 +6,7 @@ SwiperCore.use([Autoplay, Pagination, Navigation]);
 import "swiper/swiper-bundle.min.css";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 // verander hier je URL endpoints
 const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
@@ -88,6 +89,7 @@ export default function Home(description) {
       </div>
       <p className="introductie-titel titel-twee">Wat doen we?</p>
       <div className="services-image-blocks">
+        <Link href="/restauratie">
         <a href="/restauratie" className="image-block">
           <span>Restauratie</span>
           <Image
@@ -99,6 +101,8 @@ export default function Home(description) {
             alt="raam restauratie"
           />
         </a>
+        </Link>
+        <Link href="/schrijnentimmerwerken">
         <a href="/schrijnentimmerwerken" className="image-block">
           <span>Schrijn en timmerwerken</span>
           <Image
@@ -110,6 +114,8 @@ export default function Home(description) {
             alt="tuinhuis"
           />
         </a>
+        </Link>
+        <Link href="/treecycle">
         <a href="/treecycle" className="image-block">
           <span>Treecycle</span>
           <Image
@@ -121,6 +127,7 @@ export default function Home(description) {
             alt="snijplank"
           />
         </a>
+        </Link>
       </div>
     </>
   );

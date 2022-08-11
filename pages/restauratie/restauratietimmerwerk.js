@@ -186,7 +186,7 @@ export default function Restauratietimmerwerk() {
             </div>
           </div>
           <div
-            key="afbeelding3"
+            key="afbeelding7"
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
@@ -226,7 +226,7 @@ export default function Restauratietimmerwerk() {
       <div className="diensten-restauratie diensten-restauratie-2 onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
         <div className="afbeeldingen-box">
           <div
-            key="afbeelding1"
+            key="afbeelding4"
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
@@ -244,7 +244,7 @@ export default function Restauratietimmerwerk() {
             </div>
           </div>
           <div
-            key="afbeelding2"
+            key="afbeelding5"
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
@@ -262,7 +262,7 @@ export default function Restauratietimmerwerk() {
             </div>
           </div>
           <div
-            key="afbeelding3"
+            key="afbeelding6"
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">

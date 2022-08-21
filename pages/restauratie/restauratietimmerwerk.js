@@ -230,13 +230,13 @@ export default function Restauratietimmerwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-2.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/vakwerkherstel-bokrijk-2.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/duifhuis-bokrijk-2.jpg"
+                    src="/static/SmallPhoto/vakwerkherstel-bokrijk-2.jpg"
                     alt="Kerktoren"
                   />
                 </a>
@@ -248,39 +248,21 @@ export default function Restauratietimmerwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/vakwerkherstel-bokrijk.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/duifhuis-bokrijk.jpg"
+                    src="/static/SmallPhoto/vakwerkherstel-bokrijk.jpg"
                     alt="Toren"
                   />
                 </a>
               </Link>
             </div>
           </div>
-          <div
-            key="afbeelding6"
-            className="slide-afbeelding diensten-afbeeldingen"
-          >
-            <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-3.jpg">
-                <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    objectFit="cover"
-                    src="/static/SmallPhoto/duifhuis-bokrijk-3.jpg"
-                    alt="Trap in toren"
-                  />
-                </a>
-              </Link>
-            </div>
-          </div>
         </div>
-        <h2 className="project-titel">Restaurtatie van Duifhuis te Bokrijk</h2>
+        <h2 className="project-titel">Stal in restauratie te Bokrijk</h2>
       </div>
       <div className="background-diensten"></div>
     </>

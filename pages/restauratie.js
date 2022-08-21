@@ -246,7 +246,7 @@ export default function Restauratie() {
             </div>
           </a>
         </Link>
-        <Link href="/restauratieschrijnwerk">
+        <Link href="/restauratie/restauratieschrijnwerk">
           <a title="naar timmerwerk">
             <div className="box">
               <p className="onderwerp-titel">Restauratie van schrijnwerk </p>
@@ -262,7 +262,7 @@ export default function Restauratie() {
             </div>
           </a>
         </Link>
-        <Link href="/veiligheid">
+        <Link href="/restaurtatie/veiligheid">
           <a title="naar timmerwerk">
             <div className="box">
               <p className="onderwerp-titel">Bereikbaarheid en veiligheid</p>

@@ -11,16 +11,9 @@ export default function fotoDetail() {
   return (
     <>
     <Head>
-        <title>Restauratie van timmerwerk | Ambachtelijkschrijnwerk.be</title>
         <link
           rel="canonical"
           href={`https://ambachtelijkschrijnwerk.be/restauratie/${slug}`}
-        />
-        <meta
-          name="description"
-          content="Aangezien we een grote liefde hebben voor het vakmanschap van
-            weleer, hebben we ons gespecialiseerd in het restaureren van antiek
-            houtwerk."
         />
       </Head>
       <div className="backgroundTableTheme">

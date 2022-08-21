@@ -124,7 +124,7 @@ export default function Restauratieschrijnwerk() {
           >
             <SwiperSlide key="afbeelding1" className="slide-afbeelding">
               <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding1.jpg">
+                <Link href="/restauratieschrijnwerk/restauratie-afbeelding1.jpg">
                   <a title="klik en vergroot!">
                     <Image
                       height={250}

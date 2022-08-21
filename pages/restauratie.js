@@ -98,7 +98,7 @@ export default function Restauratie() {
           >
             <SwiperSlide key="afbeelding1" className="slide-afbeelding">
               <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding1.jpg">
+                <Link href="/restauratie/restauratie-afbeelding1.jpg">
                   <a title="klik en vergroot!">
                     <Image
                       height={250}
@@ -112,7 +112,7 @@ export default function Restauratie() {
             </SwiperSlide>
             <SwiperSlide key="afbeelding2" className="slide-afbeelding">
               <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding2.jpg">
+                <Link href="/restauratie/restauratie-afbeelding2.jpg">
                   <a title="klik en vergroot!">
                     <Image
                       height={250}
@@ -126,7 +126,7 @@ export default function Restauratie() {
             </SwiperSlide>
             <SwiperSlide key="afbeelding3" className="slide-afbeelding">
               <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding3.jpg">
+                <Link href="/restauratie/restauratie-afbeelding3.jpg">
                   <a title="klik en vergroot!">
                     <Image
                       height={250}
@@ -140,7 +140,7 @@ export default function Restauratie() {
             </SwiperSlide>
             <SwiperSlide key="afbeelding4" className="slide-afbeelding">
               <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding4.jpg">
+                <Link href="/restauratie/restauratie-afbeelding4.jpg">
                   <a title="klik en vergroot!">
                     <Image
                       height={250}
@@ -154,7 +154,7 @@ export default function Restauratie() {
             </SwiperSlide>
             <SwiperSlide key="afbeelding5" className="slide-afbeelding">
               <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding5.jpg">
+                <Link href="/restauratie/restauratie-afbeelding5.jpg">
                   <a title="klik en vergroot!">
                     <Image
                       height={250}
@@ -168,7 +168,7 @@ export default function Restauratie() {
             </SwiperSlide>
             <SwiperSlide key="afbeelding6" className="slide-afbeelding">
               <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding6.jpg">
+                <Link href="/restauratie/restauratie-afbeelding6.jpg">
                   <a title="klik en vergroot!">
                     <Image
                       height={250}
@@ -182,7 +182,7 @@ export default function Restauratie() {
             </SwiperSlide>
             <SwiperSlide key="afbeelding7" className="slide-afbeelding">
               <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding7.jpg">
+                <Link href="/restauratie/restauratie-afbeelding7.jpg">
                   <a title="klik en vergroot!">
                     <Image
                       height={250}
@@ -196,7 +196,7 @@ export default function Restauratie() {
             </SwiperSlide>
             <SwiperSlide key="afbeelding8" className="slide-afbeelding">
               <div className="swiper-afbeelding">
-                <Link href="/fotos-static/restauratie-afbeelding8.jpg">
+                <Link href="/restauratie/restauratie-afbeelding8.jpg">
                   <a title="klik en vergroot!">
                     <Image
                       height={250}

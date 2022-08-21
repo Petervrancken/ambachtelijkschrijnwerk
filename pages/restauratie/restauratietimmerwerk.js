@@ -154,7 +154,7 @@ export default function Restauratietimmerwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/fotos-static/duifhuis-bokrijk-2.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-2.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
@@ -172,7 +172,7 @@ export default function Restauratietimmerwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/fotos-static/duifhuis-bokrijk.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
@@ -190,7 +190,7 @@ export default function Restauratietimmerwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/fotos-static/duifhuis-bokrijk-3.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-3.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
@@ -208,7 +208,7 @@ export default function Restauratietimmerwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/fotos-static/duifhuis-bokrijk-5.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-5.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
@@ -230,7 +230,7 @@ export default function Restauratietimmerwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/fotos-static/duifhuis-bokrijk-2.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-2.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
@@ -248,7 +248,7 @@ export default function Restauratietimmerwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/fotos-static/duifhuis-bokrijk.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
@@ -266,7 +266,7 @@ export default function Restauratietimmerwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/fotos-static/duifhuis-bokrijk-3.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-3.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}

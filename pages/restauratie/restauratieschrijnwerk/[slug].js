@@ -14,7 +14,7 @@ export default function fotoDetail() {
     <Head>
         <link
           rel="canonical"
-          href={`https://ambachtelijkschrijnwerk.be/restauratie/restauratietimmerwerk/${slug}`}
+          href={`https://ambachtelijkschrijnwerk.be/restauratie/restauratieschrijnwerk/${slug}`}
         />
       </Head>
       <div className="backgroundTableTheme">

@@ -262,7 +262,7 @@ export default function Restauratietimmerwerk() {
             </div>
           </div>
         </div>
-        <h2 className="project-titel">Stal in restauratie te Bokrijk</h2>
+        <h2 className="project-title-white one-line">Stal in restauratie te Bokrijk</h2>
       </div>
       <div className="background-diensten"></div>
     </>

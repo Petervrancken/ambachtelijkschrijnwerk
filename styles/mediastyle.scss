@@ -41,6 +41,46 @@
 
 //normal small screen
 @media only screen and (max-width: 1550px) {
+  .diensten-restauratie.resto.onderwerp-bottom.flexxed.bottom-restauratie.timmerwerken-bottom {
+    padding-top: 0px!important;
+    padding-bottom: 50px;
+  }
+  .diensten-restauratie.diensten-restauratie-2.onderwerp-bottom.flexxed.bottom-restauratie.timmerwerken-bottom {
+    padding-bottom: 50px;
+  }
+  .project-title-white{
+    margin-right: none;
+    margin: auto!important;
+    width: 100%;
+    max-width: 100%!important;
+    text-align: center!important;
+    &:before{
+      top: 98%!important;
+      height: 3px!important;
+    }
+    &:after{
+      height: 3px!important;
+      width: 300px;
+    }
+  }
+  .project-titel{
+    margin-right: none;
+    margin: auto!important;
+    width: 100%;
+    max-width: 100%!important;
+    text-align: center!important;
+    &:before{
+      top: 98%!important;
+      height: 3px!important;
+    }
+    &:after{
+      height: 3px!important;
+      width: 300px;
+    }
+  }
+  h2.one-line{
+    padding-top: 95px!important;
+  }
   .diensten-restauratie.onderwerp-bottom.flexxed.bottom-restauratie.timmerwerken-bottom{
     justify-content: center!important;
   }
@@ -160,6 +200,12 @@
 
 // iphone 5
 @media only screen and (max-width: 420px) {
+  ol._2jvtI li a{
+    font-size: 10px;
+  }
+  ol._2jvtI {
+    padding-top: 3px;
+}
   .services-image-blocks {
     flex-wrap: wrap;
   }

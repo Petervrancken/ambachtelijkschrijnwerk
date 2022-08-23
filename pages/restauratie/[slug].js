@@ -28,6 +28,7 @@ export default function fotoDetail() {
               width={1000}
               height={1000}
               alt={`${slug}`}
+              objectFit="cover"
             ></Image>
           </div>
         </div>

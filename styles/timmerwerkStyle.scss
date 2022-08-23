@@ -45,8 +45,8 @@
   justify-content: right!important;
 }
 .project-titel{
-  text-align: center;
-  margin:auto;
+  text-align: right;
+  margin-left:auto;
   font-family: WoodHellCompany;
   font-weight: 100;
   max-width: 300px;
@@ -56,9 +56,9 @@
     display: block;
     width: 100%;
     height: 7px;
-    background-image: linear-gradient(357deg, black, #a50000);
+    background-image: linear-gradient(357deg, #a50000, #000000);
     left: 0;
-    top: 89%;
+    top: 72%;
     position: absolute;
   }
   &:after{
@@ -66,9 +66,9 @@
     display: block;
     width: 100%;
     height: 6px;
-    background-image: linear-gradient(357deg, black, #a50000);
+    background-image: linear-gradient(357deg, #a50000, #000000);
     right: 0;
-    top: 22px;
+    top: 61px;
     position: absolute;
   }
 }
@@ -79,6 +79,45 @@
   img{
 
   }
+}
+.project-title-white{
+  text-align: left;
+  margin-right:auto;
+  font-family: WoodHellCompany;
+  font-weight: 100;
+  max-width: 300px;
+  position: relative;
+  &:before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 7px;
+    background-image: linear-gradient(357deg, rgb(255, 255, 255), #a50000);
+    left: 0;
+    top: 72%;
+    position: absolute;
+  }
+  &:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-image: linear-gradient(357deg, rgb(255, 255, 255), #a50000);
+    right: 0;
+    top: 61px;
+    position: absolute;
+  }
+}
+.diensten-restauratie h2.project-title-white {
+  padding-top: 112px;
+  padding-bottom: 30px;
+}
+ol._2jvtI{
+  flex-wrap: wrap;
+}
+.diensten-restauratie h2.project-title-white.two-lines {
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 .background-diensten{
   width: 100%;
@@ -95,7 +134,7 @@
   }
 }
 .diensten-restauratie h2{
-  padding-top:50px;
+  padding-top:100px;
     padding-bottom: 30px;
 }
 .diensten-restauratie.resto.onderwerp-bottom.flexxed.bottom-restauratie.timmerwerken-bottom{

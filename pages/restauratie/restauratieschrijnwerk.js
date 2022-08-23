@@ -90,7 +90,7 @@ export default function Restauratieschrijnwerk() {
         ></motion.div>
       </div>
       <h2 className="introductie-titel titel-twee title-restauratie">
-        Bekijk onze projecten voor restauratie timmerwerken
+        Bekijk onze projecten voor restauratieschrijnwerk
       </h2>
       <div className="onderwerp-bottom flexxed bottom-restauratie">
         <motion.p
@@ -142,21 +142,21 @@ export default function Restauratieschrijnwerk() {
         </div>
       </div>
       <div className="diensten-restauratie resto onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
-        <h2 className="project-titel">Restaurtatie van Duifhuis te Bokrijk</h2>
+        <h2 className="project-titel">Restaurtatieschrijnwerk antieke trap</h2>
         <div className="afbeeldingen-box">
           <div
             key="afbeelding1"
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-2.jpg">
+              <Link href="/restauratie/restauratieschrijnwerk/antieke-trap.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/duifhuis-bokrijk-2.jpg"
-                    alt="Kerktoren"
+                    src="/static/SmallPhoto/antieke-trap.jpg"
+                    alt="antieke trap plaatsen"
                   />
                 </a>
               </Link>
@@ -167,14 +167,14 @@ export default function Restauratieschrijnwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk.jpg">
+              <Link href="/restauratie/restauratieschrijnwerk/antieke-trap-2.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/duifhuis-bokrijk.jpg"
-                    alt="Toren"
+                    src="/static/SmallPhoto/antieke-trap-2.jpg"
+                    alt="antieke trap verwijderen"
                   />
                 </a>
               </Link>
@@ -185,14 +185,14 @@ export default function Restauratieschrijnwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-3.jpg">
+              <Link href="/restauratie/restauratieschrijnwerk/antieke-trap-3.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/duifhuis-bokrijk-3.jpg"
-                    alt="Trap in toren"
+                    src="/static/SmallPhoto/antieke-trap-3.jpg"
+                    alt="antieke trap atelier"
                   />
                 </a>
               </Link>
@@ -203,14 +203,14 @@ export default function Restauratieschrijnwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-5.jpg">
+              <Link href="/restauratie/restauratieschrijnwerk/antieke-trap-4.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/duifhuis-bokrijk-5.jpg"
-                    alt="Trap in toren"
+                    src="/static/SmallPhoto/antieke-trap-4.jpg"
+                    alt="antieke trap"
                   />
                 </a>
               </Link>
@@ -225,14 +225,14 @@ export default function Restauratieschrijnwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-2.jpg">
+              <Link href="/restauratie/restauratieschrijnwerk/den-wolsack-2.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/duifhuis-bokrijk-2.jpg"
-                    alt="Kerktoren"
+                    src="/static/SmallPhoto/den-wolsack-2.jpg"
+                    alt="traprestauraties"
                   />
                 </a>
               </Link>
@@ -243,39 +243,80 @@ export default function Restauratieschrijnwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk.jpg">
+              <Link href="/restauratie/restauratieschrijnwerk/den-wolsack-1.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/duifhuis-bokrijk.jpg"
-                    alt="Toren"
-                  />
-                </a>
-              </Link>
-            </div>
-          </div>
-          <div
-            key="afbeelding6"
-            className="slide-afbeelding diensten-afbeeldingen"
-          >
-            <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-3.jpg">
-                <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    objectFit="cover"
-                    src="/static/SmallPhoto/duifhuis-bokrijk-3.jpg"
-                    alt="Trap in toren"
+                    src="/static/SmallPhoto/den-wolsack-1.jpg"
+                    alt="traprestauratie"
                   />
                 </a>
               </Link>
             </div>
           </div>
         </div>
-        <h2 className="project-titel">Restaurtatie van Duifhuis te Bokrijk</h2>
+        <h2 className="project-title-white two-lines">Restaurtatieschrijnwerk den Wolsack</h2>
+      </div>
+      <div className="diensten-restauratie resto onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
+        <h2 className="project-titel">Restaurtatieschrijnwerk van waaiers</h2>
+        <div className="afbeeldingen-box">
+          <div
+            key="afbeelding1"
+            className="slide-afbeelding diensten-afbeeldingen"
+          >
+            <div className="swiper-afbeelding">
+              <Link href="/restauratie/restauratieschrijnwerk/waaier.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    objectFit="cover"
+                    src="/static/SmallPhoto/waaier.jpg"
+                    alt="restauratieschrijnwer waaier"
+                  />
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div
+            key="afbeelding2"
+            className="slide-afbeelding diensten-afbeeldingen"
+          >
+            <div className="swiper-afbeelding">
+              <Link href="/restauratie/restauratieschrijnwerk/waaier-2.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    objectFit="cover"
+                    src="/static/SmallPhoto/waaier-2.jpg"
+                    alt="restauratie waaiers"
+                  />
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div
+            key="afbeelding7"
+            className="slide-afbeelding diensten-afbeeldingen"
+          >
+            <div className="swiper-afbeelding">
+              <Link href="/restauratie/restauratieschrijnwerk/waaier-3.jpg">
+                <a title="klik en vergroot!">
+                  <Image
+                    height={250}
+                    width={250}
+                    objectFit="cover"
+                    src="/static/SmallPhoto/waaier-3.jpg"
+                    alt="restauratie waaier"
+                  />
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="background-diensten"></div>
     </>

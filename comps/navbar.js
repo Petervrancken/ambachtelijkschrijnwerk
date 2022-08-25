@@ -25,7 +25,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="linkschrijnentimmerwerken">
-            <Link href="/schrijnentimmerwerken">
+            <Link href="/schrijn-en-timmerwerken">
               <a title="ga naar schrijn en timmerwerken">
                 <p>schrijn en timmerwerken</p>
               </a>
@@ -81,7 +81,7 @@ export default function Navbar() {
                     <p className="textdropdown">restauratie</p>
                   </a>
                 </Link>
-                <Link href="/schrijnentimmerwerken">
+                <Link href="/schrijn-en-timmerwerken">
                   <a title="ga naar schrijn en timmerwerken">
                     <p className="textdropdown">schrijn en timmerwerken</p>
                   </a>

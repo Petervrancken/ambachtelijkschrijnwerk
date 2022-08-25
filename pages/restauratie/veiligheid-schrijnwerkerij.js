@@ -17,14 +17,14 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 import "swiper/swiper-bundle.min.css";
 
-export default function Restauratieschrijnwerk() {
+export default function Restauratietimmerwerk() {
   return (
     <>
       <Head>
-        <title>Restauratie van schrijnwerk | Ambachtelijkschrijnwerk.be</title>
+        <title>Restauratie van timmerwerk | Ambachtelijkschrijnwerk.be</title>
         <link
           rel="canonical"
-          href="https://ambachtelijkschrijnwerk.be/restauratie/restauratieschrijnwerk"
+          href="https://ambachtelijkschrijnwerk.be/restauratie/restauratietimmerwerk"
         />
         <meta
           name="description"
@@ -51,7 +51,7 @@ export default function Restauratieschrijnwerk() {
             }}
             className="sloganText timmerwerken-h1"
           >
-            Restauratie van schrijnwerk
+            Restauratie van timmerwerk
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -69,8 +69,11 @@ export default function Restauratieschrijnwerk() {
             }}
             className="infoRestauratie introductie-text"
           >
-            Dit gaat van ramen en deuren tot trappen en ander interieur
-            schrijnwerk.
+            Dak structuren en andere structurele elementen (bv. moerbalken) in
+            monumenten of andere oude gebouwen zijn meestal gemaakt in eik.
+            Hoewel hout een zeer duurzaam bouwmateriaal is, kan na jarenlange
+            blootstelling aan weer en wind, of door aantasting van beestjes of
+            slecht onderhoud restauratie van doen zijn.
           </motion.p>
         </div>
         <motion.div
@@ -90,7 +93,7 @@ export default function Restauratieschrijnwerk() {
         ></motion.div>
       </div>
       <h2 className="introductie-titel titel-twee title-restauratie">
-        Bekijk onze projecten voor restauratieschrijnwerk
+        Bekijk onze projecten voor restauratie timmerwerken
       </h2>
       <div className="onderwerp-bottom flexxed bottom-restauratie">
         <motion.p
@@ -109,9 +112,11 @@ export default function Restauratieschrijnwerk() {
           }}
           className="infoRestauratie darktext"
         >
-          We streven steeds na zo veel mogelijk van het originele schrijnwerk te
-          behouden, enkel delen die niet meer gered kunnen worden volgens de
-          regels van de kunst geheel of gedeeltelijk vervangen.
+          Zoals bij alle restauratiewerken trachten we zo veel mogelijk van de
+          originele timmerwerken te behouden. We voeren de herstellingen uit met
+          de aloude technieken zoals liplassen of zwaluwstaarten. Ook doen we
+          herstellingen met moderne technieken zoals polymeer-chemisch en
+          glasvezel.
         </motion.p>
         <div className="usp usp-button-group">
           <div className="usp-group">
@@ -142,21 +147,21 @@ export default function Restauratieschrijnwerk() {
         </div>
       </div>
       <div className="diensten-restauratie resto onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
-        <h2 className="project-titel">Restaurtatieschrijnwerk antieke trap</h2>
+        <h2 className="project-titel">Restaurtatie van Duifhuis te Bokrijk</h2>
         <div className="afbeeldingen-box">
           <div
             key="afbeelding1"
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratieschrijnwerk/antieke-trap.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-2.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/antieke-trap.jpg"
-                    alt="antieke trap plaatsen"
+                    src="/static/SmallPhoto/duifhuis-bokrijk-2.jpg"
+                    alt="duifhuis restauratie"
                   />
                 </a>
               </Link>
@@ -167,14 +172,14 @@ export default function Restauratieschrijnwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratieschrijnwerk/antieke-trap-2.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/antieke-trap-2.jpg"
-                    alt="antieke trap verwijderen"
+                    src="/static/SmallPhoto/duifhuis-bokrijk.jpg"
+                    alt="restauratietimmerwerk duifhuis"
                   />
                 </a>
               </Link>
@@ -185,14 +190,14 @@ export default function Restauratieschrijnwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratieschrijnwerk/antieke-trap-3.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-3.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/antieke-trap-3.jpg"
-                    alt="antieke trap atelier"
+                    src="/static/SmallPhoto/duifhuis-bokrijk-3.jpg"
+                    alt="duifhuis vakwerk"
                   />
                 </a>
               </Link>
@@ -203,14 +208,14 @@ export default function Restauratieschrijnwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratieschrijnwerk/antieke-trap-4.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-5.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/antieke-trap-4.jpg"
-                    alt="antieke trap"
+                    src="/static/SmallPhoto/duifhuis-bokrijk-5.jpg"
+                    alt="duifhuis afwerking"
                   />
                 </a>
               </Link>
@@ -225,14 +230,14 @@ export default function Restauratieschrijnwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratieschrijnwerk/den-wolsack-2.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/vakwerkherstel-bokrijk-2.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/den-wolsack-2.jpg"
-                    alt="traprestauraties"
+                    src="/static/SmallPhoto/vakwerkherstel-bokrijk-2.jpg"
+                    alt="steunbalk restauratie"
                   />
                 </a>
               </Link>
@@ -243,80 +248,21 @@ export default function Restauratieschrijnwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratieschrijnwerk/den-wolsack-1.jpg">
+              <Link href="/restauratie/restauratietimmerwerk/vakwerkherstel-bokrijk.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/den-wolsack-1.jpg"
-                    alt="traprestauratie"
+                    src="/static/SmallPhoto/vakwerkherstel-bokrijk.jpg"
+                    alt="steunbalk geplaatst"
                   />
                 </a>
               </Link>
             </div>
           </div>
         </div>
-        <h2 className="project-title-white two-lines">Restaurtatieschrijnwerk den Wolsack</h2>
-      </div>
-      <div className="diensten-restauratie resto onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
-        <h2 className="project-titel">Restaurtatieschrijnwerk van waaiers</h2>
-        <div className="afbeeldingen-box">
-          <div
-            key="afbeelding1"
-            className="slide-afbeelding diensten-afbeeldingen"
-          >
-            <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratieschrijnwerk/waaier.jpg">
-                <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    objectFit="cover"
-                    src="/static/SmallPhoto/waaier.jpg"
-                    alt="restauratieschrijnwer waaier"
-                  />
-                </a>
-              </Link>
-            </div>
-          </div>
-          <div
-            key="afbeelding2"
-            className="slide-afbeelding diensten-afbeeldingen"
-          >
-            <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratieschrijnwerk/waaier-2.jpg">
-                <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    objectFit="cover"
-                    src="/static/SmallPhoto/waaier-2.jpg"
-                    alt="restauratie waaiers"
-                  />
-                </a>
-              </Link>
-            </div>
-          </div>
-          <div
-            key="afbeelding7"
-            className="slide-afbeelding diensten-afbeeldingen"
-          >
-            <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratieschrijnwerk/waaier-3.jpg">
-                <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    objectFit="cover"
-                    src="/static/SmallPhoto/waaier-3.jpg"
-                    alt="restauratie waaier"
-                  />
-                </a>
-              </Link>
-            </div>
-          </div>
-        </div>
+        <h2 className="project-title-white one-line">Stal in restauratie te Bokrijk</h2>
       </div>
       <div className="background-diensten"></div>
     </>

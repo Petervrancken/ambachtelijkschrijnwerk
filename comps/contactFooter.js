@@ -18,7 +18,7 @@ export default function ContactFooter() {
           <h5>Diensten</h5>
           <div className="blokInfo">
             <Link href="/restauratie">Restauratie</Link>
-            <Link href="/schrijnentimmerwerken">
+            <Link href="/schrijn-en-timmerwerken">
               Schrijn en timmerwerken
             </Link>
             <a href="/treecyle">Treecycle</a>
@@ -27,9 +27,9 @@ export default function ContactFooter() {
         <div className="contactBlok">
           <h5>Extra</h5>
           <div className="blokInfo">
-          <Link href="/restauratie/restauratieschrijnwerk">Restauratie van schrijnwerk</Link>
-          <Link href="/restauratie/restauratietimmerwerk">Restauratie van timmerwerk</Link>
-          <Link href="/restauratie/veiligheid">Bereikbaarheid en veiligheid</Link>
+          <Link href="/restauratie/restauratie-schrijnwerk">Restauratie van schrijnwerk</Link>
+          <Link href="/restauratie/restauratie-timmerwerk">Restauratie van timmerwerk</Link>
+          <Link href="/restauratie/veiligheid-schrijnwerkerij">Veiligheid in schrijnwerkerij</Link>
           </div>
         </div>
         <div className="contactBlok">

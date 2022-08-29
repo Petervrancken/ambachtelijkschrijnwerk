@@ -20,6 +20,12 @@
 .title-restauratie {
   font-weight: 100;
 }
+.align-flexxed{
+  align-items: center;
+}
+h2.project-title-white.two-lines {
+  text-align: right;
+}
 .onderwerp-bottom.flexxed.bottom-restauratie {
     justify-content: space-evenly;
 }
@@ -27,9 +33,9 @@
     background-color: black;
     color: white;
     padding:0px;
-    .slide-afbeelding {
-
-    }
+}
+h2.project-title-white.two-lines {
+  margin-right: 20px;
 }
 .diensten-afbeeldingen {
   margin:10px;
@@ -41,6 +47,14 @@
     border: 0px!important;
   }
 }
+body div.diensten-restauratie.diensten-restauratie-2.white-box-flexxed.onderwerp-bottom.flexxed.bottom-restauratie.timmerwerken-bottom {
+  justify-content: left!important;
+}
+.paragraph-box.white-box{
+  color: black;
+  justify-content: center;
+  padding-left: 100px;
+}
 .diensten-restauratie{
   justify-content: right!important;
 }
@@ -51,6 +65,7 @@
   font-weight: 100;
   max-width: 300px;
   position: relative;
+  margin-right: 20px;
   &:before{
     content: "";
     display: block;
@@ -76,9 +91,6 @@
   display: flex;
   padding-top: 10px;
   padding-bottom: 5px;
-  img{
-
-  }
 }
 .project-title-white{
   text-align: left;
@@ -109,7 +121,7 @@
   }
 }
 .diensten-restauratie {
-  justify-content: right !important;
+  justify-content: right!important;
 }
 .diensten-restauratie h2.project-title-white {
   padding-top: 112px;
@@ -128,7 +140,7 @@ ol._2jvtI{
   margin:auto;
 }
 .paragraph-h2{
-  max-width: 500px;
+  max-width: 440px;
   margin:auto;
   text-align: left;
   margin-right: 20%;

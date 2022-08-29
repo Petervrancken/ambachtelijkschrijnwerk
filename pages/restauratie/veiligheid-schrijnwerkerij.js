@@ -21,10 +21,10 @@ export default function Restauratietimmerwerk() {
   return (
     <>
       <Head>
-        <title>Restauratie van timmerwerk | Ambachtelijkschrijnwerk.be</title>
+        <title>Veiligheid in schrijnwerkerij | Ambachtelijkschrijnwerk.be</title>
         <link
           rel="canonical"
-          href="https://ambachtelijkschrijnwerk.be/restauratie/restauratietimmerwerk"
+          href="https://ambachtelijkschrijnwerk.be/restauratie/veiligheid-schrijnwerkerij"
         />
         <meta
           name="description"
@@ -51,7 +51,7 @@ export default function Restauratietimmerwerk() {
             }}
             className="sloganText timmerwerken-h1"
           >
-            Restauratie van timmerwerk
+            Veiligheid in schrijnwerkerij
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -93,9 +93,9 @@ export default function Restauratietimmerwerk() {
         ></motion.div>
       </div>
       <h2 className="introductie-titel titel-twee title-restauratie">
-        Bekijk onze projecten voor restauratie timmerwerken
+         Bekijk de veiligheid tijdens onze schrijnwerkerkij
       </h2>
-      <div className="onderwerp-bottom flexxed bottom-restauratie">
+      <div className="onderwerp-bottom flexxed bottom-restauratie align-flexxed">
         <motion.p
           initial="hidden"
           animate="visible"
@@ -112,11 +112,8 @@ export default function Restauratietimmerwerk() {
           }}
           className="infoRestauratie darktext"
         >
-          Zoals bij alle restauratiewerken trachten we zo veel mogelijk van de
-          originele timmerwerken te behouden. We voeren de herstellingen uit met
-          de aloude technieken zoals liplassen of zwaluwstaarten. Ook doen we
-          herstellingen met moderne technieken zoals polymeer-chemisch en
-          glasvezel.
+          Platformen en loopbruggen om moeilijk bereikbare plaatsen toch gemakkelijk en veilig te kunnen bereiken kunnen we ook vervaardigen.
+
         </motion.p>
         <div className="usp usp-button-group">
           <div className="usp-group">
@@ -147,20 +144,34 @@ export default function Restauratietimmerwerk() {
         </div>
       </div>
       <div className="diensten-restauratie resto onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
-        <h2 className="project-titel">Restaurtatie van Duifhuis te Bokrijk</h2>
+      <div className="paragraph-box">
+          <h2 className="project-titel">
+            wij zorgen voor veiligheid tijdens onze schrijwerkerij
+          </h2>
+          <div className="paragraph-flex">
+            <p className="paragraph-h2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
+        </div>
         <div className="afbeeldingen-box">
           <div
             key="afbeelding1"
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-2.jpg">
+              <Link href="/restauratie/veiligheid-schrijnwerkerij/bereikbaarheid-1.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/duifhuis-bokrijk-2.jpg"
+                    src="/static/SmallPhoto/bereikbaarheid-1.jpg"
                     alt="duifhuis restauratie"
                   />
                 </a>
@@ -172,32 +183,14 @@ export default function Restauratietimmerwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk.jpg">
+              <Link href="/restauratie/veiligheid-schrijnwerkerij/bereikbaarheid-2.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/duifhuis-bokrijk.jpg"
+                    src="/static/SmallPhoto/bereikbaarheid-2.jpg"
                     alt="restauratietimmerwerk duifhuis"
-                  />
-                </a>
-              </Link>
-            </div>
-          </div>
-          <div
-            key="afbeelding7"
-            className="slide-afbeelding diensten-afbeeldingen"
-          >
-            <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-3.jpg">
-                <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    objectFit="cover"
-                    src="/static/SmallPhoto/duifhuis-bokrijk-3.jpg"
-                    alt="duifhuis vakwerk"
                   />
                 </a>
               </Link>
@@ -208,13 +201,13 @@ export default function Restauratietimmerwerk() {
             className="slide-afbeelding diensten-afbeeldingen"
           >
             <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/duifhuis-bokrijk-5.jpg">
+              <Link href="/restauratie/veiligheid-schrijnwerkerij/bereikbaarheid-3.jpg">
                 <a title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
                     objectFit="cover"
-                    src="/static/SmallPhoto/duifhuis-bokrijk-5.jpg"
+                    src="/static/SmallPhoto/bereikbaarheid-3.jpg"
                     alt="duifhuis afwerking"
                   />
                 </a>
@@ -222,47 +215,6 @@ export default function Restauratietimmerwerk() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="diensten-restauratie diensten-restauratie-2 onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
-        <div className="afbeeldingen-box">
-          <div
-            key="afbeelding4"
-            className="slide-afbeelding diensten-afbeeldingen"
-          >
-            <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/vakwerkherstel-bokrijk-2.jpg">
-                <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    objectFit="cover"
-                    src="/static/SmallPhoto/vakwerkherstel-bokrijk-2.jpg"
-                    alt="steunbalk restauratie"
-                  />
-                </a>
-              </Link>
-            </div>
-          </div>
-          <div
-            key="afbeelding5"
-            className="slide-afbeelding diensten-afbeeldingen"
-          >
-            <div className="swiper-afbeelding">
-              <Link href="/restauratie/restauratietimmerwerk/vakwerkherstel-bokrijk.jpg">
-                <a title="klik en vergroot!">
-                  <Image
-                    height={250}
-                    width={250}
-                    objectFit="cover"
-                    src="/static/SmallPhoto/vakwerkherstel-bokrijk.jpg"
-                    alt="steunbalk geplaatst"
-                  />
-                </a>
-              </Link>
-            </div>
-          </div>
-        </div>
-        <h2 className="project-title-white one-line">Stal in restauratie te Bokrijk</h2>
       </div>
       <div className="background-diensten"></div>
     </>

@@ -147,7 +147,21 @@ export default function Restauratietimmerwerk() {
         </div>
       </div>
       <div className="diensten-restauratie resto onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
-        <h2 className="project-titel">Restaurtatie van Duifhuis te Bokrijk</h2>
+      <div className="paragraph-box">
+          <h2 className="project-titel">
+            Restaurtatie van duifhuis te bokrijk
+          </h2>
+          <div className="paragraph-flex">
+            <p className="paragraph-h2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
+        </div>
         <div className="afbeeldingen-box">
           <div
             key="afbeelding1"
@@ -223,7 +237,7 @@ export default function Restauratietimmerwerk() {
           </div>
         </div>
       </div>
-      <div className="diensten-restauratie diensten-restauratie-2 onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
+      <div className="diensten-restauratie diensten-restauratie-2 white-box-flexxed onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
         <div className="afbeeldingen-box">
           <div
             key="afbeelding4"
@@ -262,7 +276,21 @@ export default function Restauratietimmerwerk() {
             </div>
           </div>
         </div>
-        <h2 className="project-title-white one-line">Stal in restauratie te Bokrijk</h2>
+        <div className="paragraph-box white-box">
+          <h2 className="project-title-white two-lines">
+            Steunbalk in restauratie te bokrijk
+          </h2>
+          <div className="paragraph-flex paragraph-flex-white">
+            <p className="paragraph-h2 paragraph-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
+        </div>
       </div>
       <div className="background-diensten"></div>
     </>

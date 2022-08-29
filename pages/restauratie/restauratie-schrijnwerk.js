@@ -90,9 +90,9 @@ export default function Restauratieschrijnwerk() {
         ></motion.div>
       </div>
       <h2 className="introductie-titel titel-twee title-restauratie">
-        Bekijk onze projecten voor restauratieschrijnwerk
+        Bekijk onze projecten voor restauratie schrijnwerk
       </h2>
-      <div className="onderwerp-bottom flexxed bottom-restauratie">
+      <div className="onderwerp-bottom flexxed bottom-restauratie align-flexxed">
         <motion.p
           initial="hidden"
           animate="visible"
@@ -142,7 +142,21 @@ export default function Restauratieschrijnwerk() {
         </div>
       </div>
       <div className="diensten-restauratie resto onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
-        <h2 className="project-titel">Restaurtatieschrijnwerk antieke trap</h2>
+        <div className="paragraph-box">
+          <h2 className="project-titel">
+            Restaurtatie schrijnwerk antieke trap
+          </h2>
+          <div className="paragraph-flex">
+            <p className="paragraph-h2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
+        </div>
         <div className="afbeeldingen-box">
           <div
             key="afbeelding1"
@@ -218,7 +232,7 @@ export default function Restauratieschrijnwerk() {
           </div>
         </div>
       </div>
-      <div className="diensten-restauratie diensten-restauratie-2 onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
+      <div className="diensten-restauratie diensten-restauratie-2 white-box-flexxed onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
         <div className="afbeeldingen-box">
           <div
             key="afbeelding4"
@@ -257,26 +271,37 @@ export default function Restauratieschrijnwerk() {
             </div>
           </div>
         </div>
-        <h2 className="project-title-white two-lines">
-          Restaurtatie schrijnwerk den Wolsack
-        </h2>
+        <div className="paragraph-box white-box">
+          <h2 className="project-title-white two-lines">
+            Restaurtatie schrijnwerk den Wolsack
+          </h2>
+          <div className="paragraph-flex paragraph-flex-white">
+            <p className="paragraph-h2 paragraph-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
+        </div>
       </div>
       <div className="diensten-restauratie resto onderwerp-bottom flexxed bottom-restauratie timmerwerken-bottom">
         <div className="paragraph-box">
-          <div className="paragraph-flex">
-          <p className="paragraph-h2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          </div>
           <h2 className="project-titel">
             Restaurtatie schrijnwerk van waaiers
           </h2>
+          <div className="paragraph-flex">
+            <p className="paragraph-h2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
         </div>
         <div className="afbeeldingen-box">
           <div

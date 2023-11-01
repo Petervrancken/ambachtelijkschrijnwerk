@@ -9,7 +9,7 @@ import contactstyle from "../styles/contactstyle.scss";
 import footerstyle from "../styles/footerstyle.scss";
 import timmerwerk from "../styles/timmerwerkStyle.scss";
 import { motion } from "framer-motion";
-import Breadcrumbs from 'nextjs-breadcrumbs';
+//import Breadcrumbs from 'nextjs-breadcrumbs';
 
 
 
@@ -24,10 +24,6 @@ function MyApp({ Component, pageProps, router }) {
     <>
     <div className="bg">
         <Navbar />
-        <Breadcrumbs
-        useDefaultStyle={true}
-        replaceCharacterList={[{ from: '.', to: ' ' }]}
-      />
         <motion.div
           key={router.route}
           initial="pageInitial"

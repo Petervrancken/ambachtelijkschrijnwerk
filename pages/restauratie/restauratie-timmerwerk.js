@@ -169,7 +169,7 @@ export default function Restauratietimmerwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-timmerwerk/duifhuis-bokrijk-2.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -177,7 +177,7 @@ export default function Restauratietimmerwerk() {
                     src="/static/SmallPhoto/duifhuis-bokrijk-2.jpg"
                     alt="duifhuis restauratie"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -187,7 +187,7 @@ export default function Restauratietimmerwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-timmerwerk/duifhuis-bokrijk.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -195,7 +195,7 @@ export default function Restauratietimmerwerk() {
                     src="/static/SmallPhoto/duifhuis-bokrijk.jpg"
                     alt="restauratie timmerwerk duifhuis"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -205,7 +205,7 @@ export default function Restauratietimmerwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-timmerwerk/duifhuis-bokrijk-3.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -213,7 +213,7 @@ export default function Restauratietimmerwerk() {
                     src="/static/SmallPhoto/duifhuis-bokrijk-3.jpg"
                     alt="duifhuis vakwerk"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -223,7 +223,7 @@ export default function Restauratietimmerwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-timmerwerk/duifhuis-bokrijk-5.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -231,7 +231,7 @@ export default function Restauratietimmerwerk() {
                     src="/static/SmallPhoto/duifhuis-bokrijk-5.jpg"
                     alt="duifhuis afwerking"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -245,7 +245,7 @@ export default function Restauratietimmerwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-timmerwerk/vakwerkherstel-bokrijk-2.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -253,7 +253,7 @@ export default function Restauratietimmerwerk() {
                     src="/static/SmallPhoto/vakwerkherstel-bokrijk-2.jpg"
                     alt="steunbalk restauratie"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -263,7 +263,7 @@ export default function Restauratietimmerwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-timmerwerk/vakwerkherstel-bokrijk.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -271,7 +271,7 @@ export default function Restauratietimmerwerk() {
                     src="/static/SmallPhoto/vakwerkherstel-bokrijk.jpg"
                     alt="steunbalk geplaatst"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>

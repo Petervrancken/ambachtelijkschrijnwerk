@@ -90,43 +90,49 @@ export default function Home(description) {
       <p className="introductie-titel titel-twee">Wat doen we?</p>
       <div className="services-image-blocks">
         <Link href="/restauratie">
-        <a href="/restauratie" className="image-block">
+        <div className="image-block">
           <span>Restauratie</span>
           <Image
-            height="100%"
-            width="100%"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: '100%', height: 'auto' }} 
             src="/static/BigPhoto/restauratie-afbeelding7.jpg"
             layout="responsive"
             objectFit="contain"
             alt="raam restauratie"
           />
-        </a>
+        </div>
         </Link>
         <Link href="/schrijnentimmerwerken">
-        <a href="/schrijnentimmerwerken" className="image-block">
+        <div className="image-block">
           <span>Schrijn en timmerwerken</span>
           <Image
-            height="100%"
-            width="100%"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: '100%', height: 'auto' }} 
             src="/static/BigPhoto/schrijnentimmerwerken-01.jpg"
             layout="responsive"
             objectFit="contain"
             alt="tuinhuis"
           />
-        </a>
+        </div>
         </Link>
         <Link href="/treecycle">
-        <a href="/treecycle" className="image-block">
+        <div className="image-block">
           <span>Treecycle</span>
           <Image
-            height="100%"
-            width="100%"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: '100%', height: 'auto' }} 
             src="/static/BigPhoto/treecycle-08.jpg"
             layout="responsive"
             objectFit="contain"
             alt="snijplank"
           />
-        </a>
+        </div>
         </Link>
       </div>
     </>

@@ -12,51 +12,51 @@ export default function Navbar() {
         <ul className="navbar">
           <li className="marginLogo">
             <Link href="/">
-              <a title="ga naar home">
+              <div title="ga naar home">
                 <Logo className="logo" />
-              </a>
+              </div>
             </Link>
           </li>
           <li className="linkrestauratie">
             <Link href="/restauratie">
-              <a title="ga naar restauratie">
+              <div title="ga naar restauratie">
                 <p>restauratie</p>
-              </a>
+              </div>
             </Link>
           </li>
           <li className="linkschrijnentimmerwerken">
             <Link href="/schrijn-en-timmerwerken">
-              <a title="ga naar schrijn en timmerwerken">
+              <div title="ga naar schrijn en timmerwerken">
                 <p>schrijn en timmerwerken</p>
-              </a>
+              </div>
             </Link>
           </li>
           <li className="linktreecycle">
             <Link href="/treecycle">
-              <a title="ga naar treecyleshop">
+              <div title="ga naar treecyleshop">
                 <p>treecycle</p>
-              </a>
+              </div>
             </Link>
           </li>
           <li className="linkcontact">
             <Link href="/contact">
-              <a title="ga naar contact">
+              <div title="ga naar contact">
                 <p>contact</p>
-              </a>
+              </div>
             </Link>
           </li>
           <li className="linkcontact phone-contact">
             <Link href="tel:0032494364587">
-              <a title="Telefoneer ons!">
+              <div title="Telefoneer ons!">
                 <Instagram className="instagram-logo phone-logo" />
-              </a>
+              </div>
             </Link>
           </li>
           <li className="linkcontact">
             <Link href="mailto:info@ambachtelijkschrijnwerk.be">
-              <a title="Mail ons!">
+              <div title="Mail ons!">
                 <Mail className="instagram-logo phone-logo" />
-              </a>
+              </div>
             </Link>
           </li>
         </ul>
@@ -65,9 +65,9 @@ export default function Navbar() {
         <ul className="navbar">
           <li className="marginLogo">
             <Link href="/">
-              <a title="ga naar home">
+              <div title="ga naar home">
                 <Logo className="logo" />
-              </a>
+              </div>
             </Link>
           </li>
           <div className="iphonesize">
@@ -77,24 +77,24 @@ export default function Navbar() {
               </div>
               <div className="dropdown-content">
                 <Link href="/restauratie">
-                  <a title="ga naar restauratie">
+                  <div title="ga naar restauratie">
                     <p className="textdropdown">restauratie</p>
-                  </a>
+                  </div>
                 </Link>
                 <Link href="/schrijn-en-timmerwerken">
-                  <a title="ga naar schrijn en timmerwerken">
+                  <div title="ga naar schrijn en timmerwerken">
                     <p className="textdropdown">schrijn en timmerwerken</p>
-                  </a>
+                  </div>
                 </Link>
                 <Link href="/treecycle">
-                  <a title="ga naar treecyleshop">
+                  <div title="ga naar treecyleshop">
                     <p className="textdropdown">treecycle</p>
-                  </a>
+                  </div>
                 </Link>
                 <Link href="/contact">
-                  <a title="ga naar contact">
+                  <div title="ga naar contact">
                     <p className="textdropdown">contact</p>
-                  </a>
+                  </div>
                 </Link>
               </div>
             </div>

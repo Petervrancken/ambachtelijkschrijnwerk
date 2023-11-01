@@ -9,16 +9,18 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "babel-runtime": "^6.26.0",
+    "eslint-config-next": "^14.0.1",
     "framer-motion": "^4.1.17",
     "js-cookie": "^2.2.1",
     "moment": "^2.29.1",
-    "next": "10.2.0",
+    "next": "^14.0.1",
     "nextjs-breadcrumbs": "^1.1.9",
     "nextjs-redirect": "^5.0.2",
     "nookies": "^2.5.2",
     "password-hash": "^1.2.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-hook-form": "^7.8.6",
     "react-iframe": "^1.8.0",
     "react-use-cart": "^1.11.1",
@@ -26,6 +28,6 @@
     "swiper": "^6.6.1"
   },
   "devDependencies": {
-    "babel-plugin-inline-react-svg": "^2.0.1"
+    "babel-plugin-inline-react-svg": "^2.0.2"
   }
 }

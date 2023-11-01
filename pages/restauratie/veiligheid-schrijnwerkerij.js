@@ -166,7 +166,7 @@ export default function Restauratietimmerwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/veiligheid-schrijnwerkerij/bereikbaarheid-1.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -174,7 +174,7 @@ export default function Restauratietimmerwerk() {
                     src="/static/SmallPhoto/bereikbaarheid-1.jpg"
                     alt="duifhuis restauratie"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -184,7 +184,7 @@ export default function Restauratietimmerwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/veiligheid-schrijnwerkerij/bereikbaarheid-2.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -192,7 +192,7 @@ export default function Restauratietimmerwerk() {
                     src="/static/SmallPhoto/bereikbaarheid-2.jpg"
                     alt="restauratietimmerwerk duifhuis"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -202,7 +202,7 @@ export default function Restauratietimmerwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/veiligheid-schrijnwerkerij/bereikbaarheid-3.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -210,7 +210,7 @@ export default function Restauratietimmerwerk() {
                     src="/static/SmallPhoto/bereikbaarheid-3.jpg"
                     alt="duifhuis afwerking"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>

@@ -116,98 +116,98 @@ export default function schrijnentimmerwerken(schrijnProps) {
             <SwiperSlide key="afbeelding1" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/fotos-static/schrijnentimmerwerken-01.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/schrijnentimmerwerken-01.jpg"
                       alt="Don't forget your alt text"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide key="afbeelding2" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/fotos-static/schrijnentimmerwerken-02.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/schrijnentimmerwerken-02.jpg"
                       alt="Don't forget your alt text"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide key="afbeelding3" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/fotos-static/schrijnentimmerwerken-03.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/schrijnentimmerwerken-03.jpg"
                       alt="Don't forget your alt text"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide key="afbeelding4" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/fotos-static/schrijnentimmerwerken-04.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/schrijnentimmerwerken-04.jpg"
                       alt="Don't forget your alt text"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide key="afbeelding5" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/fotos-static/schrijnentimmerwerken-05.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/schrijnentimmerwerken-05.jpg"
                       alt="Don't forget your alt text"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide key="afbeelding6" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/fotos-static/schrijnentimmerwerken-06.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/schrijnentimmerwerken-06.jpg"
                       alt="Don't forget your alt text"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide key="afbeelding7" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/fotos-static/schrijnentimmerwerken-07.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/schrijnentimmerwerken-07.jpg"
                       alt="Don't forget your alt text"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
@@ -232,7 +232,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
       </div>
       <div className="onderwerp-bottom">
         <Link href="/restauratietimmerwerk">
-          <a title="naar timmerwerk">
+          <div title="naar timmerwerk">
             <div className="box">
               <p className="onderwerp-titel">Restauratie van timmerwerk </p>
               <Timmerwerk className="onderwerp-icoon" />
@@ -247,10 +247,10 @@ export default function schrijnentimmerwerken(schrijnProps) {
                 </span>
               </p>
             </div>
-          </a>
+          </div>
         </Link>
         <Link href="/restauratieschrijnwerk">
-          <a title="naar timmerwerk">
+          <div title="naar timmerwerk">
             <div className="box">
               <p className="onderwerp-titel">Restauratie van schrijnwerk </p>
               <Zaag className="onderwerp-icoon" />
@@ -263,10 +263,10 @@ export default function schrijnentimmerwerken(schrijnProps) {
                 </span>
               </p>
             </div>
-          </a>
+          </div>
         </Link>
         <Link href="/veiligheid">
-          <a title="naar timmerwerk">
+          <div title="naar timmerwerk">
             <div className="box">
               <p className="onderwerp-titel">Bereikbaarheid en veiligheid</p>
               <Veiligheid className="onderwerp-icoon" />
@@ -279,7 +279,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
                 </span>
               </p>
             </div>
-          </a>
+          </div>
         </Link>
       </div>
     </>

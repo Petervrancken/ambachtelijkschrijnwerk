@@ -99,112 +99,112 @@ export default function Restauratie() {
             <SwiperSlide key="afbeelding1" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/restauratie/restauratie-afbeelding1.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding1.jpg"
                       alt="Kerktoren"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide key="afbeelding2" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/restauratie/restauratie-afbeelding2.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding2.jpg"
                       alt="Toren"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide key="afbeelding3" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/restauratie/restauratie-afbeelding3.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding3.jpg"
                       alt="Trap in toren"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide key="afbeelding4" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/restauratie/restauratie-afbeelding4.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding4.jpg"
                       alt="plankjes restaureren"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide key="afbeelding5" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/restauratie/restauratie-afbeelding5.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding5.jpg"
                       alt="Kader raam restauratie"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide key="afbeelding6" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/restauratie/restauratie-afbeelding6.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding6.jpg"
                       alt="Tuinbank restauratie"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide key="afbeelding7" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/restauratie/restauratie-afbeelding7.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding7.jpg"
                       alt="Raam restauratie"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide key="afbeelding8" className="slide-afbeelding">
               <div className="swiper-afbeelding">
                 <Link href="/restauratie/restauratie-afbeelding8.jpg">
-                  <a title="klik en vergroot!">
+                  <div title="klik en vergroot!">
                     <Image
                       height={250}
                       width={250}
                       src="/static/SmallPhoto/restauratie-afbeelding8.jpg"
                       alt="Raamkader restauratie"
                     />
-                  </a>
+                  </div>
                 </Link>
               </div>
             </SwiperSlide>
@@ -229,7 +229,7 @@ export default function Restauratie() {
       <p className="introductie-titel titel-twee">Wat doen we?</p>
       <div className="onderwerp-bottom bottom-restauratie">
         <Link href="/restauratie/restauratie-timmerwerk">
-          <a title="naar timmerwerk">
+          <div title="naar timmerwerk">
             <div className="box">
               <p className="onderwerp-titel">Restauratie van timmerwerk </p>
               <Timmerwerk className="onderwerp-icoon" />
@@ -244,10 +244,10 @@ export default function Restauratie() {
                 </span>
               </p>
             </div>
-          </a>
+          </div>
         </Link>
         <Link href="/restauratie/restauratie-schrijnwerk">
-          <a title="naar timmerwerk">
+          <div title="naar timmerwerk">
             <div className="box">
               <p className="onderwerp-titel">Restauratie van schrijnwerk </p>
               <Zaag className="onderwerp-icoon" />
@@ -260,10 +260,10 @@ export default function Restauratie() {
                 </span>
               </p>
             </div>
-          </a>
+          </div>
         </Link>
         <Link href="/restauratie/veiligheid-schrijnwerkerij">
-          <a title="naar timmerwerk">
+          <div title="naar timmerwerk">
             <div className="box">
               <p className="onderwerp-titel">Bereikbaarheid en veiligheid</p>
               <Veiligheid className="onderwerp-icoon" />
@@ -276,7 +276,7 @@ export default function Restauratie() {
                 </span>
               </p>
             </div>
-          </a>
+          </div>
         </Link>
       </div>
     </>

@@ -164,7 +164,7 @@ export default function Restauratieschrijnwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-schrijnwerk/antieke-trap-1.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -172,7 +172,7 @@ export default function Restauratieschrijnwerk() {
                     src="/static/SmallPhoto/antieke-trap-1.jpg"
                     alt="antieke trap plaatsen"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -182,7 +182,7 @@ export default function Restauratieschrijnwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-schrijnwerk/antieke-trap-12.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -190,7 +190,7 @@ export default function Restauratieschrijnwerk() {
                     src="/static/SmallPhoto/antieke-trap-12.jpg"
                     alt="antieke trap verwijderen"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -200,7 +200,7 @@ export default function Restauratieschrijnwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-schrijnwerk/antieke-trap-13.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -208,7 +208,7 @@ export default function Restauratieschrijnwerk() {
                     src="/static/SmallPhoto/antieke-trap-13.jpg"
                     alt="antieke trap atelier"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -218,7 +218,7 @@ export default function Restauratieschrijnwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-schrijnwerk/antieke-trap-14.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -226,7 +226,7 @@ export default function Restauratieschrijnwerk() {
                     src="/static/SmallPhoto/antieke-trap-14.jpg"
                     alt="antieke trap"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -240,7 +240,7 @@ export default function Restauratieschrijnwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-schrijnwerk/den-wolsack-12.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -248,7 +248,7 @@ export default function Restauratieschrijnwerk() {
                     src="/static/SmallPhoto/den-wolsack-12.jpg"
                     alt="traprestauraties"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -258,7 +258,7 @@ export default function Restauratieschrijnwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-schrijnwerk/den-wolsack-11.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -266,7 +266,7 @@ export default function Restauratieschrijnwerk() {
                     src="/static/SmallPhoto/den-wolsack-11.jpg"
                     alt="traprestauratie"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -310,7 +310,7 @@ export default function Restauratieschrijnwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-schrijnwerk/waaier.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -318,7 +318,7 @@ export default function Restauratieschrijnwerk() {
                     src="/static/SmallPhoto/waaier.jpg"
                     alt="restauratieschrijnwerk waaier"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -328,7 +328,7 @@ export default function Restauratieschrijnwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-schrijnwerk/waaier-2.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -336,7 +336,7 @@ export default function Restauratieschrijnwerk() {
                     src="/static/SmallPhoto/waaier-2.jpg"
                     alt="restauratie waaiers"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -346,7 +346,7 @@ export default function Restauratieschrijnwerk() {
           >
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-schrijnwerk/waaier-3.jpg">
-                <a title="klik en vergroot!">
+                <div title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -354,7 +354,7 @@ export default function Restauratieschrijnwerk() {
                     src="/static/SmallPhoto/waaier-3.jpg"
                     alt="restauratie waaier"
                   />
-                </a>
+                </div>
               </Link>
             </div>
           </div>

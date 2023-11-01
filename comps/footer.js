@@ -8,15 +8,15 @@ export default function Footer() {
     <>
       <div className="footer">
         <Link href="https://www.instagram.com/destrooperwoodworks/">
-          <a title="onze instagram">
+          <div title="onze instagram">
             <Instagram className="instagram-logo" />
-          </a>
+          </div>
         </Link>
         <p className="footer-text">Volg ons</p>
         <Link href="https://m.facebook.com/destrooperwoodworks/">
-          <a title="onze facebook">
+          <div title="onze facebook">
             <Facebook className="instagram-logo" />
-          </a>
+          </div>
         </Link>
       </div>
     </>

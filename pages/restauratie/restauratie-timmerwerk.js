@@ -178,7 +178,7 @@ export default function Restauratietimmerwerk() {
                   alt="duifhuis restauratie"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -201,7 +201,7 @@ export default function Restauratietimmerwerk() {
                   alt="restauratie timmerwerk duifhuis"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -224,7 +224,7 @@ export default function Restauratietimmerwerk() {
                   alt="duifhuis vakwerk"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -247,7 +247,7 @@ export default function Restauratietimmerwerk() {
                   alt="duifhuis afwerking"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -274,7 +274,7 @@ export default function Restauratietimmerwerk() {
                   alt="steunbalk restauratie"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -297,7 +297,7 @@ export default function Restauratietimmerwerk() {
                   alt="steunbalk geplaatst"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>

@@ -36,7 +36,8 @@ export default function fotoDetail() {
             alt={`${slug}`}
             style={{
               maxWidth: "100%",
-              height: "auto"
+              width: "1000px",
+              height: "1000px"
             }}></Image>
         </div>
       </div>

@@ -175,7 +175,7 @@ export default function Restauratietimmerwerk() {
                   alt="duifhuis restauratie"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -198,7 +198,7 @@ export default function Restauratietimmerwerk() {
                   alt="restauratietimmerwerk duifhuis"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -221,7 +221,7 @@ export default function Restauratietimmerwerk() {
                   alt="duifhuis afwerking"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>

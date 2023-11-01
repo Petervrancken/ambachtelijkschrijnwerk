@@ -101,8 +101,6 @@ export default function Home(description) {
           style={{
             width: '100%',
             height: 'auto',
-            width: "100%",
-            height: "auto",
             objectFit: "contain"
           }} />
       </div>
@@ -120,8 +118,6 @@ export default function Home(description) {
           style={{
             width: '100%',
             height: 'auto',
-            width: "100%",
-            height: "auto",
             objectFit: "contain"
           }} />
       </div>
@@ -137,10 +133,8 @@ export default function Home(description) {
           alt="snijplank"
           sizes="100vw"
           style={{
-            width: '100%',
             height: 'auto',
             width: "100%",
-            height: "auto",
             objectFit: "contain"
           }} />
       </div>

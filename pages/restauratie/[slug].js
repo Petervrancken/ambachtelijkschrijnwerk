@@ -29,7 +29,8 @@ export default function fotoDetail() {
             alt={`${slug}`}
             style={{
               maxWidth: "100%",
-              height: "auto",
+              height: "1000px",
+              width: "1000px",
               objectFit: "cover"
             }}></Image>
         </div>

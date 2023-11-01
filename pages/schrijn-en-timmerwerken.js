@@ -121,9 +121,11 @@ export default function schrijnentimmerwerken(schrijnProps) {
                     width={250}
                     src="/static/SmallPhoto/schrijnentimmerwerken-01.jpg"
                     alt="Don't forget your alt text"
+                    sizes="100vw"
                     style={{
-                      maxWidth: "100%",
-                      height: "auto"
+                      height: "250px",
+                      width: "100%",
+                      objectFit: "contain"
                     }} />
                 </div>
               </Link>
@@ -134,14 +136,17 @@ export default function schrijnentimmerwerken(schrijnProps) {
               <Link href="/fotos-static/schrijnentimmerwerken-02.jpg" legacyBehavior>
                 <div className="add-pointer" title="klik en vergroot!">
                   <Image
-                    height={250}
-                    width={250}
+                    height={0}
+                    width={0}
                     src="/static/SmallPhoto/schrijnentimmerwerken-02.jpg"
                     alt="Don't forget your alt text"
+                    sizes="100vw"
                     style={{
-                      maxWidth: "100%",
-                      height: "auto"
-                    }} />
+                      height: '250px',
+                      width: "100%",
+                      objectFit: "cover",
+                      overflow: "hidden"
+                    }}/>
                 </div>
               </Link>
             </div>
@@ -157,7 +162,8 @@ export default function schrijnentimmerwerken(schrijnProps) {
                     alt="Don't forget your alt text"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px",
+                      objectFit: "cover"
                     }} />
                 </div>
               </Link>
@@ -174,7 +180,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
                     alt="Don't forget your alt text"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -191,7 +197,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
                     alt="Don't forget your alt text"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -208,7 +214,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
                     alt="Don't forget your alt text"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -225,7 +231,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
                     alt="Don't forget your alt text"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>

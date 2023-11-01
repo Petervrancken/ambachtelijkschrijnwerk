@@ -120,7 +120,7 @@ export default function Treecycle(treeProps) {
                     alt="Don't forget your alt text"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -137,7 +137,7 @@ export default function Treecycle(treeProps) {
                     alt="Don't forget your alt text"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -154,7 +154,7 @@ export default function Treecycle(treeProps) {
                     alt="Don't forget your alt text"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -171,7 +171,7 @@ export default function Treecycle(treeProps) {
                     alt="Don't forget your alt text"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -188,7 +188,7 @@ export default function Treecycle(treeProps) {
                     alt="Don't forget your alt text"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -205,7 +205,7 @@ export default function Treecycle(treeProps) {
                     alt="Don't forget your alt text"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -222,7 +222,7 @@ export default function Treecycle(treeProps) {
                     alt="Don't forget your alt text"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -239,7 +239,7 @@ export default function Treecycle(treeProps) {
                     alt="Don't forget your alt text"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>

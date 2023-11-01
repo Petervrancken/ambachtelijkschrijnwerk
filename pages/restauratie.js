@@ -106,7 +106,7 @@ export default function Restauratie() {
                     alt="Kerktoren"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -123,7 +123,7 @@ export default function Restauratie() {
                     alt="Toren"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -140,7 +140,7 @@ export default function Restauratie() {
                     alt="Trap in toren"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -157,7 +157,7 @@ export default function Restauratie() {
                     alt="plankjes restaureren"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -174,7 +174,7 @@ export default function Restauratie() {
                     alt="Kader raam restauratie"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -191,7 +191,7 @@ export default function Restauratie() {
                     alt="Tuinbank restauratie"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -208,7 +208,7 @@ export default function Restauratie() {
                     alt="Raam restauratie"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>
@@ -225,7 +225,7 @@ export default function Restauratie() {
                     alt="Raamkader restauratie"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "250px"
                     }} />
                 </div>
               </Link>

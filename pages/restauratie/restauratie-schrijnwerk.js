@@ -173,7 +173,7 @@ export default function Restauratieschrijnwerk() {
                   alt="antieke trap plaatsen"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -196,7 +196,7 @@ export default function Restauratieschrijnwerk() {
                   alt="antieke trap verwijderen"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -219,7 +219,7 @@ export default function Restauratieschrijnwerk() {
                   alt="antieke trap atelier"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -242,7 +242,7 @@ export default function Restauratieschrijnwerk() {
                   alt="antieke trap"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -269,7 +269,7 @@ export default function Restauratieschrijnwerk() {
                   alt="traprestauraties"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -292,7 +292,7 @@ export default function Restauratieschrijnwerk() {
                   alt="traprestauratie"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -347,7 +347,7 @@ export default function Restauratieschrijnwerk() {
                   alt="restauratieschrijnwerk waaier"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -368,7 +368,7 @@ export default function Restauratieschrijnwerk() {
                   alt="restauratie waaiers"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>
@@ -389,7 +389,7 @@ export default function Restauratieschrijnwerk() {
                   alt="restauratie waaier"
                   style={{
                     maxWidth: "100%",
-                    height: "auto",
+                    height: "250px",
                     objectFit: "cover"
                   }} />
               </div>

@@ -10,13 +10,12 @@
   justify-content: center;
   margin: auto;
   transition: transform 0.5s;
-  &:hover {
-    transform: scale(1.0);
-    transform: rotate(4deg);
-  }
 }
 .swiper-afbeelding img{
   border: 1px solid black!important;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 .sloganTheme {
   display: flex;

@@ -1,5 +1,5 @@
 // SVG imports"
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Timmerwerk from "../public/timmer.svg";
 import Zaag from "../public/zaag.svg";
 import Veiligheid from "../public/veiligheid.svg";

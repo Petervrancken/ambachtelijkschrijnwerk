@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 import "swiper/swiper-bundle.min.css";
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 // verander hier je URL endpoints

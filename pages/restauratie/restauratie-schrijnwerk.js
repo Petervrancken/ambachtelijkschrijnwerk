@@ -165,7 +165,7 @@ export default function Restauratieschrijnwerk() {
             <Link
               href="/restauratie/restauratie-schrijnwerk/antieke-trap-1.jpg"
               legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}
@@ -188,7 +188,7 @@ export default function Restauratieschrijnwerk() {
             <Link
               href="/restauratie/restauratie-schrijnwerk/antieke-trap-12.jpg"
               legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}
@@ -211,7 +211,7 @@ export default function Restauratieschrijnwerk() {
             <Link
               href="/restauratie/restauratie-schrijnwerk/antieke-trap-13.jpg"
               legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}
@@ -234,7 +234,7 @@ export default function Restauratieschrijnwerk() {
             <Link
               href="/restauratie/restauratie-schrijnwerk/antieke-trap-14.jpg"
               legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}
@@ -261,7 +261,7 @@ export default function Restauratieschrijnwerk() {
             <Link
               href="/restauratie/restauratie-schrijnwerk/den-wolsack-12.jpg"
               legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}
@@ -284,7 +284,7 @@ export default function Restauratieschrijnwerk() {
             <Link
               href="/restauratie/restauratie-schrijnwerk/den-wolsack-11.jpg"
               legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}
@@ -339,7 +339,7 @@ export default function Restauratieschrijnwerk() {
         >
           <div className="swiper-afbeelding">
             <Link href="/restauratie/restauratie-schrijnwerk/waaier.jpg" legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}
@@ -360,7 +360,7 @@ export default function Restauratieschrijnwerk() {
         >
           <div className="swiper-afbeelding">
             <Link href="/restauratie/restauratie-schrijnwerk/waaier-2.jpg" legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}
@@ -381,7 +381,7 @@ export default function Restauratieschrijnwerk() {
         >
           <div className="swiper-afbeelding">
             <Link href="/restauratie/restauratie-schrijnwerk/waaier-3.jpg" legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}

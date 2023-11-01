@@ -112,7 +112,7 @@ export default function Treecycle(treeProps) {
           <SwiperSlide key="afbeelding1" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/treecycle-01.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -129,7 +129,7 @@ export default function Treecycle(treeProps) {
           <SwiperSlide key="afbeelding2" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/treecycle-02.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -146,7 +146,7 @@ export default function Treecycle(treeProps) {
           <SwiperSlide key="afbeelding3" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/treecycle-03.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -163,7 +163,7 @@ export default function Treecycle(treeProps) {
           <SwiperSlide key="afbeelding4" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/treecycle-04.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -180,7 +180,7 @@ export default function Treecycle(treeProps) {
           <SwiperSlide key="afbeelding5" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/treecycle-05.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -197,7 +197,7 @@ export default function Treecycle(treeProps) {
           <SwiperSlide key="afbeelding6" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/treecycle-06.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -214,7 +214,7 @@ export default function Treecycle(treeProps) {
           <SwiperSlide key="afbeelding7" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/treecycle-07.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -231,7 +231,7 @@ export default function Treecycle(treeProps) {
           <SwiperSlide key="afbeelding8" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/treecycle-08.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}

@@ -89,7 +89,7 @@ export default function Home(description) {
     <p className="introductie-titel titel-twee">Wat doen we?</p>
     <div className="services-image-blocks">
       <Link href="/restauratie" legacyBehavior>
-      <div className="image-block">
+      <div className="image-block add-pointer">
         <span>Restauratie</span>
         <Image
           priority={true}
@@ -108,7 +108,7 @@ export default function Home(description) {
       </div>
       </Link>
       <Link href="/schrijnentimmerwerken" legacyBehavior>
-      <div className="image-block">
+      <div className="image-block add-pointer">
         <span>Schrijn en timmerwerken</span>
         <Image
           priority={true}
@@ -127,7 +127,7 @@ export default function Home(description) {
       </div>
       </Link>
       <Link href="/treecycle" legacyBehavior>
-      <div className="image-block">
+      <div className="image-block add-pointer">
         <span>Treecycle</span>
         <Image
           priority={true}

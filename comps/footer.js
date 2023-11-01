@@ -7,13 +7,13 @@ export default function Footer() {
   return <>
     <div className="footer">
       <Link href="https://www.instagram.com/destrooperwoodworks/" legacyBehavior>
-        <div title="onze instagram">
+        <div className="add-pointer" title="onze instagram">
           <Instagram className="instagram-logo" />
         </div>
       </Link>
       <p className="footer-text">Volg ons</p>
       <Link href="https://m.facebook.com/destrooperwoodworks/" legacyBehavior>
-        <div title="onze facebook">
+        <div className="add-pointer" title="onze facebook">
           <Facebook className="instagram-logo" />
         </div>
       </Link>

@@ -170,7 +170,7 @@ export default function Restauratietimmerwerk() {
             <Link
               href="/restauratie/restauratie-timmerwerk/duifhuis-bokrijk-2.jpg"
               legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}
@@ -193,7 +193,7 @@ export default function Restauratietimmerwerk() {
             <Link
               href="/restauratie/restauratie-timmerwerk/duifhuis-bokrijk.jpg"
               legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}
@@ -216,7 +216,7 @@ export default function Restauratietimmerwerk() {
             <Link
               href="/restauratie/restauratie-timmerwerk/duifhuis-bokrijk-3.jpg"
               legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}
@@ -239,7 +239,7 @@ export default function Restauratietimmerwerk() {
             <Link
               href="/restauratie/restauratie-timmerwerk/duifhuis-bokrijk-5.jpg"
               legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}
@@ -266,7 +266,7 @@ export default function Restauratietimmerwerk() {
             <Link
               href="/restauratie/restauratie-timmerwerk/vakwerkherstel-bokrijk-2.jpg"
               legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}
@@ -289,7 +289,7 @@ export default function Restauratietimmerwerk() {
             <Link
               href="/restauratie/restauratie-timmerwerk/vakwerkherstel-bokrijk.jpg"
               legacyBehavior>
-              <div title="klik en vergroot!">
+              <div className="add-pointer" title="klik en vergroot!">
                 <Image
                   height={250}
                   width={250}

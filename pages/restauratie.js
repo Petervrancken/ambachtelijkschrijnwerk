@@ -98,7 +98,7 @@ export default function Restauratie() {
           <SwiperSlide key="afbeelding1" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-afbeelding1.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -115,7 +115,7 @@ export default function Restauratie() {
           <SwiperSlide key="afbeelding2" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-afbeelding2.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -132,7 +132,7 @@ export default function Restauratie() {
           <SwiperSlide key="afbeelding3" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-afbeelding3.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -149,7 +149,7 @@ export default function Restauratie() {
           <SwiperSlide key="afbeelding4" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-afbeelding4.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -166,7 +166,7 @@ export default function Restauratie() {
           <SwiperSlide key="afbeelding5" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-afbeelding5.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -183,7 +183,7 @@ export default function Restauratie() {
           <SwiperSlide key="afbeelding6" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-afbeelding6.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -200,7 +200,7 @@ export default function Restauratie() {
           <SwiperSlide key="afbeelding7" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-afbeelding7.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -217,7 +217,7 @@ export default function Restauratie() {
           <SwiperSlide key="afbeelding8" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/restauratie/restauratie-afbeelding8.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -252,7 +252,7 @@ export default function Restauratie() {
     <p className="introductie-titel titel-twee">Wat doen we?</p>
     <div className="onderwerp-bottom bottom-restauratie">
       <Link href="/restauratie/restauratie-timmerwerk" legacyBehavior>
-        <div title="naar timmerwerk">
+        <div className="add-pointer" title="naar timmerwerk">
           <div className="box">
             <p className="onderwerp-titel">Restauratie van timmerwerk </p>
             <Timmerwerk className="onderwerp-icoon" />
@@ -270,7 +270,7 @@ export default function Restauratie() {
         </div>
       </Link>
       <Link href="/restauratie/restauratie-schrijnwerk" legacyBehavior>
-        <div title="naar timmerwerk">
+        <div className="add-pointer" title="naar timmerwerk">
           <div className="box">
             <p className="onderwerp-titel">Restauratie van schrijnwerk </p>
             <Zaag className="onderwerp-icoon" />
@@ -286,7 +286,7 @@ export default function Restauratie() {
         </div>
       </Link>
       <Link href="/restauratie/veiligheid-schrijnwerkerij" legacyBehavior>
-        <div title="naar timmerwerk">
+        <div className="add-pointer" title="naar timmerwerk">
           <div className="box">
             <p className="onderwerp-titel">Bereikbaarheid en veiligheid</p>
             <Veiligheid className="onderwerp-icoon" />

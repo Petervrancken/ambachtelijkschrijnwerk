@@ -115,7 +115,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
           <SwiperSlide key="afbeelding1" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/schrijnentimmerwerken-01.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -132,7 +132,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
           <SwiperSlide key="afbeelding2" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/schrijnentimmerwerken-02.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -149,7 +149,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
           <SwiperSlide key="afbeelding3" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/schrijnentimmerwerken-03.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -166,7 +166,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
           <SwiperSlide key="afbeelding4" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/schrijnentimmerwerken-04.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -183,7 +183,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
           <SwiperSlide key="afbeelding5" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/schrijnentimmerwerken-05.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -200,7 +200,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
           <SwiperSlide key="afbeelding6" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/schrijnentimmerwerken-06.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -217,7 +217,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
           <SwiperSlide key="afbeelding7" className="slide-afbeelding">
             <div className="swiper-afbeelding">
               <Link href="/fotos-static/schrijnentimmerwerken-07.jpg" legacyBehavior>
-                <div title="klik en vergroot!">
+                <div className="add-pointer" title="klik en vergroot!">
                   <Image
                     height={250}
                     width={250}
@@ -252,7 +252,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
     </div>
     <div className="onderwerp-bottom">
       <Link href="/restauratietimmerwerk" legacyBehavior>
-        <div title="naar timmerwerk">
+        <div className="add-pointer" title="naar timmerwerk">
           <div className="box">
             <p className="onderwerp-titel">Restauratie van timmerwerk </p>
             <Timmerwerk className="onderwerp-icoon" />
@@ -270,7 +270,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
         </div>
       </Link>
       <Link href="/restauratieschrijnwerk" legacyBehavior>
-        <div title="naar timmerwerk">
+        <div className="add-pointer" title="naar timmerwerk">
           <div className="box">
             <p className="onderwerp-titel">Restauratie van schrijnwerk </p>
             <Zaag className="onderwerp-icoon" />
@@ -286,7 +286,7 @@ export default function schrijnentimmerwerken(schrijnProps) {
         </div>
       </Link>
       <Link href="/veiligheid" legacyBehavior>
-        <div title="naar timmerwerk">
+        <div className="add-pointer" title="naar timmerwerk">
           <div className="box">
             <p className="onderwerp-titel">Bereikbaarheid en veiligheid</p>
             <Veiligheid className="onderwerp-icoon" />

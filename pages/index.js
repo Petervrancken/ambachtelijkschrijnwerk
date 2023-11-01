@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 import "swiper/swiper-bundle.min.css";
 import Head from "next/head";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 // verander hier je URL endpoints
@@ -92,45 +92,57 @@ export default function Home(description) {
       <div className="image-block">
         <span>Restauratie</span>
         <Image
+          priority={true}
           width={0}
           height={0}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }} 
           src="/static/BigPhoto/restauratie-afbeelding7.jpg"
-          layout="responsive"
-          objectFit="contain"
           alt="raam restauratie"
-        />
+          sizes="100vw"
+          style={{
+            width: '100%',
+            height: 'auto',
+            width: "100%",
+            height: "auto",
+            objectFit: "contain"
+          }} />
       </div>
       </Link>
       <Link href="/schrijnentimmerwerken" legacyBehavior>
       <div className="image-block">
         <span>Schrijn en timmerwerken</span>
         <Image
+          priority={true}
           width={0}
           height={0}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }} 
           src="/static/BigPhoto/schrijnentimmerwerken-01.jpg"
-          layout="responsive"
-          objectFit="contain"
           alt="tuinhuis"
-        />
+          sizes="100vw"
+          style={{
+            width: '100%',
+            height: 'auto',
+            width: "100%",
+            height: "auto",
+            objectFit: "contain"
+          }} />
       </div>
       </Link>
       <Link href="/treecycle" legacyBehavior>
       <div className="image-block">
         <span>Treecycle</span>
         <Image
+          priority={true}
           width={0}
           height={0}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }} 
           src="/static/BigPhoto/treecycle-08.jpg"
-          layout="responsive"
-          objectFit="contain"
           alt="snijplank"
-        />
+          sizes="100vw"
+          style={{
+            width: '100%',
+            height: 'auto',
+            width: "100%",
+            height: "auto",
+            objectFit: "contain"
+          }} />
       </div>
       </Link>
     </div>

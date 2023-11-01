@@ -1,5 +1,5 @@
 // SVG imports"
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Timmerwerk from "../public/timmer.svg";
 import Zaag from "../public/zaag.svg";
 import Veiligheid from "../public/veiligheid.svg";
@@ -121,7 +121,10 @@ export default function schrijnentimmerwerken(schrijnProps) {
                     width={250}
                     src="/static/SmallPhoto/schrijnentimmerwerken-01.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -135,7 +138,10 @@ export default function schrijnentimmerwerken(schrijnProps) {
                     width={250}
                     src="/static/SmallPhoto/schrijnentimmerwerken-02.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -149,7 +155,10 @@ export default function schrijnentimmerwerken(schrijnProps) {
                     width={250}
                     src="/static/SmallPhoto/schrijnentimmerwerken-03.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -163,7 +172,10 @@ export default function schrijnentimmerwerken(schrijnProps) {
                     width={250}
                     src="/static/SmallPhoto/schrijnentimmerwerken-04.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -177,7 +189,10 @@ export default function schrijnentimmerwerken(schrijnProps) {
                     width={250}
                     src="/static/SmallPhoto/schrijnentimmerwerken-05.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -191,7 +206,10 @@ export default function schrijnentimmerwerken(schrijnProps) {
                     width={250}
                     src="/static/SmallPhoto/schrijnentimmerwerken-06.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -205,7 +223,10 @@ export default function schrijnentimmerwerken(schrijnProps) {
                     width={250}
                     src="/static/SmallPhoto/schrijnentimmerwerken-07.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>

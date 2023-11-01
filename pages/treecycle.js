@@ -1,6 +1,6 @@
 //next imports
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import axios from "axios";
@@ -118,7 +118,10 @@ export default function Treecycle(treeProps) {
                     width={250}
                     src="/static/SmallPhoto/treecycle-01.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -132,7 +135,10 @@ export default function Treecycle(treeProps) {
                     width={250}
                     src="/static/SmallPhoto/treecycle-02.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -146,7 +152,10 @@ export default function Treecycle(treeProps) {
                     width={250}
                     src="/static/SmallPhoto/treecycle-03.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -160,7 +169,10 @@ export default function Treecycle(treeProps) {
                     width={250}
                     src="/static/SmallPhoto/treecycle-04.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -174,7 +186,10 @@ export default function Treecycle(treeProps) {
                     width={250}
                     src="/static/SmallPhoto/treecycle-05.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -188,7 +203,10 @@ export default function Treecycle(treeProps) {
                     width={250}
                     src="/static/SmallPhoto/treecycle-06.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -202,7 +220,10 @@ export default function Treecycle(treeProps) {
                     width={250}
                     src="/static/SmallPhoto/treecycle-07.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -216,7 +237,10 @@ export default function Treecycle(treeProps) {
                     width={250}
                     src="/static/SmallPhoto/treecycle-08.jpg"
                     alt="Don't forget your alt text"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>

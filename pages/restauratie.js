@@ -2,7 +2,7 @@
 import Timmerwerk from "../public/timmer.svg";
 import Zaag from "../public/zaag.svg";
 import Veiligheid from "../public/veiligheid.svg";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
 
@@ -104,7 +104,10 @@ export default function Restauratie() {
                     width={250}
                     src="/static/SmallPhoto/restauratie-afbeelding1.jpg"
                     alt="Kerktoren"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -118,7 +121,10 @@ export default function Restauratie() {
                     width={250}
                     src="/static/SmallPhoto/restauratie-afbeelding2.jpg"
                     alt="Toren"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -132,7 +138,10 @@ export default function Restauratie() {
                     width={250}
                     src="/static/SmallPhoto/restauratie-afbeelding3.jpg"
                     alt="Trap in toren"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -146,7 +155,10 @@ export default function Restauratie() {
                     width={250}
                     src="/static/SmallPhoto/restauratie-afbeelding4.jpg"
                     alt="plankjes restaureren"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -160,7 +172,10 @@ export default function Restauratie() {
                     width={250}
                     src="/static/SmallPhoto/restauratie-afbeelding5.jpg"
                     alt="Kader raam restauratie"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -174,7 +189,10 @@ export default function Restauratie() {
                     width={250}
                     src="/static/SmallPhoto/restauratie-afbeelding6.jpg"
                     alt="Tuinbank restauratie"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -188,7 +206,10 @@ export default function Restauratie() {
                     width={250}
                     src="/static/SmallPhoto/restauratie-afbeelding7.jpg"
                     alt="Raam restauratie"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>
@@ -202,7 +223,10 @@ export default function Restauratie() {
                     width={250}
                     src="/static/SmallPhoto/restauratie-afbeelding8.jpg"
                     alt="Raamkader restauratie"
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </Link>
             </div>

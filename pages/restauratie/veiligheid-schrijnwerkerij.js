@@ -2,7 +2,7 @@
 import Timmerwerk from "../../public/timmer.svg";
 import Zaag from "../../public/zaag.svg";
 import Veiligheid from "../../public/veiligheid.svg";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
 
@@ -171,10 +171,13 @@ export default function Restauratietimmerwerk() {
                 <Image
                   height={250}
                   width={250}
-                  objectFit="cover"
                   src="/static/SmallPhoto/bereikbaarheid-1.jpg"
                   alt="duifhuis restauratie"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    objectFit: "cover"
+                  }} />
               </div>
             </Link>
           </div>
@@ -191,10 +194,13 @@ export default function Restauratietimmerwerk() {
                 <Image
                   height={250}
                   width={250}
-                  objectFit="cover"
                   src="/static/SmallPhoto/bereikbaarheid-2.jpg"
                   alt="restauratietimmerwerk duifhuis"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    objectFit: "cover"
+                  }} />
               </div>
             </Link>
           </div>
@@ -211,10 +217,13 @@ export default function Restauratietimmerwerk() {
                 <Image
                   height={250}
                   width={250}
-                  objectFit="cover"
                   src="/static/SmallPhoto/bereikbaarheid-3.jpg"
                   alt="duifhuis afwerking"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    objectFit: "cover"
+                  }} />
               </div>
             </Link>
           </div>

@@ -2,7 +2,7 @@
 import Timmerwerk from "../../public/timmer.svg";
 import Zaag from "../../public/zaag.svg";
 import Veiligheid from "../../public/veiligheid.svg";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
 
@@ -169,10 +169,13 @@ export default function Restauratieschrijnwerk() {
                 <Image
                   height={250}
                   width={250}
-                  objectFit="cover"
                   src="/static/SmallPhoto/antieke-trap-1.jpg"
                   alt="antieke trap plaatsen"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    objectFit: "cover"
+                  }} />
               </div>
             </Link>
           </div>
@@ -189,10 +192,13 @@ export default function Restauratieschrijnwerk() {
                 <Image
                   height={250}
                   width={250}
-                  objectFit="cover"
                   src="/static/SmallPhoto/antieke-trap-12.jpg"
                   alt="antieke trap verwijderen"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    objectFit: "cover"
+                  }} />
               </div>
             </Link>
           </div>
@@ -209,10 +215,13 @@ export default function Restauratieschrijnwerk() {
                 <Image
                   height={250}
                   width={250}
-                  objectFit="cover"
                   src="/static/SmallPhoto/antieke-trap-13.jpg"
                   alt="antieke trap atelier"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    objectFit: "cover"
+                  }} />
               </div>
             </Link>
           </div>
@@ -229,10 +238,13 @@ export default function Restauratieschrijnwerk() {
                 <Image
                   height={250}
                   width={250}
-                  objectFit="cover"
                   src="/static/SmallPhoto/antieke-trap-14.jpg"
                   alt="antieke trap"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    objectFit: "cover"
+                  }} />
               </div>
             </Link>
           </div>
@@ -253,10 +265,13 @@ export default function Restauratieschrijnwerk() {
                 <Image
                   height={250}
                   width={250}
-                  objectFit="cover"
                   src="/static/SmallPhoto/den-wolsack-12.jpg"
                   alt="traprestauraties"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    objectFit: "cover"
+                  }} />
               </div>
             </Link>
           </div>
@@ -273,10 +288,13 @@ export default function Restauratieschrijnwerk() {
                 <Image
                   height={250}
                   width={250}
-                  objectFit="cover"
                   src="/static/SmallPhoto/den-wolsack-11.jpg"
                   alt="traprestauratie"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    objectFit: "cover"
+                  }} />
               </div>
             </Link>
           </div>
@@ -325,10 +343,13 @@ export default function Restauratieschrijnwerk() {
                 <Image
                   height={250}
                   width={250}
-                  objectFit="cover"
                   src="/static/SmallPhoto/waaier.jpg"
                   alt="restauratieschrijnwerk waaier"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    objectFit: "cover"
+                  }} />
               </div>
             </Link>
           </div>
@@ -343,10 +364,13 @@ export default function Restauratieschrijnwerk() {
                 <Image
                   height={250}
                   width={250}
-                  objectFit="cover"
                   src="/static/SmallPhoto/waaier-2.jpg"
                   alt="restauratie waaiers"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    objectFit: "cover"
+                  }} />
               </div>
             </Link>
           </div>
@@ -361,10 +385,13 @@ export default function Restauratieschrijnwerk() {
                 <Image
                   height={250}
                   width={250}
-                  objectFit="cover"
                   src="/static/SmallPhoto/waaier-3.jpg"
                   alt="restauratie waaier"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    objectFit: "cover"
+                  }} />
               </div>
             </Link>
           </div>

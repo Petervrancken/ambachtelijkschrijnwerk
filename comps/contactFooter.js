@@ -41,7 +41,7 @@ export default function ContactFooter() {
             </Link>
           </div>
           <p>Copyright © 2022</p>
-          <p>All rights reserved.</p>
+          <p>All rights reserved.test</p>
         </div>
       </div>
     </>

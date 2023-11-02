@@ -9,6 +9,7 @@ import contactstyle from "../styles/contactstyle.scss";
 import footerstyle from "../styles/footerstyle.scss";
 import timmerwerk from "../styles/timmerwerkStyle.scss";
 import { motion } from "framer-motion";
+import Head from "next/head";
 //import Breadcrumbs from 'nextjs-breadcrumbs';
 
 
@@ -17,12 +18,18 @@ import { motion } from "framer-motion";
 import Navbar from "../comps/navbar";
 import Footer from "../comps/footer";
 import ContactFooter from "../comps/contactFooter";
+import Backgroundslider from "../comps/backgroundslider"
+
 
 // includes Navbar + dropdown.
 function MyApp({ Component, pageProps, router }) {
   return (
     <>
+    <Head>
+      <link rel="prefetch" href="/backgroundpic3.jpg" as="image" />
+    </Head>
     <div className="bg">
+    <Backgroundslider/>
         <Navbar />
         <motion.div
           key={router.route}

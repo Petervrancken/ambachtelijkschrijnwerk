@@ -8,9 +8,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-// verander hier je URL endpoints
-const URL = "https://wdev2.be/peter21/eindwerk"; // wdev url
-//const URL = "https://127.0.0.1:8000"; // local url
 
 export default function Home(description) {
   return <>

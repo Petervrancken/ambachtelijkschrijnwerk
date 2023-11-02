@@ -1,35 +1,19 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 .bg {
-  /* The image used */
-  background-image: url('/backgroundpictest.jpg');
-
+  position: relative;
   /* Full height */
   width: 100%;
   height: 1350px; // voorlopig laten staan, veranderen als website klaar is
-
-  /* Center and scale the image nicely */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  backface-visibility: hidden;
-  animation: 25s linear 0s normal none infinite slideBg;
-  animation-timing-function: ease-in-out;
-  transition: 0.5s5;
 }
-@keyframes slideBg {
-  0% {
-    background-image: url('/backgroundpictest.jpg');
-  }
-  30% {
-    background-image: url('/backgroundpic3.jpg');
-  }
-  60% {
-    background-image: url('/backgroundpictest3.jpg');
-  }
-  100% {
-    background-image: url('/backgroundpictest.jpg');
-  }
+.image-opacity{
+  height: 100%;
+}
+.swiper-container.backgroundSwiper{
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  height: 100%;
 }
 .add-pointer{
   cursor: pointer;
@@ -37,6 +21,13 @@
 .retauratie-slogan{
   font-family: WoodHellCompany;
   padding-top: 30px!important;
+}
+.background-slider {
+  position: absolute;
+  z-index: -20;
+  opacity: 0.5; 
+  width: 100%;
+  height:100%;
 }
 div.bottom-restauratie{
   margin-top:0px!important;

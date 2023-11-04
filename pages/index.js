@@ -8,6 +8,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
+import Hammerpick from "../public/wood-frame.svg";
+
 
 export default function Home(description) {
   return <>
@@ -49,44 +51,27 @@ export default function Home(description) {
               Ambachtelijkschrijnwerk.be is ontstaan uit de samenwerking van
               twee gepassioneerde restauratieschrijnwerkers: Kristof Van
               Dooren en Anton Destrooper.
-              <br />
-              <br />
-              Samen hebben we meer dan 20 jaar ervaring in zowel{" "}
-              <a href="/restauratie">restauratieschrijnwerk</a> en algemeen
+              Samen hebben we meer dan 20 jaar ervaring in zowel 
+              restauratieschrijnwerk en algemeen
               massief schrijnwerk. In ons atelier zijn we goed uitgerust voor
               iedere job met massief hout.
             </p>
-            <div className="usp">
-              <div>&#9989; 20 jaar ervaring</div>
-              <div>&#9989; Wij gaan voor klantentevredenheid</div>
-              <div className="lastusp">
-                &#9989; Dé restauratie specialist in uw buurt
-              </div>
-              
-              <div className="Button1">
-                <a href="tel:0032495364587" className="uspbutton">
-                  Bel ons: 0495 36 45 87
-                </a>
-              </div>
-              <div className="Button1">
-                <a
-                  href="mailto:info@ambachtelijkschrijnwerk.be"
-                  className="uspbutton"
-                >
-                  <span className="buttonmargin">
-                    Mail ons: info@ambachtelijkschrijnwerk.be
-                  </span>
-                </a>
-              </div>
-            </div>
           </div>
         </motion.div>
       </div>
     </div>
-    <p className="introductie-titel titel-twee">Wat doen we?</p>
+    <section className="section-1-home">
+      <div className="introductie-titel titel-twee">
+        <p className="wat-doen-we">Wat doen we?</p>
+      </div>
     <div className="services-image-blocks">
+      <div className="service-block">
+      <div className="image-block icon-block">
+        <Hammerpick className="home-icons"/>
+        <span>tevreden klanten</span>
+      </div>
       <Link href="/restauratie" legacyBehavior>
-      <div className="image-block add-pointer">
+      <div title="Naar Restauratie" className="image-block add-pointer">
         <span>Restauratie</span>
         <Image
           priority={true}
@@ -103,7 +88,7 @@ export default function Home(description) {
       </div>
       </Link>
       <Link href="/schrijnentimmerwerken" legacyBehavior>
-      <div className="image-block add-pointer">
+      <div title="Naar schrijnwerken" className="image-block add-pointer stay-put">
         <span>Schrijn en timmerwerken</span>
         <Image
           priority={true}
@@ -120,7 +105,7 @@ export default function Home(description) {
       </div>
       </Link>
       <Link href="/treecycle" legacyBehavior>
-      <div className="image-block add-pointer">
+      <div title="Naar Treecycle" className="image-block add-pointer">
         <span>Treecycle</span>
         <Image
           priority={true}
@@ -136,6 +121,12 @@ export default function Home(description) {
           }} />
       </div>
       </Link>
+      <div className="image-block icon-block">
+        <Hammerpick className="home-icons"/>
+        <span>20 jaar ervaring</span>
+      </div>
+      </div>
     </div>
+    </section>
   </>;
 }

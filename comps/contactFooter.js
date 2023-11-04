@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function ContactFooter() {
   return (
     <>
+    <section className="sectionFooter">
       <div className="contactFooter">
         <div className="contactBlok">
           <h5>Contact info</h5>
@@ -44,6 +45,7 @@ export default function ContactFooter() {
           <p>All rights reserved.test</p>
         </div>
       </div>
+      </section>
     </>
   );
 }

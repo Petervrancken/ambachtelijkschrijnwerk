@@ -1,10 +1,15 @@
 import Image from "next/image";
 // import Swiper bundle
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay, Pagination, Navigation, EffectFade } from "swiper/core";
+import SwiperCore, {
+  Autoplay,
+  Pagination,
+  Navigation,
+  EffectFade,
+} from "swiper/core";
 SwiperCore.use([Autoplay, Pagination, Navigation, EffectFade]);
 import "swiper/swiper-bundle.min.css";
-import 'swiper/swiper.scss';
+import "swiper/swiper.scss";
 
 export default function Backgroundslider() {
   return (
@@ -14,7 +19,7 @@ export default function Backgroundslider() {
           loop={true}
           speed={4000}
           spaceBetween={0}
-          effect='fade'
+          effect="fade"
           EffectFade={{ crossFade: true }}
           autoplay={{
             delay: 5000,
@@ -24,6 +29,7 @@ export default function Backgroundslider() {
           <SwiperSlide>
             <div className="image-one image-opacity">
               <Image
+                priority={true}
                 height={250}
                 width={250}
                 src="/static/BigPhoto/backgroundpic.jpg"
@@ -40,6 +46,7 @@ export default function Backgroundslider() {
           <SwiperSlide>
             <div className="image-two image-opacity">
               <Image
+                priority={true}
                 height={250}
                 width={250}
                 src="/static/BigPhoto/backgroundpic2.jpg"
@@ -56,6 +63,7 @@ export default function Backgroundslider() {
           <SwiperSlide>
             <div className="image-three image-opacity">
               <Image
+                priority={true}
                 height={250}
                 width={250}
                 src="/static/BigPhoto/nieuw - buitenschrijnwerk - meranti 3.jpg"

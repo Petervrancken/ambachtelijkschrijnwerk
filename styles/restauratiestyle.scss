@@ -52,15 +52,40 @@ ol._2jvtI li{
   border-top: 41px solid #a50000;
   margin-top: 40px!important;
 }
-.services-image-blocks{
+.services-image-blocks {
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-top: -150px;
+  border-radius: 10px;
+  background-color: black;
+  padding: 20px 0px;
+}
+.service-block{
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  background-color: black;
+  width: 100%;
+  margin:auto;
 }
+.section-1-home{
+  background-color: black;
+  margin-top: 150px;
+}
+.image-block.stay-put{
+  top: -40px;
+  img{
+    opacity: 1;
+  }
+}
+
 .image-block{
   position: relative;
   width: 100%;
+  padding: 10px;
+  top: 0px;
+  border-radius: 10px;
+  background-color: black;
+  transition: all .4s ease;
   span{
     position: absolute;
     top: 50%;
@@ -74,6 +99,7 @@ ol._2jvtI li{
     text-align: center;
   }
   &:hover{
+    top: -40px;
     img{
       opacity: 1;
     }
